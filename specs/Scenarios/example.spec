@@ -5,4 +5,4 @@
 * Arama alanına "Dünyanın 7 Harikası" değeri yazılır.
 * "5" saniye bekle
 
-//* Arama sonuçlarından "Dünyanın Yedi Harikası - Vikipedi" alanına tıklanır.s
+//* Arama sonuçlarından "Dünyanın Yedi Harikası - Vikipedi" alanına tıklanır.
