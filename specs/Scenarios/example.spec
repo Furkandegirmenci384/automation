@@ -1,6 +1,6 @@
-# Lingaros Web Senaryolar
+# Google Deneme
 
-## TC1.1 - Login Sayfasının Doğrulanması
+## TC1.1 - Google Deneme
 * "https://www.google.com/" urlinin açıldığı doğrulanır.
 * Arama alanına "Dünyanın 7 Harikası" değeri yazılır.
 * "5" saniye bekle
