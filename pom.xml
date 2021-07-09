@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.virgosol.example</groupId>
+  <artifactId>exampleProjectName</artifactId>
+  <version>1.0-SNAPSHOT</version>
+
+  <name>example-test-automation</name>
+  <url>example-url</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.complier.version>3.6.0</maven.complier.version>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <gauge.java.version>0.7.9</gauge.java.version>
+    <junit.version>4.12</junit.version>
+    <gauge.plugin.version>1.4.1</gauge.plugin.version>
+    <virgosol.qa.version>1.0.0</virgosol.qa.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.vrgsl.qa</groupId>
+      <artifactId>qa-report</artifactId>
+      <version>${virgosol.qa.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.thoughtworks.gauge</groupId>
+      <artifactId>gauge-java</artifactId>
+      <version>${gauge.java.version}</version>
+      <exclusions>
+        <exclusion>
+          <groupId>com.google.guava</groupId>
+          <artifactId>guava</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>${maven.complier.version}</version>
+        <configuration>
+          <compilerVersion>${maven.compiler.source}</compilerVersion>
+          <source>${maven.compiler.source}</source>
+          <target>${maven.compiler.target}</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>com.thoughtworks.gauge.maven</groupId>
+        <artifactId>gauge-maven-plugin</artifactId>
+        <version>${gauge.plugin.version}</version>
+      </plugin>
+    </plugins>
+  </build>
+</project>

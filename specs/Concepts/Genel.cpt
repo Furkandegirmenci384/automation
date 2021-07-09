@@ -1,0 +1,13 @@
+# <url> urlinin açıldığı doğrulanır.
+* Sayfanın url i <url> mı?
+
+# Arama alanına <input> değeri yazılır.
+* "txtbx_GoogleInput" li elemente <input> degerini yaz
+
+# Arama sonuçlarından <aramaList> alanına tıklanır.
+* "txt_AramaSonuclari" li elementlerden <aramaList> değerine eşit olana tıkla
+
+# <saniye> saniye bekle
+* <saniye> sn bekle
+
+
