@@ -1131,6 +1131,11 @@ public class StepImpl {
         element.sendKeys(Keys.DELETE);
     }
 
+    @Step("<key> Entere tıkla")
+    public void clickEnter(String key) {
+        element.sendKeys(Keys.ENTER);
+    }
+
     @Step("frame gir")
     public void framegir() {
         waitingAction.waitUntil(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".ms-rtestate-field iframe")));

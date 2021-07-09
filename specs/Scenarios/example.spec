@@ -2,8 +2,6 @@
 
 ## TC1.1 - Google Deneme
 * "https://www.google.com/" urlinin açıldığı doğrulanır.
-* Arama alanına "Dünyanın 7 Harikası" değeri yazılır.
-
-//* "5" saniye bekle
-
-//* Arama sonuçlarından "Dünyanın Yedi Harikası - Vikipedi" alanına tıklanır.
+* Arama alanına "BMW" değeri yazılır ve aratılır.
+* "1" saniye bekle
+* Arama sonuçlarından "BMW Türkiye Resmi Web Sitesi" alanına tıklanır.
