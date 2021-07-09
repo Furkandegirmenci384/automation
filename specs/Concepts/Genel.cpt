@@ -4,8 +4,6 @@
 # Arama alanına <input> değeri yazılır ve aratılır.
 * "txtbx_GoogleInput" li elemente <input> degerini yaz
 
-//* "txtbx_GoogleInput" Entere tıkla
-
 # Arama sonuçlarından <aramaList> alanına tıklanır.
 * "txt_AramaSonuclari" li elementlerden <aramaList> değerine eşit olana tıkla
 
