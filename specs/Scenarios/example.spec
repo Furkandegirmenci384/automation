@@ -5,4 +5,4 @@
 * Arama alanına "BMW" değeri yazılır ve aratılır.
 * "1" saniye bekle
 
-//* Arama sonuçlarından "BMW Türkiye Resmi Web Sitesi" alanına tıklanır.s
+//* Arama sonuçlarından "BMW Türkiye Resmi Web Sitesi" alanına tıklanır.
