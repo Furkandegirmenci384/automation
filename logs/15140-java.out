@@ -1,9 +1,0 @@
-Listening for transport dt_socket at address: 65178
-{"logLevel":"debug","message":"multithreading is set to false"}
-{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
-WARNING: An illegal reflective access operation has occurred
-WARNING: Illegal reflective access by org.codehaus.groovy.reflection.CachedClass (file:/Users/virgosol-furkan/.m2/repository/org/codehaus/groovy/groovy-all/2.4.13/groovy-all-2.4.13.jar) to method java.lang.Object.finalize()
-WARNING: Please consider reporting this to the maintainers of org.codehaus.groovy.reflection.CachedClass
-WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
-WARNING: All illegal access operations will be denied in a future release
-Listening for transport dt_socket at address: 65178
