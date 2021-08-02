@@ -1,12 +1,17 @@
 [
   {
-    "key": "txtbx_GoogleInput",
-    "value": ".gLFyf.gsfi",
+    "key": "btn_Signin",
+    "value": ".login",
     "type": "css"
   },
   {
-    "key": "txt_AramaSonuclari",
-    "value": ".LC20lb.DKV0Md",
-    "type": "css"
+    "key": "txtbx_Email",
+    "value": "email_create",
+    "type": "id"
+  },
+  {
+    "key": "btn_CreateAnAccount",
+    "value": "SubmitCreate",
+    "type": "id"
   }
 ]

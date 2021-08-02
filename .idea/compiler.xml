@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="exampleProjectName" />
+        <module name="example" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="exampleProjectName" target="1.8" />
+      <module name="example" target="1.8" />
       <module name="Virgosol_blynr_MOBILEWEB" target="1.8" />
     </bytecodeTargetLevel>
   </component>

@@ -1,11 +1,15 @@
 # <url> urlinin açıldığı doğrulanır.
 * Sayfanın url i <url> mı?
 
-# Arama alanına <input> değeri yazılır ve aratılır.
-* "txtbx_GoogleInput" li elemente <input> degerini yaz
+# Sign in butonuna tıklanır.
+* "btn_Signin" li elemente tikla
 
-# Arama sonuçlarından <aramaList> alanına tıklanır.
-* "txt_AramaSonuclari" li elementlerden <aramaList> değerine eşit olana tıkla
+# Create An Account alanında Email <email> olarak girilir.
+* "txtbx_Email" li elemente <email> degerini yaz
+
+# Create An Account butonuna tıklanır.
+* "btn_CreateAnAccount" li elemente tikla
+
 
 # <saniye> saniye bekle
 * <saniye> sn bekle
