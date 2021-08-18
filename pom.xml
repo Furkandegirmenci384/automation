@@ -6,7 +6,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.virgosol.odeon</groupId>
-  <artifactId>Odeon Regresyon</artifactId>
+  <artifactId>OdeonRegresyon</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <name>Odeon Web Test Automation</name>
