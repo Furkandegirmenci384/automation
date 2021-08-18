@@ -5,12 +5,12 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.virgosol.example</groupId>
-  <artifactId>exampleProjectName</artifactId>
+  <groupId>com.virgosol.odeon</groupId>
+  <artifactId>Odeon Regresyon</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>example-test-automation</name>
-  <url>example-url</url>
+  <name>Odeon Web Test Automation</name>
+  <url>http://192.168.186.88:81/reservationdetail</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -39,6 +39,12 @@
           <artifactId>guava</artifactId>
         </exclusion>
       </exclusions>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi</artifactId>
+      <version>3.17</version>
     </dependency>
   </dependencies>
 

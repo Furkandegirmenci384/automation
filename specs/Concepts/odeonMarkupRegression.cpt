@@ -1,0 +1,255 @@
+# Login sayfasında <loginHead> alanına <accountValue> değeri girilir.
+* "txt_loginHeader" li elementlerden <loginHead> değerine eşit olanın yanındaki "txtbx_loginInput" elementine <accountValue> değerini yaz
+
+# Sayfada <butonText> butonuna tıklanır.
+* "btn_pageButtons" li elementlerden <butonText> değerine eşit olana tıkla
+
+# Sayfada <butonText> butonunun tıklanabilir olduğu kontrol edilir.
+* "btn_pageButtons" li elementlerden <butonText> değerine eşit olan tıklanabilir mi?
+
+# <radioButtonText> search radio butonuna tıklanır.
+* "btn_searchRadioTexts" li elementi görünür olana kadar bekle
+* "btn_searchRadioTexts" li elementi bekle
+* "btn_searchRadioTexts" li elementlerden <radioButtonText> değerine eşit olanın yanındaki "btn_searchRadio" elementine tıkla
+
+# <radioButtonText> search radio butonunun seçili olduğu kontrol edilir.
+* "btn_searchRadioTexts" li elementlerden <radioButtonText> değerine eşit olanın yanındaki "btn_searchRadioAttr" elementinin "class" attributesi "ant-radio ant-radio-checked" içeriyor mu?
+
+# <pageHeader> alanına <inputText> değeri girilir.
+* "txt_pageHeaderTexts" li elementlerden <pageHeader> değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementine tıkla
+* "txt_pageHeaderTexts" li elementlerden <pageHeader> değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementine <inputText> değerini yaz
+* "1" sn bekle
+* "txt_pageHeaderTexts" li elementlerden <pageHeader> değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementinde Entere Tikla
+* "txt_pageHeaderTexts" li elementlerden <pageHeader> değerine eşit olana tıkla
+
+# <pageHeader> dropdown menu tıklanabilir olduğu kontrol edilir.
+* "txt_pageHeaderTexts" li elementlerden <pageHeader> değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementi tıklanabilir mi?
+
+# <pageHeader> dropdown menuden <dropdownText> değeri seçilir.
+* "txt_pageHeaderTexts" li elementlerden <pageHeader> değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementine tıkla
+* "1" sn bekle
+* "txt_pageHeaderTexts" li elementlerden <pageHeader> değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementine <dropdownText> değerini yaz
+* "txt_dropdownOptions" li elementlerden <dropdownText> değerine eşit olana tıkla
+* "txt_pageHeaderTexts" li elementlerden <pageHeader> değerine eşit olana tıkla
+
+# <pageTitle> dropdown menusunden <dropdownText> değeri seçilir.
+* "txt_pageTitleTexts" li elementlerden <pageTitle> değerine eşit olanın yanındaki "txtbx_pageTitleInput" elementine tıkla
+* "txt_dropdownOptions" li elementlerden <dropdownText> değerine eşit olana tıkla
+* "txt_pageTitleTexts" li elementlerden <pageTitle> değerine eşit olana tıkla
+
+# Nightlymin alanına <inputText> değeri girilir.
+* "txtbx_nightlyMinInput" li elemente <inputText> degerini yaz
+
+# Nightlymax alanına <inputText> değeri girilir.
+* "txtbx_nightlyMaxInput" li elemente tikla
+* "txtbx_nightlyMaxInput" li elemente <inputText> degerini yaz
+
+# Nightlymax alanındaki değer silinir.
+* "txtbx_nightlyMaxInput" li elemente tikla
+* "txtbx_nightlyMaxInput" li elementin içindekileri sil
+
+# Nightlymin alanındaki değer silinir.
+* "txtbx_nightlyMinInput" li elemente tikla
+* "txtbx_nightlyMinInput" li elementin içindekileri sil
+
+# Sadece Accommodation Date Between tarih seçiminin geldiği doğrulanır.
+* "date_accommondationDateBetween" li elementin "class" attributesi "ant-picker ant-picker-range ant-picker-middle" mi
+* "date_checkinDateBetween" li elementin "class" attributesi "ant-picker ant-picker-range ant-picker-middle ant-picker-disabled" mi
+* "date_bookingDateWindow" li elementin "class" attributesi "ant-picker ant-picker-range ant-picker-middle ant-picker-disabled" mi
+* "date_rollingDate" li elementin "class" attributesi "ant-picker ant-picker-range ant-picker-middle ant-picker-disabled" mi
+
+# Accommodation Date alanında start date day <startDate> end date day <endDate> olarak seçilir.
+* "txt_accommondationStartDate" li elemente tikla
+* "date_startDay" li elementlerden <startDate> değerine eşit olana tıkla
+* "date_endDay" li elementlerden <endDate> değerine eşit olana tıkla
+
+# Markup Filter alanındaki Accommodation Date alanında start date day <startDate> end date day <endDate> olarak seçilir.
+* "txt_markupFilterAccommondationStartDate" li elemente tikla
+* "date_startDay" li elementlerden <startDate> değerine eşit olana tıkla
+* "date_endDay" li elementlerden <endDate> değerine eşit olana tıkla
+
+# Markup Type alanından <dropdownText> seçilir.
+* "txt_markupInput" li elemente tikla
+* "txt_dropdownOptions" li elementlerden <dropdownText> değerine eşit olana tıkla
+
+# Using Markup Type alanından <dropdownText> seçilir.
+* "txt_usingMarkupTypeInput" li elemente tikla
+* "txt_dropdownOptions" li elementlerden <dropdownText> değerine eşit olana tıkla
+
+# Using Markup Type 2. alanından <dropdownText> seçilir.
+* "txt_usingMarkupApplyTypeInput" li elemente tikla
+* "txt_dropdownOptions" li elementlerden <dropdownText> değerine eşit olana tıkla
+
+# Markup Value alanına <markupValueInput> değeri girilir.
+* "txt_markupValueInput" li elemente tikla
+* "txt_markupValueInput" li elemente <markupValueInput> degerini yaz
+
+# Curreny alanından <dropdownText> değeri seçilir.
+* "txt_currenyCodeInput" li elemente tikla
+* "txt_dropdownOptions" li elementlerden <dropdownText> değerine eşit olana tıkla
+
+# Markup Filter alanındaki Curreny alanından <dropdownText> değeri seçilir.
+* "txt_markupFilterCurrenyCodeInput" li elemente tikla
+* "txt_dropdownOptions" li elementlerden <dropdownText> değerine eşit olana tıkla
+
+# Name alanına <nameInput> değeri girilir.
+* "txt_nameInput" li elemente tikla
+* "txt_nameInput" li elemente <nameInput> degerini yaz
+
+# Expire Date alanında start date day <startDate> end date day <endDate> olarak seçilir.
+* "txt_expireStartDate" li elemente tikla
+* "date_startDay" li elementlerden <startDate> değerine eşit olan tıklanabilir mi?
+* "date_startDay" li elementlerden <startDate> değerine eşit olana tıkla
+* "date_endDay" li elementlerden <endDate> değerine eşit olana tıkla
+
+# Is Active butonu disable hale getirilir.
+* "btn_isActive" li elemente tikla
+* "btn_isActive" li elementin "aria-checked" attributesi "false" mi
+
+# Is Active butonu aktif olduğu kontrol edilir.
+* "btn_isActive" li elementin "aria-checked" attributesi "true" mi
+
+# Zorunlu alanların doldurulması gerektiği uyarısının çıktığı kontrol edilir.
+* "alert_requiredArea" li elementler var mı?
+
+# Description alanına <descInput> değeri girilir.
+* "txt_descriptionInput" li elemente tikla
+* "txt_descriptionInput" li elemente <descInput> degerini yaz
+
+# Sign Out pop-up'ının açıldığı kontrol edilir.
+* "modal_SignOutPopup" li element var mı?
+
+# Delete pop-up içeriğinin <popupText> olduğu doğrulanır.
+* "txt_deleteInformation" li elementin texti <popupText> mi?
+
+# Açılan pop-up'ta <btnOK> ve <btnCancel> butonlarının bulunduğu kontrol edilir.
+* "btn_pageButtons" li elementlerden <btnOK> değerine eşit olan var mı?
+* "btn_pageButtons" li elementlerden <btnCancel> değerine eşit olan var mı?
+
+# Tabloda <tableRowName> rowunda <personalName> kişisinin bulunduğu kontrol edilir.
+* "icon_loading" li elementi invisible olana kadar bekle
+* "txt_tableRowNames" li elementlerden <tableRowName> değerine eşit olanın yanındaki "txt_tableRowHeaderNameWithUsersName" li elementlerden <personalName> değerine eşit olan var mı?
+
+# Tabloda <tableRowName> rowunda <personalName> bulunduğu kontrol edilir.
+* "txt_tableRowNames" li elementlerden <tableRowName> değerine eşit olanın yanındaki "txt_tableRowHeaderNameWithusingMarkupType" li elementlerden <personalName> değerine eşit olan var mı?
+
+# Tabloda edit ve delete butonunun geldiği kontrol edilir.
+* "icon_loading" li elementi invisible olana kadar bekle
+* "img_editIcon" li elementi bekle
+* "img_editIcon" li element var mı?
+* "img_deleteIcon" li element var mı?
+
+# Search Type alanından <dropdownText> seçilir.
+* "txt_searchTypeInput" li elemente tikla
+* "txt_dropdownOptions" li elementlerden <dropdownText> değerine eşit olana tıkla
+
+# Markup Filter alanındaki Using Markup Type alanından <dropdownText> seçilir.
+* "txt_secondUsingMarkupTypeInput" li elemente tikla
+* "txt_dropdownOptions" li elementlerden <dropdownText> değerine eşit olana tıkla
+
+# Markup Filter alanındaki Using Markup Type 2. alanından <dropdownText> seçilir.
+* "txt_secondUsingMarkupTypeInputt" li elemente tikla
+* "txt_dropdownOptions" li elementlerden <dropdownText> değerine eşit olana tıkla
+
+# Data grid alanında datagrid pager olduğu doğrulanır.
+* "txt_markupFilterDatagridPager" li element var mı?
+
+# Data grid alanında <page>. sayfaya tıklanır.
+* "btn_markupFilterSecondPage" li elementlerden <page> değerine eşit olana tıkla
+
+# Data grid alanında <page>. sayfaya gidildiği doğrulanır.
+* "btn_markupFilterSecondPage" li elementlerden <page> değerine eşit olan elementin "class" attributesi "dx-selection" içeriyor mu?
+
+# Datagrid toolbar alanında Refresh, Export Excel, Column Chooser butonlarının olduğu doğrulanır.
+* "icon_refresh" li element var mı?
+* "btn_exportExcel" li element var mı?
+* "icon_columnChooser" li element var mı?
+
+# Export Excel butonuna tıklanır.
+* "btn_exportExcel" li elemente tikla
+
+# Column Chooser pop-up'ında filtrelerin olduğu doğrulanır.
+* "txt_columnChooserFilter" li elementler var mı?
+
+# Markup Id değeri <id> olan silinir.
+* "txt_id" li elementlerden <id> değerine eşit olan ile aynı sıralamada yanındaki "img_deleteIcon" elementine tıkla
+
+
+# Datagrid alanında <tableRowName> rowunda <personalName> olan datanın delete butonuna tıklanır.
+* "icon_loading" li elementi invisible olana kadar bekle
+* "txt_tableRowNames" li elementlerden <tableRowName> değerine eşit olanın yanındaki "txt_tableRowHeaderNameWithRows" li elementler <personalName> değerine eşit olanın yanındaki "txt_tableIdRowWithRowInformationByHeader" elementinin id bilgisini kaydet ve "txt_dataGridMarkupIdRow" elementlerinden yanındaki "txt_dataGridDeleteIkonByMarkupId" elementin delete butonuna tıkla
+
+# Datagrid alanında ID <markupID> olan datanın delete butonuna tıklanır.
+* "txt_dataGridMarkupIdRow" li elementlerden <markupID> değerine eşit olanın yanındaki "txt_dataGridDeleteIkonByMarkupId" elementlerinden indexe göre tıkla
+
+# Datagrid alanında ID <markupID> olan datanın edit butonuna tıklanır.
+* "txt_dataGridMarkupIdRow" li elementlerden <markupID> değerine eşit olanın yanındaki "txt_dataGridEditIkonByMarkupId" elementlerinden indexe göre tıkla
+
+# Datagrid alanında ID <markupID> olan datanın silindiği doğrulanır.
+* "txt_dataGridMarkupIdRow" li element var mı?
+
+# Datagrid alanında datanın silindiği doğrulanır.
+* "txt_dataGridMarkupIdRow" li elementlerden id bilgisi silindi mi?
+
+# Datagrid alanında Source Type <sourceType> olan datanın edit butonuna tıklanır.
+* "txt_sourceTypeMarkupIdRow" li elementlerden <sourceType> değerine eşit olanın yanındaki "txt_dataGridEditIkonByMarkupId" elementlerinden indexe göre tıkla
+
+# Delete pop-up'ının açıldığı kontrol edilir.
+* "popUp_deletePopup" li element var mı?
+
+# Delete pop-up'ında <btnYes> ve <btnNo> butonlarının bulunduğu kontrol edilir.
+* "btn_pageButtons" li elementlerden <btnYes> değerine eşit olan var mı?
+* "btn_pageButtons" li elementlerden <btnNo> değerine eşit olan var mı?
+
+# Using Markup Type alanında seçim yapılmadığı durumda <noData> yazıldığı kontrol edilir.
+* "txt_secondUsingMarkupTypeInputt" li elemente tikla
+* "txt_usingMarkupTypeNoData" li elementin texti <noData> mi?
+
+# Rolling days alanına <rollingDaysInput> değeri girilir.
+* "txt_rollingDays" li elemente tikla
+* "txt_rollingDays" li elemente <rollingDaysInput> degerini yaz
+
+# <xmlText> ve <liveText> seçimlerinin disabled olduğu doğrulanır.
+* "btn_searchRadioTexts" li elementlerden <xmlText> değerine eşit olanın yanındaki "btn_searchRadioAttr" elementinin "class" attributesi "ant-radio-disabled" içeriyor mu?
+* "btn_searchRadioTexts" li elementlerden <liveText> değerine eşit olanın yanındaki "btn_searchRadioAttr" elementinin "class" attributesi "ant-radio-disabled" içeriyor mu?
+
+# Check-in Date Between, Booking Date Window seçimlerinin disabled olduğu doğrulanır.
+* "txt_disabledCheckInDateBetween" li elementin "class" attributesi "ant-picker ant-picker-range ant-picker-middle ant-picker-disabled" mi
+* "txt_disabledBookingDateWindow" li elementin "class" attributesi "ant-picker ant-picker-range ant-picker-middle ant-picker-disabled" mi
+
+# Check-in Date Between,Accommodation Date Between, Booking Date Window, Rolling Date, Rolling Days seçimlerinin active olduğu doğrulanır.
+* "txt_disabledCheckInDateBetween" li elementin "class" attributesi "ant-picker ant-picker-range ant-picker-middle" mi
+* "txt_disabledAccommodationDateBetween" li elementin "class" attributesi "ant-picker ant-picker-range ant-picker-middle" mi
+* "txt_disabledBookingDateWindow" li elementin "class" attributesi "ant-picker ant-picker-range ant-picker-middle" mi
+* "txt_disabledRollingDate" li elementin "class" attributesi "ant-picker ant-picker-range ant-picker-middle" mi
+* "txt_disabledRollingDays" li elementin "class" attributesi "ant-input-number" mi
+
+# Rolling Date, Rolling Days seçimlerinin disabled olduğu doğrulanır.
+* "txt_disabledRollingDate" li elementin "class" attributesi "ant-picker ant-picker-range ant-picker-middle ant-picker-disabled" mi
+* "txt_disabledRollingDays" li elementin "class" attributesi "ant-input-number ant-input-number-disabled" mi
+
+# Markup filter alanındaki tüm filtrelerin temizlendiği doğrulanır.
+* "txt_clearFilter" li element yok mu?
+
+# Delete markup sayfasında alanların disabled olduğu doğrulanır.
+* "txt_deleteDisabled" li elementin "class" attributesi "ant-select ant-select-multiple ant-select-allow-clear ant-select-disabled ant-select-show-search" mi
+
+# Column Chooser pop-up'ı kapatılır.
+* "icon_columnChooserPopupClose" li elemente tikla
+
+# Column Client Nationality kolonu sürüklenip ve bırakılır.
+* "icon_loading" li elementi invisible olana kadar bekle
+* "txt_dragAndDropColumnClientNationality" li elementi sürükle ve bırak
+
+# Column Chooser pop-up'ında bütün filtre checkboxlarına tıklanır ve filtre seçimlerinin kaldırılamadığı doğrulanır.
+* "txt_columnChooserCheckboxTexts" li elementlerden yanındaki "icon_columnChooserCheckboxParentByTexts" elementinin "class" attributesi "dx-checkbox-checked" içerenin yanındaki "icon_columnChooserCheckboxByParent" elementine tıkla
+
+
+
+
+
+
+
+
+
+

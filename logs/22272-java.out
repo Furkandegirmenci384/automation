@@ -1,0 +1,28 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.codehaus.groovy.reflection.CachedClass (file:/Users/virgosol-furkan/.m2/repository/org/codehaus/groovy/groovy-all/2.4.13/groovy-all-2.4.13.jar) to method java.lang.Object.finalize()
+WARNING: Please consider reporting this to the maintainers of org.codehaus.groovy.reflection.CachedClass
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+17:33:37,847 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+17:33:37,848 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.groovy] at [file:/Users/virgosol-furkan/Documents/Virgosol%20Projects/Odeon/target/test-classes/logback.groovy]
+17:33:37,849 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.groovy] occurs multiple times on the classpath.
+17:33:37,849 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.groovy] occurs at [jar:file:/Users/virgosol-furkan/.m2/repository/com/vrgsl/qa/qa-common/1.0.0/qa-common-1.0.0.jar!/logback.groovy]
+17:33:37,849 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.groovy] occurs at [file:/Users/virgosol-furkan/Documents/Virgosol%20Projects/Odeon/target/test-classes/logback.groovy]
+17:33:38,756 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@1b5424df - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+17:33:38,757 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@1b5424df - Naming appender as [STDOUT]
+17:33:38,850 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@1b5424df - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+17:33:38,851 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@1b5424df - Naming appender as [FILE]
+17:33:38,853 |-INFO in ch.qos.logback.core.FileAppender[FILE] - File property is set to [target/slnarch.log]
+17:33:38,855 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@1b5424df - Setting level of logger [com.virgosol.bilyonerMobileWeb] to DEBUG
+17:33:38,859 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@1b5424df - Setting level of logger [org.reflections.Reflections] to OFF
+17:33:38,860 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@1b5424df - Setting level of logger [ROOT] to INFO
+17:33:38,862 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@1b5424df - Attaching appender named [STDOUT] to Logger[ROOT]
+17:33:38,862 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@1b5424df - Attaching appender named [FILE] to Logger[ROOT]
+
+{"logLevel":"debug","message":"gauge-java took 1853milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 1853"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 54968"}
+{"logLevel":"info","message":"Listening on port:54968"}
