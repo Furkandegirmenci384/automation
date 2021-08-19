@@ -2,15 +2,13 @@ package com.virgosol.odeon.step;
 
 import com.thoughtworks.gauge.Step;
 import com.virgosol.odeon.helper.ElementHelper;
-import com.virgosol.odeon.helper.ExcelHelper;
+import com.virgosol.odeon.config.ExcelHelper;
 import com.virgosol.odeon.helper.StoreHelper;
 import com.virgosol.odeon.model.ElementInfo;
 import com.virgosol.qa.web.core.di.InjectionHelper;
 import com.virgosol.qa.web.core.element.Element;
 import com.virgosol.qa.web.core.model.Configuration;
 import com.virgosol.qa.web.core.wait.WaitingAction;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;

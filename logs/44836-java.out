@@ -7377,7 +7377,7 @@ Mismatch Loss Size: 4
 reservation-18.08.2021-00.34.xlsx
 2021-08-18 00:34:08.452 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(64) - Excel "reservation" dosyasının uzantısı kontrol edilir ve içeriğinin datagrid yapısıyla aynı olduğu kontrol edilir. adimi basarisiz olarak bitti
 2021-08-18 00:34:08.452 [pool-2-thread-1] ERROR com.vrgsl.qa.testStep(65) - org.junit.Assert.fail(Assert.java:88)
-com.virgosol.odeon.helper.ExcelHelper.<init>(ExcelHelper.java:20)
+com.virgosol.odeon.config.ExcelHelper.<init>(ExcelHelper.java:20)
 com.virgosol.odeon.step.StepImpl.checkDataGridAndExcelColumn(StepImpl.java:1758)
 java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)

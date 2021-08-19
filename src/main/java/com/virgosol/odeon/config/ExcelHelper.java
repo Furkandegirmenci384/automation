@@ -1,6 +1,5 @@
-package com.virgosol.odeon.helper;
+package com.virgosol.odeon.config;
 
-import com.sun.source.tree.AssertTree;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.junit.Assert;
