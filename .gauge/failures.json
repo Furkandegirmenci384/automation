@@ -5,13 +5,5 @@
 		"--hide-suggestion",
 		"--simple-console"
 	],
-	"FailedItems": [
-		"specs/Scenarios/odeonReservationRegression.spec:692",
-		"specs/Scenarios/odeonReservationRegression.spec:717",
-		"specs/Scenarios/odeonReservationRegression.spec:737",
-		"specs/Scenarios/odeonReservationRegression.spec:266",
-		"specs/Scenarios/odeonReservationRegression.spec:299",
-		"specs/Scenarios/odeonReservationRegression.spec:574",
-		"specs/Scenarios/odeonReservationRegression.spec:666"
-	]
+	"FailedItems": []
 }
