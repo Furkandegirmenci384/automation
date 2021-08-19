@@ -13,8 +13,7 @@ public class ExcelHelper {
     XSSFWorkbook wb;
     XSSFSheet sheet;
 
-    public ExcelHelper(String excelPath){
-        try{
+    public ExcelHelper(String excelPath) throws IOException {
             file = new File(excelPath);
             if (!file.exists()){
                 Assert.fail("Belirtilen dosya bulunamadı.");
@@ -24,9 +23,6 @@ public class ExcelHelper {
 
             wb = new XSSFWorkbook(fileInputStream);
 
-        }catch(Exception e){
-            System.out.println(e.getMessage());
-        }
     }
 
     public String getData(int sheetNumber, int row, int column) throws IOException {
