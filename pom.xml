@@ -12,14 +12,28 @@
   <name>Odeon Web Test Automation</name>
   <url>http://192.168.186.88:81/reservationdetail</url>
 
+
+  <!--
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.complier.version>3.8.1</maven.complier.version>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <gauge.java.version>0.7.15</gauge.java.version>
+    <junit.version>4.12</junit.version>
+    <gauge.plugin.version>1.4.2</gauge.plugin.version>
+    <virgosol.qa.version>1.0.0</virgosol.qa.version>
+  </properties>
+  -->
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.complier.version>3.6.0</maven.complier.version>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <gauge.java.version>0.7.15</gauge.java.version>
+    <gauge.java.version>0.7.9</gauge.java.version>
     <junit.version>4.12</junit.version>
-    <gauge.plugin.version>1.4.3</gauge.plugin.version>
+    <gauge.plugin.version>1.4.1</gauge.plugin.version>
     <virgosol.qa.version>1.0.0</virgosol.qa.version>
   </properties>
 
