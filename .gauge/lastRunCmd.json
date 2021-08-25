@@ -4,5 +4,6 @@
 	"--machine-readable",
 	"--hide-suggestion",
 	"--simple-console",
-	"/Users/virgosol-furkan/Documents/Virgosol Projects/Odeon/specs/Scenarios/ornek.spec"
+	"/Users/virgosol-furkan/Documents/Virgosol Projects/Odeon/specs/Scenarios/odeonMarkupRegression.spec",
+	"/Users/virgosol-furkan/Documents/Virgosol Projects/Odeon/specs/Scenarios/odeonReservationRegression.spec"
 ]
