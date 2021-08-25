@@ -15,7 +15,7 @@ public class ExcelHelper {
     public ExcelHelper(String excelPath) throws IOException {
             file = new File(excelPath);
             if (!file.exists()){
-                Assert.fail("Belirtilen dosya bulunamadı.");
+                Assert.fail("Belirtilen dosya bulunamadı. File: "+excelPath);
             }
 
             FileInputStream fileInputStream = new FileInputStream(file);

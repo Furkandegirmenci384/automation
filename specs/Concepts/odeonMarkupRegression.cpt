@@ -58,10 +58,11 @@
 * "date_bookingDateWindow" li elementin "class" attributesi "ant-picker ant-picker-range ant-picker-middle ant-picker-disabled" mi
 * "date_rollingDate" li elementin "class" attributesi "ant-picker ant-picker-range ant-picker-middle ant-picker-disabled" mi
 
-# Accommodation Date alanında start date day <startDate> end date day <endDate> olarak seçilir.
+# Accommodation Date alanında start date day ve end date day seçilir.
+* "txt_accommondationStartDate" li element tıklanabilir mi?
 * "txt_accommondationStartDate" li elemente tikla
-* "date_startDay" li elementlerden <startDate> değerine eşit olana tıkla
-* "date_endDay" li elementlerden <endDate> değerine eşit olana tıkla
+* "date_startDay" li elementlerin yanındaki "date_startDayDisableDay" elementlerinden "class" attributesi "ant-picker-cell-disabled" içermeyen ilk elemente tıkla
+* "date_endDay" li elementlerden "20" değerine eşit olana tıkla
 
 # Markup Filter alanındaki Accommodation Date alanında start date day <startDate> end date day <endDate> olarak seçilir.
 * "txt_markupFilterAccommondationStartDate" li elemente tikla
@@ -96,11 +97,14 @@
 * "txt_nameInput" li elemente tikla
 * "txt_nameInput" li elemente <nameInput> degerini yaz
 
-# Expire Date alanında start date day <startDate> end date day <endDate> olarak seçilir.
+# Expire Date alanında start date day ve end date day seçilir.
+* "txt_expireStartDate" li element tıklanabilir mi?
 * "txt_expireStartDate" li elemente tikla
-* "date_startDay" li elementlerden <startDate> değerine eşit olan tıklanabilir mi?
-* "date_startDay" li elementlerden <startDate> değerine eşit olana tıkla
-* "date_endDay" li elementlerden <endDate> değerine eşit olana tıkla
+* "date_today" li element tıklanabilir mi?
+* "date_today" li elemente tikla
+//* "date_startDay" li elementlerden <startDate> değerine eşit olan tıklanabilir mi?
+//* "date_startDay" li elementlerin yanındaki "date_startDayDisableDay" elementlerinden "class" attributesi "ant-picker-cell-disabled" içermeyen ilk elemente tıkla
+* "date_endDay" li elementlerden "20" değerine eşit olana tıkla
 
 # Is Active butonu disable hale getirilir.
 * "btn_isActive" li elemente tikla
@@ -217,12 +221,21 @@
 * "txt_disabledCheckInDateBetween" li elementin "class" attributesi "ant-picker ant-picker-range ant-picker-middle ant-picker-disabled" mi
 * "txt_disabledBookingDateWindow" li elementin "class" attributesi "ant-picker ant-picker-range ant-picker-middle ant-picker-disabled" mi
 
-# Check-in Date Between,Accommodation Date Between, Booking Date Window, Rolling Date, Rolling Days seçimlerinin active olduğu doğrulanır.
+# Check-in Date Between,Accommodation Date Between, Booking Date Window seçimlerinin active olduğu doğrulanır.
 * "txt_disabledCheckInDateBetween" li elementin "class" attributesi "ant-picker ant-picker-range ant-picker-middle" mi
 * "txt_disabledAccommodationDateBetween" li elementin "class" attributesi "ant-picker ant-picker-range ant-picker-middle" mi
 * "txt_disabledBookingDateWindow" li elementin "class" attributesi "ant-picker ant-picker-range ant-picker-middle" mi
-* "txt_disabledRollingDate" li elementin "class" attributesi "ant-picker ant-picker-range ant-picker-middle" mi
-* "txt_disabledRollingDays" li elementin "class" attributesi "ant-input-number" mi
+
+# Yeni eklenen tarih grubunda Check-in Date Between,Accommodation Date Between, Booking Date Window, Rolling Date, Rolling Days seçimlerinin active olduğu doğrulanır.
+* "txt_newCheckInDateBetween" li elementin "class" attributesi "ant-picker ant-picker-range ant-picker-middle" mi
+* "txt_newAccommodationDateBetween" li elementin "class" attributesi "ant-picker ant-picker-range ant-picker-middle" mi
+* "txt_newBookingDateWindow" li elementin "class" attributesi "ant-picker ant-picker-range ant-picker-middle" mi
+* "txt_newRollingDate" li elementin "class" attributesi "ant-picker ant-picker-range ant-picker-middle" mi
+* "txt_newRollingDays" li elementin "class" attributesi "ant-input-number" mi
+
+# Accommodation Date Between alanının active olduğu doğrulanır.
+* "txt_disabledAccommodationDateBetween" li elementin "class" attributesi "ant-picker ant-picker-range ant-picker-middle" mi
+
 
 # Rolling Date, Rolling Days seçimlerinin disabled olduğu doğrulanır.
 * "txt_disabledRollingDate" li elementin "class" attributesi "ant-picker ant-picker-range ant-picker-middle ant-picker-disabled" mi

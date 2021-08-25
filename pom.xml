@@ -10,7 +10,7 @@
   <version>1.0-SNAPSHOT</version>
 
   <name>Odeon Web Test Automation</name>
-  <url>http://192.168.186.88:81/reservationdetail</url>
+  <url>http://192.168.186.88:81</url>
 
 
   <!--
@@ -35,6 +35,7 @@
     <junit.version>4.12</junit.version>
     <gauge.plugin.version>1.4.1</gauge.plugin.version>
     <virgosol.qa.version>1.0.0</virgosol.qa.version>
+    <!-- <virgosol.qa.version>2.0.10</virgosol.qa.version> -->
   </properties>
 
   <dependencies>
@@ -42,6 +43,16 @@
       <groupId>com.vrgsl.qa</groupId>
       <artifactId>qa-report</artifactId>
       <version>${virgosol.qa.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.vrgsl.qa</groupId>
+      <artifactId>web-gauge</artifactId>
+      <version>${virgosol.qa.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.aventstack</groupId>
+      <artifactId>klov-reporter</artifactId>
+      <version>5.0.6</version>
     </dependency>
     <dependency>
       <groupId>com.thoughtworks.gauge</groupId>

@@ -27,6 +27,11 @@
 * "date_startDay" li elementlerden <startDate> değerine eşit olana tıkla
 //* "txt_pageHeaderTexts" li elementlerden <pageHeader> değerine eşit olana tıkla
 
+# <pageHeader> alanında end date day <startDate> olarak seçilir.
+* "txt_pageHeaderTexts" li elementlerden <pageHeader> değerine eşit olanın yanındaki "txtbx_startDateInput" elementine tıkla
+* "date_startDay" li elementlerden <startDate> değerine eşit olana tıkla
+//* "txt_pageHeaderTexts" li elementlerden <pageHeader> değerine eşit olana tıkla
+
 # End date alanında tarih günü <endDate> öncesi seçilemediği kontrol edilir.
 * "date_startDay" li elementlerden <endDate> değerine eşit olan elementten önceki "date_startDayDisableDay" elementlerin tarihi "class" attributesi "ant-picker-cell-disabled" içeriyor mu?
 

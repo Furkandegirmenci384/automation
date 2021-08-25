@@ -28,6 +28,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 public class StepImpl {
     String winHandleBefore;
@@ -170,6 +171,7 @@ public class StepImpl {
         waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement));
         List<WebElement> elements = driver.findElements(byElement);
         for (WebElement element : elements) {
+            swipeToElement(element);
             if ((text.startsWith("Deger_") && element.getText().contains(StoreHelper.getValue(text))) || element.getText().equals(text)) {
                 if (!element.isDisplayed())
                     waitingAction.waitUntil(ExpectedConditions.visibilityOfElementLocated(byElement));
@@ -371,19 +373,35 @@ public class StepImpl {
 
     @Step({"<key> li elementlerden <text> değerine eşit olanın yanındaki <key2> elementlerinden indexe göre tıkla"})
     public void findElementWithTextsAndClickNextToWithIndex(String key, String text, String key2) {
-        By byElement = ElementHelper.getElementInfoToBy(key);
-        waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement));
-        List<WebElement> elements = driver.findElements(byElement);
-        int size = elements.size();
-        for (int i = 0; i < size; i++) {
-            swipeToElement(elements.get(i));
-            if ((text.startsWith("Deger_") && elements.get(i).getText().contains(StoreHelper.getValue(text))) || elements.get(i).getText().equals(text)) {
-                List<WebElement> elementsNextTo = elements.get(i).findElements(ElementHelper.getElementInfoToBy(key2));
-                //waitingAction.waitUntil(ExpectedConditions.elementToBeClickable((elementNextTo)));
-                elementsNextTo.get(i).click();
-                break;
+        int count = 0;
+        int pager = 1;
+        int pageSize = 0;
+        do {
+            By byElement = ElementHelper.getElementInfoToBy(key);
+            waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement));
+            List<WebElement> elements = driver.findElements(byElement);
+            int size = elements.size();
+            for (int i = 0; i < size; i++) {
+                swipeToElement(elements.get(i));
+                if ((text.startsWith("Deger_") && elements.get(i).getText().contains(StoreHelper.getValue(text))) || elements.get(i).getText().equals(text)) {
+                    List<WebElement> elementsNextTo = elements.get(i).findElements(ElementHelper.getElementInfoToBy(key2));
+                    //waitingAction.waitUntil(ExpectedConditions.elementToBeClickable((elementNextTo)));
+                    elementsNextTo.get(i).click();
+                    return;
+                }else if(i == size-1){
+                    if (pager == elements.size())
+                        break;
+                    if (pager < elements.size()){
+                        By byElement2 = ElementHelper.getElementInfoToBy("txt_pager");
+                        waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement2));
+                        List<WebElement> elementsPage = driver.findElements(byElement2);
+                        pageSize = elementsPage.size();
+                        elementsPage.get(pager).click();
+                    }
+                    pager++;
+                }
             }
-        }
+        }while (count < pageSize);
     }
 
     @Step({"<key> li elementlerden <text> değerine eşit olanın yanındaki <key2> elementlerinden <text2> değerine eşit olana tıkla"})
@@ -711,18 +729,23 @@ public class StepImpl {
 
     @Step({"<key> li elementlerden <text> değerine eşit olan var mı?"})
     public void findElementWithTextsAndCheckText(String key, String text) {
-        By byElement = ElementHelper.getElementInfoToBy(key);
-        waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement));
-        List<WebElement> elements = driver.findElements(byElement);
-        for (int i = 0; i < elements.size();) {
-            System.out.println("Element Text: "+elements.get(i).getText());
-            swipeToElement(elements.get(i));
-            if ((text.startsWith("Deger_") && elements.get(i).getText().replaceAll("\\s+", " ").contains(StoreHelper.getValue(text).replaceAll("\\s+", " "))) || elements.get(i).getText().replaceAll("\\s+", " ").equals(text.replaceAll("\\s+", " "))) {
-                return;
+        int count = 0;
+        while(count < 5){
+            try {
+                By byElement = ElementHelper.getElementInfoToBy(key);
+                waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement));
+                List<WebElement> elements = driver.findElements(byElement);
+                for (int i = 0; i < elements.size();) {
+                    if ((text.startsWith("Deger_") && elements.get(i).getText().contains(StoreHelper.getValue(text))) || elements.get(i).getText().equals(text)) {
+                        return;
+                    }
+                    if (i % 2 == 0) swipeToElement(elements.get(i));
+                    if (i == elements.size()-1) break;
+                    i++;
+                }
+            }catch (StaleElementReferenceException s){
             }
-            swipeToElement(elements.get(i));
-            if (i == elements.size() -1) break;
-            i++;
+            count++;
         }
         Assert.fail(text+" değerine eşit element bulunamadı.");
     }
@@ -988,14 +1011,14 @@ public class StepImpl {
         waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement));
         List<WebElement> elements = driver.findElements(byElement);
         for (WebElement element : elements) {
-            swipeJS(element);
+            swipeToElement(element);
             System.out.println(element.getText());
             if ((text.startsWith("Deger_") && element.getText().contains(StoreHelper.getValue(text))) || element.getText().contains(text)) {
                 check1 = true;
                 By byElement2 = ElementHelper.getElementInfoToBy(key2);
                 List<WebElement> lastElements = element.findElements(byElement2);
                 for (WebElement lastElement : lastElements) {
-                    swipeJS(element);
+                    swipeToElement(element);
                     System.out.println(lastElement.getText());
                     if ((text2.startsWith("Deger_") && lastElement.getText().contains(StoreHelper.getValue(text2))) || lastElement.getText().contains(text2)) {
                         waitingAction.waitUntil(ExpectedConditions.visibilityOf(lastElement));
@@ -1454,7 +1477,38 @@ public class StepImpl {
         }
     }
 
+    @Step({"<key> li elementlerin yanındaki <key2> elementlerinden <attr> attributesi <attrtext> içermeyen ilk elemente tıkla"})
+    public void findElementWithTextsAndCheckAttrAndClickFirst(String key, String key2, String attr, String attrtext) {
+        Boolean var = false;
+        try {
+            By byElement = ElementHelper.getElementInfoToBy(key);
+            waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement));
+            List<WebElement> elements = driver.findElements(byElement);
 
+            By byElement2 = ElementHelper.getElementInfoToBy(key2);
+            waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement2));
+            List<WebElement> elements2 = driver.findElements(byElement2);
+
+            By byElement3 = ElementHelper.getElementInfoToBy("txt_accommondationStartDate");
+            waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement3));
+            WebElement element = driver.findElement(byElement3);
+            for (int i = 0; i < elements2.size(); i++){
+                //swipeToElement(elements2.get(i));
+                if (element.getAttribute("value").equals("")){
+                    if (i == elements2.size()-1){
+                        var = true;
+                        if (!elements.get(i+1).getAttribute(attr).contains(attrtext)) {
+                            elements.get(i+1).click();
+                            return;
+                        }
+                    }
+                }
+            }
+        } catch (Exception e) {
+            if (var == false) Assert.fail("Elementin size değeri i değerine eşit değil.");
+            //Assert.fail("Elementin "+attr+" attributesi "+attrtext+" içeriyor.");
+        }
+    }
 
 
 
@@ -1806,7 +1860,8 @@ public class StepImpl {
     // TRUE FUNCTION
     public void swipeToElement(WebElement element) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        for(int i=0;i<30;i++) {
+        for(int i=0;i<25;i++) {
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS) ;
             js.executeScript("arguments[0].scrollIntoView({behavior: \"auto\", block: \"center\", inline: \"center\"});", element);
         }
     }

@@ -55,6 +55,11 @@
     "type": "css"
   },
   {
+    "key": "date_today",
+    "value": "td[class*='ant-picker-cell-today']:not(td[class*='ant-picker-cell-range-start']) > div",
+    "type": "css"
+  },
+  {
     "key": "date_startDayDisableDay",
     "value": ".ant-picker-cell-disabled",
     "type": "css"
@@ -428,6 +433,31 @@
     "type": "css"
   },
   {
+    "key": "txt_newCheckInDateBetween",
+    "value": "div[name='checkInStart-1']",
+    "type": "css"
+  },
+  {
+    "key": "txt_newBookingDateWindow",
+    "value": "div[name='bookingStart-1']",
+    "type": "css"
+  },
+  {
+    "key": "txt_newRollingDate",
+    "value": "div[name='rollingD-1']",
+    "type": "css"
+  },
+  {
+    "key": "txt_newRollingDays",
+    "value": "div[field='rollingDays-1'] > div > div > div > div> div",
+    "type": "css"
+  },
+  {
+    "key": "txt_newAccommodationDateBetween",
+    "value": "div[name='accommodationStartDate-1']",
+    "type": "css"
+  },
+  {
     "key": "txt_clearFilter",
     "value": ".ant-select-selection-item",
     "type": "css"
@@ -460,6 +490,11 @@
   {
     "key": "txt_deleteInformation",
     "value": ".ant-popover-message-title",
+    "type": "css"
+  },
+  {
+    "key": "txt_pager",
+    "value": ".dx-page",
     "type": "css"
   }
 ]
