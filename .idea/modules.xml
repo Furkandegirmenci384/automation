@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/odeon.iml" filepath="$PROJECT_DIR$/odeon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Odeon.iml" filepath="$PROJECT_DIR$/Odeon.iml" />
     </modules>
   </component>
 </project>
