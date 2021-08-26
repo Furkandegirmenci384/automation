@@ -9,6 +9,7 @@ import com.virgosol.qa.web.core.di.InjectionHelper;
 import com.virgosol.qa.web.core.element.Element;
 import com.virgosol.qa.web.core.model.Configuration;
 import com.virgosol.qa.web.core.wait.WaitingAction;
+import jxl.read.biff.BiffException;
 import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
@@ -739,7 +740,7 @@ public class StepImpl {
                     if ((text.startsWith("Deger_") && elements.get(i).getText().contains(StoreHelper.getValue(text))) || elements.get(i).getText().equals(text)) {
                         return;
                     }
-                    if (i % 2 == 0) swipeToElement(elements.get(i));
+                    if (i % 3 == 0) swipeToElement(elements.get(i));
                     if (i == elements.size()-1) break;
                     i++;
                 }
@@ -1732,10 +1733,11 @@ public class StepImpl {
         String date = dateTime.format(formatter);
         System.out.println(dateTime.format(formatter));
 
+        //date = date.substring(date.length()-2, date.length()-1);
+
         if (excelFileName.contains("Markup")){
             fileNamePath = excelFileName+"-"+date+".xlsx";
             System.out.println(fileNamePath);
-
         }
         else if(excelFileName.contains("reservation"))    {
             fileNamePath = excelFileName+"-"+date+".xlsx";
@@ -1791,7 +1793,101 @@ public class StepImpl {
     }
 
     @Step({"Excel <excelFileName> dosyasının uzantısı kontrol edilir ve içeriğinin datagrid yapısıyla aynı olduğu kontrol edilir."})
-    public void checkDataGridAndExcelColumn(String excelFileName) throws IOException {
+    public void checkDataGridAndExcelColumn(String excelFileName) throws IOException, BiffException {
+
+        ExcelHelper excel = null;
+        String fileNamePath = "";
+        LocalDateTime dateTime = LocalDateTime.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy-HH.mm");
+        String date = dateTime.format(formatter);
+        System.out.println(dateTime.format(formatter));
+
+        if (excelFileName.contains("Markup")){
+            fileNamePath = excelFileName+"-"+date+".xlsx";
+            System.out.println(fileNamePath);
+
+        }
+        else if(excelFileName.contains("reservation"))    {
+            fileNamePath = excelFileName+"-"+date+".xlsx";
+            System.out.println(fileNamePath);
+        }
+        try {
+            excel = new ExcelHelper("/Users/virgosol-furkan/Downloads/"+fileNamePath);
+            String row0 = excel.getData(0,0,0);
+            System.out.println("Data from Excel is: "+row0);
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+
+        By byElement = ElementHelper.getElementInfoToBy("txt_tableRowNames");
+        waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement));
+        List<WebElement> elements = driver.findElements(byElement);
+        int size = elements.size();
+
+        ElementInfo elementInfo = ElementHelper.getElementInfo("txt_tableRowHeaderNameWithRows");
+        String by = (elementInfo.getValue()+"/td["+(1)+"]");
+        List<WebElement> rowElements = elements.get(0).findElements(By.xpath(by));
+        int firstRowSize = rowElements.size();
+
+        String data[][] = new String[size][firstRowSize+1];
+        int rowSize = 0;
+
+        for (int i = 0; i < size; ){
+            swipeToElement(elements.get(i));
+            data[i][0] = elements.get(i).getText();
+            System.out.println("Dizi İçeriği: "+data[i][0]);
+            if (i == size - 1) break;
+            i++;
+        }
+
+        for (int k = 0 ; k < size; k++) {
+            swipeToElement(elements.get(k));
+            System.out.println(elements.get(k).getText());
+            if (elements.get(k).getText().equals(data[k][0])) {
+                ElementInfo elementInfo1 = ElementHelper.getElementInfo("txt_tableRowHeaderNameWithRows");
+                String by1 = (elementInfo1.getValue()+"/td["+(k+1)+"]");
+                List<WebElement> lastElements = elements.get(k).findElements(By.xpath(by1));
+                rowSize = lastElements.size();
+                for (int i = 0; i < rowSize; i++) {
+                    swipeToElement(lastElements.get(i));
+                    data[k][i+1] = lastElements.get(i).getText();
+                }
+            }
+        }
+
+        /*for(int i = 0; i < size;i++){
+            for(int k = 0; k < rowSize+1; k++){
+                System.out.println("Array List ["+i+"]"+"["+k+"] :" +data[i][k]);
+            }
+        }
+        System.out.println("Excel Data: ");*/
+
+        //System.out.println("Array List ["+1+"]"+"["+1+"] :" +excel.getData(0,1,1));
+
+        /*for(int i = 0; i < size;i++){
+            for(int k = 0; k < rowSize+1; k++){
+                System.out.println("Array List ["+i+"]"+"["+k+"] :" +excel.getData(0,k,i));
+            }
+        }*/
+
+        for (int i = 0; i < size; i++){
+            for(int k = 0; k < rowSize+1; k++){
+                if (!(data[i][k].equals(excel.getData(0,k,i))))
+                    Assert.fail(data[i][k]+" texti "+excel.getData(0,k,i)+" textine eşit değil.");
+            }
+        }
+
+        //key txt_tableRowNames
+
+        //System.out.println("Element Data Grid Size: "+size);
+        //System.out.println("Excel Table First Column Y: "+excel.getYCount(0));
+        //System.out.println("Excel Table Last Column X: "+excel.getXCount(0));
+
+        excel.deleteExcel();
+    }
+
+    /*@Step({"Excel <excelFileName> dosyasının uzantısı kontrol edilir ve içeriğinin datagrid yapısıyla aynı olduğu kontrol edilir."})
+    public void checkDataGridAndExcelColumn2(String excelFileName) throws IOException {
 
         ExcelHelper excel = null;
         String fileNamePath = "";
@@ -1837,12 +1933,8 @@ public class StepImpl {
             i++;
         }
 
-        //System.out.println("Element Data Grid Size: "+size);
-        //System.out.println("Excel Table First Column Y: "+excel.getYCount(0));
-        //System.out.println("Excel Table Last Column X: "+excel.getXCount(0));
-
         excel.deleteExcel();
-    }
+    }*/
 
     @Step("frame gir")
     public void framegir() {

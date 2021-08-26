@@ -1,5 +1,10 @@
 package com.virgosol.odeon.config;
 
+import jxl.Workbook;
+import jxl.WorkbookSettings;
+import jxl.read.biff.BiffException;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.junit.Assert;
@@ -28,7 +33,10 @@ public class ExcelHelper {
 
         sheet = wb.getSheetAt(sheetNumber);
 
-        String data = sheet.getRow(row).getCell(column).getStringCellValue();
+        DataFormatter formatter = new DataFormatter();
+        Cell cell = sheet.getRow(row).getCell(column);
+        String data = formatter.formatCellValue(cell);
+        //String data = sheet.getRow(row).getCell(column).getStringCellValue();
 
         wb.close();
 
@@ -65,7 +73,6 @@ public class ExcelHelper {
             Assert.fail("File " + file.getName() + " not found.");
         }
     }
-
 
     public void setData(int sheetNumber, int row, int column, String value) throws IOException {
 
