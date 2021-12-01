@@ -1,32 +1,32 @@
 # HepsiJET POC Senaryolar
 
 ## TC1 - Sayfadaki Üst Menu Ve Hamburger Menu Kontrolü
-* "https://hepsijet.com/" urlinin açıldığı doğrulanır.
-* Hepsijet logosunun geldiği kontrol edilir.
-* Üst menüde "Taşımacı Başvurusu" alanının olduğu kontrol edilir.
-* Üst menüde "Beraber Çalışalım" alanının olduğu kontrol edilir.
-* Üst menüde "İletişim" alanının olduğu kontrol edilir.
-* Menüye tıklanır.
-* Menüde "Ana Sayfa" alanının olduğu kontrol edilir.
-* Menüde "Hakkımızda" alanının olduğu kontrol edilir.
-* Menüde "Müşterilerimiz" alanının olduğu kontrol edilir.
-* Menüde "Teslimat Hizmetlerimiz" alanının olduğu kontrol edilir.
-* Menüde "Sıkça Sorulan Sorular" alanının olduğu kontrol edilir.
-* Menüde "Teknoloji & Arge Merkezi" alanının olduğu kontrol edilir.
-* Menüde "İletişim" alanının olduğu kontrol edilir.
-* Menüde "Taşımacımız Olun" alanının olduğu kontrol edilir.
-* Menüde "Müşterimiz Olun" alanının olduğu kontrol edilir.
-* Menüye tıklanır.
-* Alt menüde "Ana Sayfa" alanının olduğu kontrol edilir.
-* Alt menüde "Hakkımızda" alanının olduğu kontrol edilir.
-* Alt menüde "Öneri ve Şikayet" alanının olduğu kontrol edilir.
-* Alt menüde "Bilgi Güvenliği Politikası" alanının olduğu kontrol edilir.
-* Alt menüde "Müşterilerimiz" alanının olduğu kontrol edilir.
-* Alt menüde "Sıkça Sorulanlar" alanının olduğu kontrol edilir.
-* Alt menüde "Teknoloji & Arge Merkezi" alanının olduğu kontrol edilir.
-* Alt menüde "K.V.K.K. Aydınlatma Metni" alanının olduğu kontrol edilir.
-* Alt menüde "Veri Sorumlusuna Başvuru Formu" alanının olduğu kontrol edilir.
-* Alt menüde "Müşterilere İlişkin Aydınlatma Metni" alanının olduğu kontrol edilir.
+//* "https://hepsijet.com/" urlinin açıldığı doğrulanır.
+//* Hepsijet logosunun geldiği kontrol edilir.
+//* Üst menüde "Taşımacı Başvurusu" alanının olduğu kontrol edilir.
+//* Üst menüde "Beraber Çalışalım" alanının olduğu kontrol edilir.
+//* Üst menüde "İletişim" alanının olduğu kontrol edilir.
+//* Menüye tıklanır.
+//* Menüde "Ana Sayfa" alanının olduğu kontrol edilir.
+//* Menüde "Hakkımızda" alanının olduğu kontrol edilir.
+//* Menüde "Müşterilerimiz" alanının olduğu kontrol edilir.
+//* Menüde "Teslimat Hizmetlerimiz" alanının olduğu kontrol edilir.
+//* Menüde "Sıkça Sorulan Sorular" alanının olduğu kontrol edilir.
+//* Menüde "Teknoloji & Arge Merkezi" alanının olduğu kontrol edilir.
+//* Menüde "İletişim" alanının olduğu kontrol edilir.
+//* Menüde "Taşımacımız Olun" alanının olduğu kontrol edilir.
+//* Menüde "Müşterimiz Olun" alanının olduğu kontrol edilir.
+//* Menüye tıklanır.
+//* Alt menüde "Ana Sayfa" alanının olduğu kontrol edilir.
+//* Alt menüde "Hakkımızda" alanının olduğu kontrol edilir.
+//* Alt menüde "Öneri ve Şikayet" alanının olduğu kontrol edilir.
+//* Alt menüde "Bilgi Güvenliği Politikası" alanının olduğu kontrol edilir.
+//* Alt menüde "Müşterilerimiz" alanının olduğu kontrol edilir.
+//* Alt menüde "Sıkça Sorulanlar" alanının olduğu kontrol edilir.
+//* Alt menüde "Teknoloji & Arge Merkezi" alanının olduğu kontrol edilir.
+//* Alt menüde "K.V.K.K. Aydınlatma Metni" alanının olduğu kontrol edilir.
+//* Alt menüde "Veri Sorumlusuna Başvuru Formu" alanının olduğu kontrol edilir.
+//* Alt menüde "Müşterilere İlişkin Aydınlatma Metni" alanının olduğu kontrol edilir.
 
 ## TC2 - Anasayfa Taşımacı Başvurusu Alanının Doldurulması Ve Taşımacı Butonlarının Doğru Yönlendirmesinin Kontrolü
 * "https://hepsijet.com/" urlinin açıldığı doğrulanır.
