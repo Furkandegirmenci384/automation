@@ -9,6 +9,7 @@ import com.virgosol.qa.report.ReportManager;
 import com.virgosol.qa.web.core.di.page.InjectablePageTestImpl;
 import com.virgosol.qa.web.core.driver.DriverAction;
 import com.virgosol.qa.web.core.helper.ConfigurationHelper;
+import org.openqa.selenium.Dimension;
 
 import java.io.File;
 import javax.inject.Inject;

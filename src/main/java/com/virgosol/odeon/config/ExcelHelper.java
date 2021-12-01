@@ -1,15 +1,32 @@
 package com.virgosol.odeon.config;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Iterator;
 
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import jxl.Sheet;
 import jxl.Workbook;
 import jxl.WorkbookSettings;
 import jxl.read.biff.BiffException;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.junit.Assert;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.io.*;
+import java.util.Iterator;
 
 public class ExcelHelper {
 
@@ -18,14 +35,14 @@ public class ExcelHelper {
     XSSFSheet sheet;
 
     public ExcelHelper(String excelPath) throws IOException {
-            file = new File(excelPath);
-            if (!file.exists()){
-                Assert.fail("Belirtilen dosya bulunamadı. File: "+excelPath);
-            }
+        file = new File(excelPath);
+        if (!file.exists()) {
+            Assert.fail("Belirtilen dosya bulunamadı. File: " + excelPath);
+        }
 
-            FileInputStream fileInputStream = new FileInputStream(file);
+        FileInputStream fileInputStream = new FileInputStream(file);
 
-            wb = new XSSFWorkbook(fileInputStream);
+        wb = new XSSFWorkbook(fileInputStream);
 
     }
 
@@ -64,9 +81,9 @@ public class ExcelHelper {
         return rowCount;
     }
 
-    public void deleteExcel(){
+    public void deleteExcel() {
 
-        System.out.println("Silinecek Excel File: "+file.getName());
+        System.out.println("Silinecek Excel File: " + file.getName());
         if (file.delete()) {
             System.out.println("File " + file.getName() + " is deleted.");
         } else {
@@ -76,7 +93,7 @@ public class ExcelHelper {
 
     public void setData(int sheetNumber, int row, int column, String value) throws IOException {
 
-        try{
+        try {
             sheet = wb.getSheetAt(sheetNumber);
 
             sheet.getRow(row).createCell(column).setCellValue(value);
@@ -84,8 +101,14 @@ public class ExcelHelper {
             FileOutputStream fileOutputStream = new FileOutputStream(file);
             wb.write(fileOutputStream);
             wb.close();
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println(e.getMessage());
         }
     }
+
 }
+
+
+
+
+

@@ -1,0 +1,20 @@
+Listening for transport dt_socket at address: 60667
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+Listening for transport dt_socket at address: 60667
+17:09:29,781 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+17:09:29,783 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.groovy] at [file:/Users/dilekaysegun/Desktop/Odeon/target/test-classes/logback.groovy]
+17:09:29,786 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.groovy] occurs multiple times on the classpath.
+17:09:29,787 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.groovy] occurs at [jar:file:/Users/dilekaysegun/.m2/repository/com/vrgsl/qa/qa-common/1.0.0/qa-common-1.0.0.jar!/logback.groovy]
+17:09:29,787 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.groovy] occurs at [file:/Users/dilekaysegun/Desktop/Odeon/target/test-classes/logback.groovy]
+17:09:36,129 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@72c9946d - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+17:09:36,131 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@72c9946d - Naming appender as [STDOUT]
+17:09:36,314 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@72c9946d - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+17:09:36,315 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@72c9946d - Naming appender as [FILE]
+17:09:36,320 |-INFO in ch.qos.logback.core.FileAppender[FILE] - File property is set to [target/slnarch.log]
+17:09:36,323 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@72c9946d - Setting level of logger [com.virgosol.bilyonerMobileWeb] to DEBUG
+17:09:36,329 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@72c9946d - Setting level of logger [org.reflections.Reflections] to OFF
+17:09:36,334 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@72c9946d - Setting level of logger [ROOT] to INFO
+17:09:36,336 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@72c9946d - Attaching appender named [STDOUT] to Logger[ROOT]
+17:09:36,339 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@72c9946d - Attaching appender named [FILE] to Logger[ROOT]
+

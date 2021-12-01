@@ -1,0 +1,868 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+16:47:23,510 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+16:47:23,515 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.groovy] at [file:/Users/dilekaysegun/Desktop/Odeon/target/test-classes/logback.groovy]
+16:47:23,518 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.groovy] occurs multiple times on the classpath.
+16:47:23,518 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.groovy] occurs at [jar:file:/Users/dilekaysegun/.m2/repository/com/vrgsl/qa/qa-common/1.0.0/qa-common-1.0.0.jar!/logback.groovy]
+16:47:23,518 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.groovy] occurs at [file:/Users/dilekaysegun/Desktop/Odeon/target/test-classes/logback.groovy]
+16:47:29,746 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@47be5d69 - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+16:47:29,748 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@47be5d69 - Naming appender as [STDOUT]
+16:47:29,918 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@47be5d69 - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+16:47:29,920 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@47be5d69 - Naming appender as [FILE]
+16:47:29,922 |-INFO in ch.qos.logback.core.FileAppender[FILE] - File property is set to [target/slnarch.log]
+16:47:29,925 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@47be5d69 - Setting level of logger [com.virgosol.bilyonerMobileWeb] to DEBUG
+16:47:29,930 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@47be5d69 - Setting level of logger [org.reflections.Reflections] to OFF
+16:47:29,938 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@47be5d69 - Setting level of logger [ROOT] to INFO
+16:47:29,940 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@47be5d69 - Attaching appender named [STDOUT] to Logger[ROOT]
+16:47:29,942 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@47be5d69 - Attaching appender named [FILE] to Logger[ROOT]
+
+{"logLevel":"debug","message":"gauge-java took 8296milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 8296"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 59325"}
+{"logLevel":"info","message":"Listening on port:59325"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkNotExistElement' and 'com.virgosol.odeon.step.StepImpl.checkNotExistElement'"}
+{"logLevel":"debug","message":"Found {} li element yok mu? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkClickable' and 'com.virgosol.odeon.step.StepImpl.checkClickable'"}
+{"logLevel":"debug","message":"Found {} li element tıklanabilir mi? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementsCheckTextsAndDeletedId' and 'com.virgosol.odeon.step.StepImpl.findElementsCheckTextsAndDeletedId'"}
+{"logLevel":"debug","message":"Found {} li elementlerden id bilgisi silindi mi? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.openWait' and 'com.virgosol.odeon.step.StepImpl.openWait'"}
+{"logLevel":"debug","message":"Found Beklemeleri ac in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.goToUrl' and 'com.virgosol.odeon.step.StepImpl.goToUrl'"}
+{"logLevel":"debug","message":"Found {} urle git in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.saveText' and 'com.virgosol.odeon.step.StepImpl.saveText'"}
+{"logLevel":"debug","message":"Found {} li elementin textini {} olarak kaydet in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.hoverElementNextTo' and 'com.virgosol.odeon.step.StepImpl.hoverElementNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementinin üzerine gel in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementsCheckTextsAndCheckElementNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementsCheckTextsAndCheckElementNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden texti olanın yanındaki {} elementi var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClick' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClick'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olana tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckElementNextToNotExists' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckElementNextToNotExists'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementi yok mu? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.deleteText2' and 'com.virgosol.odeon.step.StepImpl.deleteText2'"}
+{"logLevel":"debug","message":"Found {} li elementi temizle in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkAttribute' and 'com.virgosol.odeon.step.StepImpl.checkAttribute'"}
+{"logLevel":"debug","message":"Found {} li elementin {} attributesi var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.saveAttributeNextTo' and 'com.virgosol.odeon.step.StepImpl.saveAttributeNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementinin {} attributesini {} olarak kaydet in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndFindElementWithTextAndFindWithTextNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndFindElementWithTextAndFindWithTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin texti {} mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.waitInVisible' and 'com.virgosol.odeon.step.StepImpl.waitInVisible'"}
+{"logLevel":"debug","message":"Found {} li elementi invisible olana kadar bekle in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkFilename' and 'com.virgosol.odeon.step.StepImpl.checkFilename'"}
+{"logLevel":"debug","message":"Found Excel {} dosyasının doğru uzantıda olduğu kontrol edilir. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckClickable' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckClickable'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olan tıklanabilir mi? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckAttributeNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckAttributeNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin {} attributesi var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.clickEnterWithElement' and 'com.virgosol.odeon.step.StepImpl.clickEnterWithElement'"}
+{"logLevel":"debug","message":"Found {} Entere tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndFindElementSaveTextAndClickIndexNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndFindElementSaveTextAndClickIndexNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} li elementler {} değerine eşit olanın yanındaki {} elementinin id bilgisini kaydet ve {} elementlerinden yanındaki {} elementin delete butonuna tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.dragAndDropColumn' and 'com.virgosol.odeon.step.StepImpl.dragAndDropColumn'"}
+{"logLevel":"debug","message":"Found {} li elementi sürükle ve bırak in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementPinWithTextsAndClick' and 'com.virgosol.odeon.step.StepImpl.findElementPinWithTextsAndClick'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} pin değerine tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClickAllignment' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClickAllignment'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olan ile aynı sıralamada yanındaki {} elementine tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkTextsElement' and 'com.virgosol.odeon.step.StepImpl.checkTextsElement'"}
+{"logLevel":"debug","message":"Found {} li elementlerin texti var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.sendKeyNextTo' and 'com.virgosol.odeon.step.StepImpl.sendKeyNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementine {} degerini yaz in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSaveText' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSaveText'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın textini {} olarak kaydet in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSendKeyNextToEnter' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSendKeyNextToEnter'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementinde Entere Tikla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkTextEquals' and 'com.virgosol.odeon.step.StepImpl.checkTextEquals'"}
+{"logLevel":"debug","message":"Found {} li elementin texti {} mi? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.clickElementNextTo' and 'com.virgosol.odeon.step.StepImpl.clickElementNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementine tikla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.excelReadData' and 'com.virgosol.odeon.step.StepImpl.excelReadData'"}
+{"logLevel":"debug","message":"Found Excel {} dosyasından veri okuma işlemi yapılır. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.clickEnter' and 'com.virgosol.odeon.step.StepImpl.clickEnter'"}
+{"logLevel":"debug","message":"Found Entere tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkElements' and 'com.virgosol.odeon.step.StepImpl.checkElements'"}
+{"logLevel":"debug","message":"Found {} li elementler var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckAttribute' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckAttribute'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın {} attributesi var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.forwardPage' and 'com.virgosol.odeon.step.StepImpl.forwardPage'"}
+{"logLevel":"debug","message":"Found Bulunduğun sayfada ileri git in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.backPage' and 'com.virgosol.odeon.step.StepImpl.backPage'"}
+{"logLevel":"debug","message":"Found Bulunduğun sayfada geri git in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementsCheckTextsAndCheckElementsTextNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementsCheckTextsAndCheckElementsTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden texti olanın yanındaki {} elementin texti var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndOrderAllignment' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndOrderAllignment'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olan ile aynı sıralamada altındaki {} verileri {} olarak sıralı mı in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.waitVisible' and 'com.virgosol.odeon.step.StepImpl.waitVisible'"}
+{"logLevel":"debug","message":"Found {} li elementi görünür olana kadar bekle in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.waitMinutes' and 'com.virgosol.odeon.step.StepImpl.waitMinutes'"}
+{"logLevel":"debug","message":"Found {} dakika bekle in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.refreshPage' and 'com.virgosol.odeon.step.StepImpl.refreshPage'"}
+{"logLevel":"debug","message":"Found Bulunduğun sayfayı yenile in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckElementNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckElementNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} element var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextAndCheckAttributeContainsTextNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextAndCheckAttributeContainsTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olan elementin {} attributesi {} içeriyor mu? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkTextNextTo' and 'com.virgosol.odeon.step.StepImpl.checkTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementinin texti var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkTitle' and 'com.virgosol.odeon.step.StepImpl.checkTitle'"}
+{"logLevel":"debug","message":"Found Sayfanın title ı {} mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSendKey' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSendKey'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olana {} değerini yaz in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.deleteText' and 'com.virgosol.odeon.step.StepImpl.deleteText'"}
+{"logLevel":"debug","message":"Found {} li elementin içindekileri sil in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.saveAttribute' and 'com.virgosol.odeon.step.StepImpl.saveAttribute'"}
+{"logLevel":"debug","message":"Found {} li elementin {} attributesini {} olarak kaydet in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextAndCheckAttributeText' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextAndCheckAttributeText'"}
+{"logLevel":"debug","message":"Found {} li elementin {} attributesi {} mi in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSaveTextNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSaveTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin textini {} olarak kaydet in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckAttributeTextNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckAttributeTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin {} attributesi {} içeriyor mu? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClickNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClickNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementine tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkTextNotExistsElements' and 'com.virgosol.odeon.step.StepImpl.checkTextNotExistsElements'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olan yok mu? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementsCheckTextsAndClickElementTextNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementsCheckTextsAndClickElementTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden yanındaki {} elementinin {} attributesi {} içerenin yanındaki {} elementine tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextAndCheckAttributeTextNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextAndCheckAttributeTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olan elementin {} attributesi {} mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.waitSeconds' and 'com.virgosol.odeon.step.StepImpl.waitSeconds'"}
+{"logLevel":"debug","message":"Found {} sn bekle in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findFile' and 'com.virgosol.odeon.step.StepImpl.findFile'"}
+{"logLevel":"debug","message":"Found {} li elemente tikla ve {} dosya secimini yap in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.clickElement' and 'com.virgosol.odeon.step.StepImpl.clickElement'"}
+{"logLevel":"debug","message":"Found Click element with key {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.clickElement' and 'com.virgosol.odeon.step.StepImpl.clickElement'"}
+{"logLevel":"debug","message":"Found {} li elemente tikla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.navigateWindow' and 'com.virgosol.odeon.step.StepImpl.navigateWindow'"}
+{"logLevel":"debug","message":"Found Yeni açılan sayfaya geç in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSetAttribute' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSetAttribute'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın {} attributesini {} yap in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.dateCompare' and 'com.virgosol.odeon.step.StepImpl.dateCompare'"}
+{"logLevel":"debug","message":"Found {} tarihi ile {} tarihini karşılaştır. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.sendKey' and 'com.virgosol.odeon.step.StepImpl.sendKey'"}
+{"logLevel":"debug","message":"Found Send keys to element with key {} and text {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.sendKey' and 'com.virgosol.odeon.step.StepImpl.sendKey'"}
+{"logLevel":"debug","message":"Found {} li elemente {} degerini yaz in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.hoverElement' and 'com.virgosol.odeon.step.StepImpl.hoverElement'"}
+{"logLevel":"debug","message":"Found {} li elementin üzerine gel in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.framegir' and 'com.virgosol.odeon.step.StepImpl.framegir'"}
+{"logLevel":"debug","message":"Found frame gir in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClickWithTextNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClickWithTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementlerinden {} değerine eşit olana tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.closeWait' and 'com.virgosol.odeon.step.StepImpl.closeWait'"}
+{"logLevel":"debug","message":"Found Beklemeleri kapat in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClickNextToWithIndex' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClickNextToWithIndex'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementlerinden indexe göre tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkElementVisible' and 'com.virgosol.odeon.step.StepImpl.checkElementVisible'"}
+{"logLevel":"debug","message":"Found {} li element görünür mü? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkNotExistAttribute' and 'com.virgosol.odeon.step.StepImpl.checkNotExistAttribute'"}
+{"logLevel":"debug","message":"Found {} li elementin {} attributesi yok mu in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndHover' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndHover'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın üzerine gel in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndHoverNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndHoverNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin üzerine gel in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndFindElementWithTextAndSaveTextNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndFindElementWithTextAndSaveTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin textini {} olarak kaydet in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.saveTextNextTo' and 'com.virgosol.odeon.step.StepImpl.saveTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementinin textini {} olarak kaydet in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndFindElementWithTextAndClickNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndFindElementWithTextAndClickNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} li elementlerden {} değerine eşit olanın yanındaki {} elementine tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSaveAttribute' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSaveAttribute'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın {} attributesini {} olarak kaydet in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.setAttributeNextTo' and 'com.virgosol.odeon.step.StepImpl.setAttributeNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementinin {} attributesini {} yap in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkTextEqualsNextTo' and 'com.virgosol.odeon.step.StepImpl.checkTextEqualsNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementinin texti {} mi? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.changeScreenResolution' and 'com.virgosol.odeon.step.StepImpl.changeScreenResolution'"}
+{"logLevel":"debug","message":"Found Ekran çözünürlüğünü {} yap. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSendKeyNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSendKeyNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementine {} değerini yaz in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkText' and 'com.virgosol.odeon.step.StepImpl.checkText'"}
+{"logLevel":"debug","message":"Found {} li elementin texti var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkElement' and 'com.virgosol.odeon.step.StepImpl.checkElement'"}
+{"logLevel":"debug","message":"Found {} li element var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.closePage' and 'com.virgosol.odeon.step.StepImpl.closePage'"}
+{"logLevel":"debug","message":"Found Bulunduğun sayfayı kapat in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkTextContains' and 'com.virgosol.odeon.step.StepImpl.checkTextContains'"}
+{"logLevel":"debug","message":"Found {} li elementin texti {} içeriyor mu? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkTextContainsNextTo' and 'com.virgosol.odeon.step.StepImpl.checkTextContainsNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementinin texti {} içeriyor mi? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.waitElement' and 'com.virgosol.odeon.step.StepImpl.waitElement'"}
+{"logLevel":"debug","message":"Found Wait {} element in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.waitElement' and 'com.virgosol.odeon.step.StepImpl.waitElement'"}
+{"logLevel":"debug","message":"Found {} li elementi bekle in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSendKeyAllignment' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSendKeyAllignment'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olan ile aynı sıralamada yanındaki {} elementine {} değerini yaz in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckAttrAndClickFirst' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckAttrAndClickFirst'"}
+{"logLevel":"debug","message":"Found {} li elementlerin yanındaki {} elementlerinden {} attributesi {} içermeyen ilk elemente tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithCheckAttributeText' and 'com.virgosol.odeon.step.StepImpl.findElementWithCheckAttributeText'"}
+{"logLevel":"debug","message":"Found {} li elementlerin {} attributesi {} mi in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndFindElementWithTextNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndFindElementWithTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} li elementlerden {} değerine eşit olan var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkClickableNextTo' and 'com.virgosol.odeon.step.StepImpl.checkClickableNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementi tıklanabilir mi? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSelect' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSelect'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanı seç in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSaveAttributeTextNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSaveAttributeTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin {} attributesini kaydet in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSaveAttributeTextNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSaveAttributeTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} li elementlerin textindeki tarihler doğru aralıkta mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextAndCheckAttributeEqualsTextNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextAndCheckAttributeEqualsTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin {} attributesi {} mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkElementNextTo' and 'com.virgosol.odeon.step.StepImpl.checkElementNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} element var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndFindElementCheckWithTextNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndFindElementCheckWithTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} li elementler {} değerine eşit mi? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithCheckAttribute' and 'com.virgosol.odeon.step.StepImpl.findElementWithCheckAttribute'"}
+{"logLevel":"debug","message":"Found {} li elementlerin {} attributesi var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkAttributeNextTo' and 'com.virgosol.odeon.step.StepImpl.checkAttributeNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementinin {} attributesi var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSetAttributeNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSetAttributeNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin {} attributesini {} yap in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSelectNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSelectNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementini seç in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.navigateFrame' and 'com.virgosol.odeon.step.StepImpl.navigateFrame'"}
+{"logLevel":"debug","message":"Found Frameden ana sayfaya geç in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkDataGridAndExcelColumn' and 'com.virgosol.odeon.step.StepImpl.checkDataGridAndExcelColumn'"}
+{"logLevel":"debug","message":"Found Excel {} dosyasının uzantısı kontrol edilir ve içeriğinin datagrid yapısıyla aynı olduğu kontrol edilir. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.navigateFrame' and 'com.virgosol.odeon.step.StepImpl.navigateFrame'"}
+{"logLevel":"debug","message":"Found {} isimli frame e geç in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckText' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckText'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olan var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.openInBrowser' and 'com.virgosol.odeon.step.StepImpl.openInBrowser'"}
+{"logLevel":"debug","message":"Found Url {} tarayıcıda açılır. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckClickableNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckClickableNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olan elementten önceki {} elementlerin tarihi {} attributesi {} içeriyor mu? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckClickableNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckClickableNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementi tıklanabilir mi? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.setAttribute' and 'com.virgosol.odeon.step.StepImpl.setAttribute'"}
+{"logLevel":"debug","message":"Found {} li elementin {} attributesini {} yap in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSaveAttributeNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSaveAttributeNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin {} attributesini {} olarak kaydet in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkUrl' and 'com.virgosol.odeon.step.StepImpl.checkUrl'"}
+{"logLevel":"debug","message":"Found Sayfanın url i {} mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.elementIsDisplayed' and 'com.virgosol.odeon.step.StepImpl.elementIsDisplayed'"}
+{"logLevel":"debug","message":"Found {} li element gözüküyor mu? in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\t{} li elementlerin {} attributesi {} mi : public void findElementWithCheckAttributeText(String key, String attr, String attrtext)"}
+{"logLevel":"debug","message":"\tExcel {} dosyasının doğru uzantıda olduğu kontrol edilir. : public void checkFilename(String excelFileName) throws IOException"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın {} attributesini {} yap : public void findElementWithTextsAndSetAttribute(String key, String text, String attr, String text2)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} elementi yok mu? : public void findElementWithTextsAndCheckElementNextToNotExists(String key, String text, String key2)"}
+{"logLevel":"debug","message":"\tBeklemeleri ac : public void openWait()"}
+{"logLevel":"debug","message":"\t{} li elementin textini {} olarak kaydet : public void saveText(String key, String key2)"}
+{"logLevel":"debug","message":"\t{} li elementin {} attributesi {} mi : public void findElementWithTextAndCheckAttributeText(String key, String attr, String attrtext)"}
+{"logLevel":"debug","message":"\t{} li elemente tikla ve {} dosya secimini yap : public void findFile(String key, String file)"}
+{"logLevel":"debug","message":"\t{} li elementin texti {} mi? : public void checkTextEquals(String key, String text)"}
+{"logLevel":"debug","message":"\tSayfanın title ı {} mı? : public void checkTitle(String title)"}
+{"logLevel":"debug","message":"\tBulunduğun sayfada ileri git : public void forwardPage()"}
+{"logLevel":"debug","message":"\t{} li elementin {} attributesi yok mu : public void checkNotExistAttribute(String key, String attr) throws IOException"}
+{"logLevel":"debug","message":"\t{} li elementin yanındaki {} elementi tıklanabilir mi? : public void checkClickableNextTo(String key, String key2)"}
+{"logLevel":"debug","message":"\t{} li element yok mu? : public void checkNotExistElement(String key)"}
+{"logLevel":"debug","message":"\t{} li elementin yanındaki {} elementinin üzerine gel : public void hoverElementNextTo(String key, String key2)"}
+{"logLevel":"debug","message":"\t{} li elementin üzerine gel : public void hoverElement(String key)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} li elementler {} değerine eşit olanın yanındaki {} elementinin id bilgisini kaydet ve {} elementlerinden yanındaki {} elementin delete butonuna tıkla : public void findElementWithTextsAndFindElementSaveTextAndClickIndexNextTo(String key, String text, String key2, String text2, String key3, String key4, String key5)"}
+{"logLevel":"debug","message":"\t{} li elementin {} attributesi var mı? : public void checkAttribute(String key, String attr)"}
+{"logLevel":"debug","message":"\t{} urle git : public void goToUrl(String url)"}
+{"logLevel":"debug","message":"\t{} dakika bekle : public void waitMinutes(String key) throws InterruptedException"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olan ile aynı sıralamada yanındaki {} elementine tıkla : public void findElementWithTextsAndClickAllignment(String key, String text, String key2)"}
+{"logLevel":"debug","message":"\tExcel {} dosyasının uzantısı kontrol edilir ve içeriğinin datagrid yapısıyla aynı olduğu kontrol edilir. : public void checkDataGridAndExcelColumn(String excelFileName) throws IOException, BiffException"}
+{"logLevel":"debug","message":"\t{} li elementlerin yanındaki {} elementlerinden {} attributesi {} içermeyen ilk elemente tıkla : public void findElementWithTextsAndCheckAttrAndClickFirst(String key, String key2, String attr, String attrtext)"}
+{"logLevel":"debug","message":"\t{} tarihi ile {} tarihini karşılaştır. : public void dateCompare(String key1, String key2) throws IOException"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın üzerine gel : public void findElementWithTextsAndHover(String key, String text)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olan elementin {} attributesi {} içeriyor mu? : public void findElementWithTextAndCheckAttributeContainsTextNextTo(String key, String text, String attr, String attrtext)"}
+{"logLevel":"debug","message":"\t{} li elemente {} degerini yaz : public void sendKey(String key, String text)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} elementini seç : public void findElementWithTextsAndSelectNextTo(String key, String text, String key2)"}
+{"logLevel":"debug","message":"\t{} li elementin yanındaki {} elementinin texti {} içeriyor mi? : public void checkTextContainsNextTo(String key, String key2, String text)"}
+{"logLevel":"debug","message":"\t{} li element var mı? : public void checkElement(String key)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} elementinin {} attributesi var mı? : public void findElementWithTextsAndCheckAttributeNextTo(String key, String text, String key2, String attr)"}
+{"logLevel":"debug","message":"\t{} li element tıklanabilir mi? : public void checkClickable(String key)"}
+{"logLevel":"debug","message":"\tBulunduğun sayfada geri git : public void backPage()"}
+{"logLevel":"debug","message":"\t{} li elementlerden yanındaki {} elementinin {} attributesi {} içerenin yanındaki {} elementine tıkla : public void findElementsCheckTextsAndClickElementTextNextTo(String key, String key2, String attr, String attrtext, String key3)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin texti {} mı? : public void findElementWithTextsAndFindElementWithTextAndFindWithTextNextTo(String key, String text, String key2, String text2, String key3, String text3)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} li elementler {} değerine eşit mi? : public void findElementWithTextsAndFindElementCheckWithTextNextTo(String key, String text, String key2, String text2)"}
+{"logLevel":"debug","message":"\tBeklemeleri kapat : public void closeWait()"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanı seç : public void findElementWithTextsAndSelect(String key, String text)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olan elementten önceki {} elementlerin tarihi {} attributesi {} içeriyor mu? : public void findElementWithTextsAndCheckClickableNextTo(String key, String text, String key2, String attr, String attrtext)"}
+{"logLevel":"debug","message":"\t{} li elementin yanındaki {} elementinin texti {} mi? : public void checkTextEqualsNextTo(String key, String key2, String text)"}
+{"logLevel":"debug","message":"\t{} li elementlerden id bilgisi silindi mi? : public void findElementsCheckTextsAndDeletedId(String key)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} elementinin {} attributesini kaydet : public void findElementWithTextsAndSaveAttributeTextNextTo(String key, String text, String key2, String attr)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olan ile aynı sıralamada altındaki {} verileri {} olarak sıralı mı : public void findElementWithTextsAndOrderAllignment(String key, String text, String key2, String text2)"}
+{"logLevel":"debug","message":"\tClick element with key {} : public void clickElement(String key)"}
+{"logLevel":"debug","message":"\t{} sn bekle : public void waitSeconds(String key) throws InterruptedException"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} elementlerinden {} değerine eşit olana tıkla : public void findElementWithTextsAndClickWithTextNextTo(String key, String text, String key2, String text2)"}
+{"logLevel":"debug","message":"\tUrl {} tarayıcıda açılır. : public void openInBrowser(String browserName) throws IOException"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} elementlerinden indexe göre tıkla : public void findElementWithTextsAndClickNextToWithIndex(String key, String text, String key2)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} elementine {} değerini yaz : public void findElementWithTextsAndSendKeyNextTo(String key, String text, String key2, String text2)"}
+{"logLevel":"debug","message":"\tEkran çözünürlüğünü {} yap. : public void changeScreenResolution(String screenResolution) throws IOException"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} elementinin {} attributesini {} olarak kaydet : public void findElementWithTextsAndSaveAttributeNextTo(String key, String text, String key2, String attr, String key3)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} elementinin {} attributesini {} yap : public void findElementWithTextsAndSetAttributeNextTo(String key, String text, String key2, String attr, String text2)"}
+{"logLevel":"debug","message":"\t{} li elementlerin texti var mı? : public void checkTextsElement(String key)"}
+{"logLevel":"debug","message":"\tSayfanın url i {} mı? : public void checkUrl(String url)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} pin değerine tıkla : public void findElementPinWithTextsAndClick(String key, String pin)"}
+{"logLevel":"debug","message":"\t{} li element gözüküyor mu? : public void elementIsDisplayed(String key)"}
+{"logLevel":"debug","message":"\tWait {} element : public void waitElement(String key)"}
+{"logLevel":"debug","message":"\tBulunduğun sayfayı kapat : public void closePage()"}
+{"logLevel":"debug","message":"\tEntere tıkla : public void clickEnter()"}
+{"logLevel":"debug","message":"\t{} li elementlerin {} attributesi var mı? : public void findElementWithCheckAttribute(String key, String attr)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} elementinde Entere Tikla : public void findElementWithTextsAndSendKeyNextToEnter(String key, String text, String key2)"}
+{"logLevel":"debug","message":"\t{} li elementin {} attributesini {} olarak kaydet : public void saveAttribute(String key, String attr, String key2)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olan var mı? : public void findElementWithTextsAndCheckText(String key, String text)"}
+{"logLevel":"debug","message":"\t{} li elementin yanındaki {} elementinin {} attributesi var mı? : public void checkAttributeNextTo(String key, String key2, String attr)"}
+{"logLevel":"debug","message":"\t{} li elementi sürükle ve bırak : public void dragAndDropColumn(String key)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olan elementin {} attributesi {} mı? : public void findElementWithTextAndCheckAttributeTextNextTo(String key, String text, String attr, String attrtext)"}
+{"logLevel":"debug","message":"\t{} li elementin yanındaki {} element var mı? : public void checkElementNextTo(String key, String key2)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olana tıkla : public void findElementWithTextsAndClick(String key, String text)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olan yok mu? : public void checkTextNotExistsElements(String key, String text)"}
+{"logLevel":"debug","message":"\t{} li elementi invisible olana kadar bekle : public void waitInVisible(String key)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} elementinin üzerine gel : public void findElementWithTextsAndHoverNextTo(String key, String text, String key2)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} elementine tıkla : public void findElementWithTextsAndClickNextTo(String key, String text, String key2)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olan tıklanabilir mi? : public void findElementWithTextsAndCheckClickable(String key, String text)"}
+{"logLevel":"debug","message":"\t{} li elemente tikla : public void clickElement(String key)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın textini {} olarak kaydet : public void findElementWithTextsAndSaveText(String key, String text, String key2)"}
+{"logLevel":"debug","message":"\t{} li elementin {} attributesini {} yap : public void setAttribute(String key, String attr, String text)"}
+{"logLevel":"debug","message":"\t{} Entere tıkla : public void clickEnterWithElement(String key)"}
+{"logLevel":"debug","message":"\tYeni açılan sayfaya geç : public void navigateWindow()"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olan ile aynı sıralamada yanındaki {} elementine {} değerini yaz : public void findElementWithTextsAndSendKeyAllignment(String key, String text, String key2, String text2)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} li elementlerden {} değerine eşit olan var mı? : public void findElementWithTextsAndFindElementWithTextNextTo(String key, String text, String key2, String text2)"}
+{"logLevel":"debug","message":"\t{} li elementi görünür olana kadar bekle : public void waitVisible(String key)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın {} attributesini {} olarak kaydet : public void findElementWithTextsAndSaveAttribute(String key, String text, String attr, String key2)"}
+{"logLevel":"debug","message":"\t{} isimli frame e geç : public void navigateFrame(String frame)"}
+{"logLevel":"debug","message":"\t{} li element görünür mü? : public void checkElementVisible(String key)"}
+{"logLevel":"debug","message":"\t{} li elementi bekle : public void waitElement(String key)"}
+{"logLevel":"debug","message":"\tSend keys to element with key {} and text {} : public void sendKey(String key, String text)"}
+{"logLevel":"debug","message":"\tExcel {} dosyasından veri okuma işlemi yapılır. : public void excelReadData(String excelFileName) throws IOException"}
+{"logLevel":"debug","message":"\t{} li elementin yanındaki {} elementine tikla : public void clickElementNextTo(String key, String key2)"}
+{"logLevel":"debug","message":"\t{} li elementin yanındaki {} elementinin texti var mı? : public void checkTextNextTo(String key, String key2)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} elementi tıklanabilir mi? : public void findElementWithTextsAndCheckClickableNextTo(String key, String text, String key2)"}
+{"logLevel":"debug","message":"\t{} li elementin yanındaki {} elementinin textini {} olarak kaydet : public void saveTextNextTo(String key, String key2, String key3)"}
+{"logLevel":"debug","message":"\t{} li elementlerden texti olanın yanındaki {} elementi var mı? : public void findElementsCheckTextsAndCheckElementNextTo(String key, String key2)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} li elementlerden {} değerine eşit olanın yanındaki {} elementine tıkla : public void findElementWithTextsAndFindElementWithTextAndClickNextTo(String key, String text, String key2, String text2, String key3)"}
+{"logLevel":"debug","message":"\t{} li elementin yanındaki {} elementinin {} attributesini {} yap : public void setAttributeNextTo(String key, String key2, String attr, String text)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} elementinin {} attributesi {} içeriyor mu? : public void findElementWithTextsAndCheckAttributeTextNextTo(String key, String text, String key2, String attr, String attrtext)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin textini {} olarak kaydet : public void findElementWithTextsAndFindElementWithTextAndSaveTextNextTo(String key, String text, String key2, String text2, String key3, String text3)"}
+{"logLevel":"debug","message":"\t{} li elementin içindekileri sil : public void deleteText(String key)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} elementinin {} attributesi {} mı? : public void findElementWithTextAndCheckAttributeEqualsTextNextTo(String key, String text, String key2, String attr, String attrtext)"}
+{"logLevel":"debug","message":"\t{} li elementlerden texti olanın yanındaki {} elementin texti var mı? : public void findElementsCheckTextsAndCheckElementsTextNextTo(String key, String key2)"}
+{"logLevel":"debug","message":"\t{} li elementin texti {} içeriyor mu? : public void checkTextContains(String key, String text)"}
+{"logLevel":"debug","message":"\tFrameden ana sayfaya geç : public void navigateFrame()"}
+{"logLevel":"debug","message":"\t{} li elementler var mı? : public void checkElements(String key)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} elementinin textini {} olarak kaydet : public void findElementWithTextsAndSaveTextNextTo(String key, String text, String key2, String key3)"}
+{"logLevel":"debug","message":"\t{} li elementi temizle : public void deleteText2(String key)"}
+{"logLevel":"debug","message":"\t{} li elementin texti var mı? : public void checkText(String key)"}
+{"logLevel":"debug","message":"\t{} li elementin yanındaki {} elementinin {} attributesini {} olarak kaydet : public void saveAttributeNextTo(String key, String key2, String attr, String key3)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} li elementlerin textindeki tarihler doğru aralıkta mı? : public void findElementWithTextsAndSaveAttributeTextNextTo(String key, String text, String key2) throws ParseException"}
+{"logLevel":"debug","message":"\t{} li elementin yanındaki {} elementine {} degerini yaz : public void sendKeyNextTo(String key, String key2, String text)"}
+{"logLevel":"debug","message":"\tBulunduğun sayfayı yenile : public void refreshPage()"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın {} attributesi var mı? : public void findElementWithTextsAndCheckAttribute(String key, String text, String attr)"}
+{"logLevel":"debug","message":"\tframe gir : public void framegir()"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} element var mı? : public void findElementWithTextsAndCheckElementNextTo(String key, String text, String key2)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olana {} değerini yaz : public void findElementWithTextsAndSendKey(String key, String text, String text2)"}
+2021-10-06 16:47:41.047 [pool-2-thread-1] WARN  com.vrgsl.qa.setBaseUrl(41) - Env System Property Not Found Default Use Test Url
+2021-10-06 16:47:41.056 [pool-2-thread-1] INFO  com.vrgsl.qa.<init>(42) - Report create and save disabled configuration!
+Starting ChromeDriver 94.0.4606.41 (333e85df3c9b656b518b5f1add5ff246365b6c24-refs/branch-heads/4606@{#845}) on port 31312
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Oct 06, 2021 4:47:46 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2021-10-06 16:47:46.180 [pool-2-thread-1] INFO  com.vrgsl.qa.initFeather(24) - Init Feather Injections
+2021-10-06 16:47:46.298 [pool-2-thread-1] INFO  com.vrgsl.qa.logWaitSelected(195) - Wait Configuration
+page load=true
+ajax load=true
+angular load=false
+2021-10-06 16:47:46.301 [pool-2-thread-1] INFO  com.vrgsl.qa.inject(8) - Inject Starting...
+2021-10-06 16:48:00.190 [pool-2-thread-1] INFO  com.vrgsl.qa.afterNavigateTo(66) - Navigate To Page Url=http://uatobbackoffice.odeontours.com
+Starting ChromeDriver 94.0.4606.41 (333e85df3c9b656b518b5f1add5ff246365b6c24-refs/branch-heads/4606@{#845}) on port 35183
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Oct 06, 2021 4:48:03 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2021-10-06 16:48:03.655 [pool-2-thread-1] INFO  com.vrgsl.qa.initFeather(24) - Init Feather Injections
+2021-10-06 16:48:03.673 [pool-2-thread-1] INFO  com.vrgsl.qa.logWaitSelected(195) - Wait Configuration
+page load=true
+ajax load=true
+angular load=false
+2021-10-06 16:48:03.691 [pool-2-thread-1] INFO  com.vrgsl.qa.inject(8) - Inject Starting...
+2021-10-06 16:48:13.760 [pool-2-thread-1] INFO  com.vrgsl.qa.afterNavigateTo(66) - Navigate To Page Url=http://uatobbackoffice.odeontours.com
+2021-10-06 16:48:16.284 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "http://uatobbackoffice.odeontours.com/reservationdetail" urle git adimi basladi
+{"logLevel":"debug","message":"Executing '{} urle git' using 'class com.virgosol.odeon.step.StepImpl.goToUrl"}
+2021-10-06 16:48:16.969 [pool-2-thread-1] INFO  com.vrgsl.qa.afterNavigateTo(66) - Navigate To Page Url=http://uatobbackoffice.odeontours.com/reservationdetail
+2021-10-06 16:48:17.003 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "http://uatobbackoffice.odeontours.com/reservationdetail" urle git adimi basariyla bitti
+2021-10-06 16:48:17.894 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - Sayfanın url i "http://uatobbackoffice.odeontours.com/reservationdetail" mı? adimi basladi
+{"logLevel":"debug","message":"Executing 'Sayfanın url i {} mı?' using 'class com.virgosol.odeon.step.StepImpl.checkUrl"}
+2021-10-06 16:48:17.909 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - Sayfanın url i "http://uatobbackoffice.odeontours.com/reservationdetail" mı? adimi basariyla bitti
+2021-10-06 16:48:18.506 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_loginHeader" li elementlerden "Username" değerine eşit olanın yanındaki "txtbx_loginInput" elementine "OdeonbedsAdmin" değerini yaz adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olanın yanındaki {} elementine {} değerini yaz' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSendKeyNextTo"}
+2021-10-06 16:48:18.617 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-form-item-required
+2021-10-06 16:48:18.696 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-form-item-required
+2021-10-06 16:48:18.743 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.xpath: ../..//input[@class='ant-input']
+2021-10-06 16:48:18.792 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.xpath: ../..//input[@class='ant-input'] TagName=label
+2021-10-06 16:48:19.187 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeChangeValueOf(135) - Set Value [Ljava.lang.CharSequence;@2203b114
+2021-10-06 16:48:21.446 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_loginHeader" li elementlerden "Username" değerine eşit olanın yanındaki "txtbx_loginInput" elementine "OdeonbedsAdmin" değerini yaz adimi basariyla bitti
+2021-10-06 16:48:22.018 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_loginHeader" li elementlerden "Password" değerine eşit olanın yanındaki "txtbx_loginInput" elementine "De53Acy2.." değerini yaz adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olanın yanındaki {} elementine {} değerini yaz' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSendKeyNextTo"}
+2021-10-06 16:48:22.026 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-form-item-required
+2021-10-06 16:48:22.075 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-form-item-required
+2021-10-06 16:48:22.134 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.xpath: ../..//input[@class='ant-input']
+2021-10-06 16:48:22.160 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.xpath: ../..//input[@class='ant-input'] TagName=label
+2021-10-06 16:48:22.545 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeChangeValueOf(135) - Set Value [Ljava.lang.CharSequence;@2ddf58e2
+2021-10-06 16:48:23.328 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_loginHeader" li elementlerden "Password" değerine eşit olanın yanındaki "txtbx_loginInput" elementine "De53Acy2.." değerini yaz adimi basariyla bitti
+2021-10-06 16:48:23.719 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "btn_pageButtons" li elementlerden "Submit" değerine eşit olana tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olana tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClick"}
+2021-10-06 16:48:23.733 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-btn,.ant-btn > span
+2021-10-06 16:48:23.771 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-btn,.ant-btn > span TagName=button
+2021-10-06 16:48:23.778 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-btn,.ant-btn > span
+2021-10-06 16:48:25.203 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "btn_pageButtons" li elementlerden "Submit" değerine eşit olana tıkla adimi basariyla bitti
+2021-10-06 16:48:25.993 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "img_OdeonLogo" li element var mı? adimi basladi
+{"logLevel":"debug","message":"Executing '{} li element var mı?' using 'class com.virgosol.odeon.step.StepImpl.checkElement"}
+2021-10-06 16:48:25.997 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: img[alt='OdeonBeds']
+2021-10-06 16:48:26.131 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: img[alt='OdeonBeds'] TagName=img
+2021-10-06 16:48:26.140 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "img_OdeonLogo" li element var mı? adimi basariyla bitti
+2021-10-06 16:48:28.209 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "btn_pageButtons" li elementlerden "EN" değerine eşit olana tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olana tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClick"}
+2021-10-06 16:48:28.216 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-btn,.ant-btn > span
+2021-10-06 16:48:28.244 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-btn,.ant-btn > span TagName=button
+2021-10-06 16:48:28.253 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-btn,.ant-btn > span
+2021-10-06 16:48:30.039 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "btn_pageButtons" li elementlerden "EN" değerine eşit olana tıkla adimi basariyla bitti
+2021-10-06 16:48:30.522 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "btn_pageButtons" li elementlerden "Search" değerine eşit olana tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olana tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClick"}
+2021-10-06 16:48:30.527 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-btn,.ant-btn > span
+2021-10-06 16:48:30.556 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-btn,.ant-btn > span TagName=button
+2021-10-06 16:48:30.562 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-btn,.ant-btn > span
+2021-10-06 16:48:33.873 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "btn_pageButtons" li elementlerden "Search" değerine eşit olana tıkla adimi basariyla bitti
+2021-10-06 16:48:34.389 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "icon_loading" li elementi invisible olana kadar bekle adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementi invisible olana kadar bekle' using 'class com.virgosol.odeon.step.StepImpl.waitInVisible"}
+2021-10-06 16:48:34.422 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:34.506 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:34.795 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:34.859 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:35.145 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:35.174 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:35.455 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:35.487 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:35.765 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:35.791 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:36.075 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:36.107 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:36.373 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:36.410 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:36.691 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:36.728 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:37.009 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:37.035 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:37.315 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:37.352 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:37.633 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:37.669 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:37.945 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:37.974 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:38.251 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:38.282 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:38.569 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:38.601 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:38.883 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:38.907 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:39.181 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:39.206 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:39.484 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:39.514 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:39.791 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:39.819 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:40.117 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:40.141 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:40.425 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:40.451 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:40.731 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:40.760 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:41.038 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:41.053 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:41.323 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:41.345 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:41.616 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:41.647 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:41.923 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:41.956 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:42.250 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:42.268 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:42.537 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:42.572 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:42.840 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:42.869 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:43.147 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:43.177 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:43.453 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:43.477 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:43.753 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:43.780 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:44.060 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:44.096 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:44.380 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:44.405 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:44.686 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:44.716 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:44.993 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:45.027 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:45.310 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:45.352 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:45.633 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:45.658 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:45.940 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:45.968 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:46.244 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:46.263 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:46.534 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:46.555 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:46.829 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:46.858 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:47.136 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:47.162 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:47.439 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:47.458 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:47.754 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:47.775 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:48.054 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:48.081 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:48.366 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:48.393 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:48.670 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:48.694 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:48.986 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:49.020 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:49.303 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:49.333 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:49.617 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:49.642 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:49.926 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:49.958 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:50.238 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:50.265 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:50.544 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:50.597 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:50.875 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:50.894 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:51.176 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:51.207 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:51.478 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:51.528 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:51.809 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:51.833 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:52.106 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:52.137 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:52.410 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:52.436 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:52.716 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:52.748 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:53.025 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:53.038 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:53.306 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:53.326 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:53.601 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:53.629 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:53.907 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:53.937 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:54.217 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:54.246 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:54.524 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:54.549 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:54.824 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:54.850 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:55.128 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:55.156 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:55.435 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:55.471 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:55.754 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:55.798 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:56.077 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:56.104 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:56.378 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:56.405 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:56.688 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:56.712 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:56.991 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:57.016 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:57.288 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:57.313 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:57.592 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:57.613 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:57.884 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:57.909 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:58.190 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:58.209 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:58.486 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:58.525 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:58.851 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:58.887 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:59.174 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:59.208 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:59.484 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:59.507 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:48:59.787 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:48:59.816 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:00.096 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:00.111 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:00.383 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:00.400 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:00.673 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:00.701 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:00.978 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:01.003 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:01.282 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:01.310 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:01.588 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:01.615 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:01.895 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:01.928 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:02.207 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:02.231 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:02.506 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:02.534 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:02.810 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:02.836 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:03.115 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:03.135 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:03.408 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:03.437 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:03.713 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:03.733 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:04.004 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:04.028 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:04.301 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:04.316 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:04.588 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:04.612 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:04.687 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "icon_loading" li elementi invisible olana kadar bekle adimi basariyla bitti
+2021-10-06 16:49:05.114 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "row_datas" li elementler var mı? adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementler var mı?' using 'class com.virgosol.odeon.step.StepImpl.checkElements"}
+2021-10-06 16:49:05.128 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .dx-datagrid-rowsview .dx-column-lines
+2021-10-06 16:49:05.175 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .dx-datagrid-rowsview .dx-column-lines
+2021-10-06 16:49:05.211 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "row_datas" li elementler var mı? adimi basariyla bitti
+2021-10-06 16:49:05.611 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "icon_loading" li elementi invisible olana kadar bekle adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementi invisible olana kadar bekle' using 'class com.virgosol.odeon.step.StepImpl.waitInVisible"}
+2021-10-06 16:49:05.617 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:05.631 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:05.904 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:05.929 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:06.202 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:06.222 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:06.491 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:06.517 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:06.793 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:06.825 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:07.099 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:07.120 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:07.392 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:07.411 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:07.680 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:07.702 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:07.971 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:08.001 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:08.267 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:08.305 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:08.586 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:08.603 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:08.870 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:08.975 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:09.242 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:09.268 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:09.545 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:09.575 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:09.850 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:09.874 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:10.146 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:10.177 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:10.456 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:10.485 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:10.799 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:10.819 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:11.093 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:11.117 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:11.396 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:11.425 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:11.706 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:11.733 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:12.009 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:12.039 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:12.315 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:12.343 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:12.617 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:12.644 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:12.920 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:12.948 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:13.229 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:13.254 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:13.525 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:13.554 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:13.826 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:13.848 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:14.121 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:14.146 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:14.424 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:14.447 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:14.727 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:14.756 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:15.030 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:15.059 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:15.333 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:15.349 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:15.618 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:15.637 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:15.916 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:15.938 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:16.211 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:16.234 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:16.509 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:16.535 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:16.809 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:16.840 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:17.119 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:17.141 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:17.414 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:17.441 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:17.715 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:17.741 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:18.015 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:18.034 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:18.305 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:18.326 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:18.594 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:18.623 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:18.895 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:18.922 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:19.227 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:19.256 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:19.544 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:19.569 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:19.851 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:19.876 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:20.160 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:20.194 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:20.482 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:20.510 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:20.792 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:20.817 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:21.099 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:21.123 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:21.400 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:21.429 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:21.708 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:21.741 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:22.018 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:22.061 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:22.334 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:22.358 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:22.630 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:22.657 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:22.932 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:22.965 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:23.242 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:23.259 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:23.527 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:23.563 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:23.848 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:23.885 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:24.157 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:24.193 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:24.471 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:24.498 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:24.769 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:24.793 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:25.067 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:25.089 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:25.359 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:25.389 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:25.667 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:25.697 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:25.975 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:26.009 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:26.287 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:26.312 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:26.592 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:26.621 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:26.899 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:26.924 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:27.198 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:27.227 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:27.501 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:27.531 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:27.809 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:27.833 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:28.109 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:28.135 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:28.412 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:28.441 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:28.717 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:28.745 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:29.023 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:29.057 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:29.331 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:29.352 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:29.625 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:29.651 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:29.927 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:29.956 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:30.233 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:30.263 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:30.539 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:30.565 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:30.835 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:30.851 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:31.117 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:31.141 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:31.414 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:31.437 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:31.707 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:31.733 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:32.010 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:32.059 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:32.330 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:32.356 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:32.629 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:32.653 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:32.927 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:32.954 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:33.230 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:33.258 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:33.535 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:33.567 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:33.848 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:33.872 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:34.143 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:34.169 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:34.442 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:34.468 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:34.742 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:34.772 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:35.049 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:35.074 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:35.348 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:35.371 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:35.642 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-06 16:49:35.667 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item TagName=span
+2021-10-06 16:49:35.729 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "icon_loading" li elementi invisible olana kadar bekle adimi basariyla bitti
+2021-10-06 16:49:36.107 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_dataGridMarkupIdRow" li elementlerden "VY3YPSZ6Q" değerine eşit olana tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olana tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClick"}
+2021-10-06 16:49:36.114 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .dx-scrollable-container .dx-column-lines > td:first-child
+2021-10-06 16:49:36.132 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(111) - Find Element Success ByName=By.cssSelector: .dx-scrollable-container .dx-column-lines > td:first-child TagName=td
+2021-10-06 16:49:36.137 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(103) - Finding Element  By.cssSelector: .dx-scrollable-container .dx-column-lines > td:first-child
+2021-10-06 16:49:36.315 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_dataGridMarkupIdRow" li elementlerden "VY3YPSZ6Q" değerine eşit olana tıkla adimi basariyla bitti
+2021-10-06 16:49:36.689 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - Yeni açılan sayfaya geç adimi basladi
+{"logLevel":"debug","message":"Executing 'Yeni açılan sayfaya geç' using 'class com.virgosol.odeon.step.StepImpl.navigateWindow"}
+2021-10-06 16:49:36.708 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - Yeni açılan sayfaya geç adimi basariyla bitti
+2021-10-06 16:49:37.119 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - Sayfanın url i "http://uatobbackoffice.odeontours.com/reservationdetail/VY3YPSZ6Q" mı? adimi basladi
+{"logLevel":"debug","message":"Executing 'Sayfanın url i {} mı?' using 'class com.virgosol.odeon.step.StepImpl.checkUrl"}
+2021-10-06 16:50:07.345 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(65) - Sayfanın url i "http://uatobbackoffice.odeontours.com/reservationdetail/VY3YPSZ6Q" mı? adimi basarisiz olarak bitti
+2021-10-06 16:50:07.353 [pool-2-thread-1] ERROR com.vrgsl.qa.testStep(66) - org.junit.Assert.fail(Assert.java:88)
+org.junit.Assert.assertTrue(Assert.java:41)
+com.virgosol.odeon.step.StepImpl.checkUrl(StepImpl.java:1739)
+
+2021-10-06 16:50:08.290 [pool-2-thread-1] ERROR com.vrgsl.qa.afterScenario(50) - 
+log4j:WARN No appenders could be found for logger (freemarker.cache).
+log4j:WARN Please initialize the log4j system properly.
+2021-10-06 16:50:09.935 [pool-2-thread-1] INFO  com.vrgsl.qa.saveReport(114) - Report create and save disabled configuration!

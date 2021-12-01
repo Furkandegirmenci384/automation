@@ -1,5 +1,7 @@
 package com.virgosol.odeon.hook;
 
+import com.virgosol.qa.web.core.di.Injectable;
+import com.virgosol.qa.web.core.page.PageTestImpl;
 import com.aventstack.extentreports.AnalysisStrategy;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentKlovReporter;
@@ -19,7 +21,10 @@ public class HookSpec {
   @BeforeSuite
   public void beforeSpec() {
     //System.setProperty("webdriver.ie.driver", ConfigurationHelper.INSTANCE.getConfiguration().getDriverPath());
-    System.setProperty("webdriver.chrome.driver", ConfigurationHelper.INSTANCE.getConfiguration().getDriverPath());
+    if(ConfigurationHelper.INSTANCE.getConfiguration().getBrowserType().equals("Chrome"))
+      System.setProperty("webdriver.chrome.driver", ConfigurationHelper.INSTANCE.getConfiguration().getDriverPath());
+    else if(ConfigurationHelper.INSTANCE.getConfiguration().getBrowserType().equals("Firefox"))
+      System.setProperty("webdriver.gecko.driver", ConfigurationHelper.INSTANCE.getConfiguration().getDriverPath());
     ReportManager reportManager = ReportManager.getInstance();
     try {
       ExtentReports extentReports = reportManager.createExtentReport();

@@ -34,8 +34,9 @@
     <gauge.java.version>0.7.9</gauge.java.version>
     <junit.version>4.12</junit.version>
     <gauge.plugin.version>1.4.1</gauge.plugin.version>
-    <virgosol.qa.version>1.0.0</virgosol.qa.version>
+    <!-- <virgosol.qa.version>1.0.0</virgosol.qa.version> -->
     <!-- <virgosol.qa.version>2.0.10</virgosol.qa.version> -->
+     <virgosol.qa.version>2.0.14</virgosol.qa.version>
   </properties>
 
   <dependencies>

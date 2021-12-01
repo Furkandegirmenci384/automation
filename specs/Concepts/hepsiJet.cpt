@@ -1,0 +1,91 @@
+# <url> urlinin açıldığı doğrulanır.
+* Sayfanın url i <url> mı?
+
+# Hepsijet logosunun geldiği kontrol edilir.
+* "img_logo" li element var mı?
+
+# Üst menüde <ustMenuText> alanının olduğu kontrol edilir.
+* "txt_solUstMenuItem" li elementlerden <ustMenuText> değerine eşit olan var mı?
+
+# Menüye tıklanır.
+* "btn_hamburgerMenu" li elemente tikla
+
+# Menüde <menuItemText> alanının olduğu kontrol edilir.
+* "txt_hamburgerMenuItems" li elementlerden <menuItemText> değerine eşit olan var mı?
+
+# Menüde Telefon No <telText> olduğu kontrol edilir.
+* "txt_hamburgerMenuTel" li elementin texti <telText> mi?
+
+# Alt menüde <altMenuText> alanının olduğu kontrol edilir.
+* "txt_altMenuItem" li elementlerden <altMenuText> değerine eşit olan var mı?
+
+# Üst menüden <ustMenuText> alanına tıklanır.
+* "txt_solUstMenuItem" li elementlerden <ustMenuText> değerine eşit olana tıkla
+
+# Sayfa başlığının <headerText> olduğu kontrol edilir.
+* "txt_sayfaHeader" swipe element
+* "txt_sayfaHeader" li elementin texti <headerText> mi?
+
+# Sayfada bulunan <inputHeader> alanına <inputText> değeri girilir.
+* "txt_inputHeaders" li elementlerden <inputHeader> değerine eşit olanın yanındaki "txtbx_input" elementine <inputText> değerini yaz
+
+# Sayfada bulunan <inputHeader> alanından <dropdownText> değeri seçilir.
+//* "txt_inputHeaders" li elementlerden <inputHeader> değerine eşit olanın yanındaki "dropdown_input" elementine tıkla
+* "txt_inputHeaders" li elementlerden <inputHeader> değerine eşit olanın yanındaki "dropdown_items" elementlerinden <dropdownText> değerine eşit olana tıkla
+
+//* "2" sn bekle
+//* Entere tıkla
+//* "3" sn bekle
+
+
+# Kullanım koşullarını okudum checkbox'ı işaretlenir.
+* "chkbx_kullanimKabul" swipe element
+* "chkbx_kullanimKabul" li elemente tikla
+
+# HepsiJet logosuna tıklanır.
+* "img_logo" li elemente tikla
+
+# Sayfanın aşağısında bulunan <butonText> butonuna tıklanır.
+* "btn_footer" swipe element
+* "btn_footer" li elementlerden <butonText> değerine eşit olana tıkla
+
+//* "btn_footer" li elementlerden <butonText> değerine eşit olanın yanındaki "btn_footerDivParent" elementine tıkla
+
+# Menüden <menuItemText> alanına tıklanır.
+* "txt_hamburgerMenuItems" li elementlerden <menuItemText> değerine eşit olana tıkla
+
+# Alt menüden <altMenuText> alanına tıklanır.
+* "txt_altMenuItem" swipe element
+* "txt_altMenuItem" li elementlerden <altMenuText> değerine eşit olana tıkla
+
+# Sıkça sorulan sorular sayfasında <soruTabText> alanının seçili olduğu kontrol edilir.
+* "btn_sorulanSorularHeaders" li elementlerden <soruTabText> değerine eşit olan elementin "aria-selected" attributesi "true" mı?
+
+# Sıkça sorulan sorular sayfasında <soruTabText> alanının olduğu kontrol edilir.
+* "btn_sorulanSorularHeaders" li elementlerden <soruTabText> değerine eşit olan var mı?
+
+# Sıkça sorulan sorular sayfasında <soruTabText> alanına tıklanır.
+* "btn_sorulanSorularHeaders" swipe element
+* "btn_sorulanSorularHeaders" li elementlerden <soruTabText> değerine eşit olana tıkla
+
+# Sipariş Teslimat Süreleri tabında <soruBaslik> alanının olduğu kontrol edilir.
+* "btn_sorularBasliklar" li elementlerden <soruBaslik> değerine eşit olan var mı?
+
+# HepsiJET’te Taşımacı Olmak tabında <soruBaslik> alanının olduğu kontrol edilir.
+* "btn_sorularBasliklar" li elementlerden <soruBaslik> değerine eşit olan var mı?
+
+# Kişisel Verilerin Korunması tabında <soruBaslik> alanının olduğu kontrol edilir.
+* "btn_sorularBasliklar" li elementlerden <soruBaslik> değerine eşit olan var mı?
+
+
+
+
+
+
+
+
+
+
+
+
+

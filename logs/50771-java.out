@@ -1,0 +1,1007 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+06:49:50,573 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+06:49:50,575 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.groovy] at [file:/Users/dilekaysegun/Desktop/Odeon/target/test-classes/logback.groovy]
+06:49:50,581 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.groovy] occurs multiple times on the classpath.
+06:49:50,581 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.groovy] occurs at [jar:file:/Users/dilekaysegun/.m2/repository/com/vrgsl/qa/qa-common/2.0.14/qa-common-2.0.14.jar!/logback.groovy]
+06:49:50,581 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.groovy] occurs at [file:/Users/dilekaysegun/Desktop/Odeon/target/test-classes/logback.groovy]
+06:49:56,784 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@6dcf927 - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+06:49:56,786 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@6dcf927 - Naming appender as [STDOUT]
+06:49:56,977 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@6dcf927 - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+06:49:56,978 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@6dcf927 - Naming appender as [FILE]
+06:49:56,981 |-INFO in ch.qos.logback.core.FileAppender[FILE] - File property is set to [target/slnarch.log]
+06:49:56,984 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@6dcf927 - Setting level of logger [com.virgosol.bilyonerMobileWeb] to DEBUG
+06:49:56,990 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@6dcf927 - Setting level of logger [org.reflections.Reflections] to OFF
+06:49:56,994 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@6dcf927 - Setting level of logger [ROOT] to INFO
+06:49:56,996 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@6dcf927 - Attaching appender named [STDOUT] to Logger[ROOT]
+06:49:56,998 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@6dcf927 - Attaching appender named [FILE] to Logger[ROOT]
+
+{"logLevel":"debug","message":"gauge-java took 8359milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 8359"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 53703"}
+{"logLevel":"info","message":"Listening on port:53703"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkNotExistElement' and 'com.virgosol.odeon.step.StepImpl.checkNotExistElement'"}
+{"logLevel":"debug","message":"Found {} li element yok mu? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkClickable' and 'com.virgosol.odeon.step.StepImpl.checkClickable'"}
+{"logLevel":"debug","message":"Found {} li element tıklanabilir mi? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementsCheckTextsAndDeletedId' and 'com.virgosol.odeon.step.StepImpl.findElementsCheckTextsAndDeletedId'"}
+{"logLevel":"debug","message":"Found {} li elementlerden id bilgisi silindi mi? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.openWait' and 'com.virgosol.odeon.step.StepImpl.openWait'"}
+{"logLevel":"debug","message":"Found Beklemeleri ac in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.goToUrl' and 'com.virgosol.odeon.step.StepImpl.goToUrl'"}
+{"logLevel":"debug","message":"Found {} urle git in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.saveText' and 'com.virgosol.odeon.step.StepImpl.saveText'"}
+{"logLevel":"debug","message":"Found {} li elementin textini {} olarak kaydet in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.dateControl' and 'com.virgosol.odeon.step.StepImpl.dateControl'"}
+{"logLevel":"debug","message":"Found {} li elementin tarih bilgisi kontrol edilir. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.hoverElementNextTo' and 'com.virgosol.odeon.step.StepImpl.hoverElementNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementinin üzerine gel in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementsCheckTextsAndCheckElementNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementsCheckTextsAndCheckElementNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden texti olanın yanındaki {} elementi var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClick' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClick'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olana tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckElementNextToNotExists' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckElementNextToNotExists'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementi yok mu? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.deleteText2' and 'com.virgosol.odeon.step.StepImpl.deleteText2'"}
+{"logLevel":"debug","message":"Found {} li elementi temizle in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkAttribute' and 'com.virgosol.odeon.step.StepImpl.checkAttribute'"}
+{"logLevel":"debug","message":"Found {} li elementin {} attributesi var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.saveAttributeNextTo' and 'com.virgosol.odeon.step.StepImpl.saveAttributeNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementinin {} attributesini {} olarak kaydet in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndFindElementWithTextAndFindWithTextNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndFindElementWithTextAndFindWithTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin texti {} mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.waitInVisible' and 'com.virgosol.odeon.step.StepImpl.waitInVisible'"}
+{"logLevel":"debug","message":"Found {} li elementi invisible olana kadar bekle in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkFilename' and 'com.virgosol.odeon.step.StepImpl.checkFilename'"}
+{"logLevel":"debug","message":"Found Excel {} dosyasının doğru uzantıda olduğu kontrol edilir. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckClickable' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckClickable'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olan tıklanabilir mi? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckAttributeNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckAttributeNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin {} attributesi var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.clickEnterWithElement' and 'com.virgosol.odeon.step.StepImpl.clickEnterWithElement'"}
+{"logLevel":"debug","message":"Found {} Entere tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.popUpAccept' and 'com.virgosol.odeon.step.StepImpl.popUpAccept'"}
+{"logLevel":"debug","message":"Found Mesajda tamam butonuna basılır. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndFindElementSaveTextAndClickIndexNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndFindElementSaveTextAndClickIndexNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} li elementler {} değerine eşit olanın yanındaki {} elementinin id bilgisini kaydet ve {} elementlerinden yanındaki {} elementin delete butonuna tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.dragAndDropColumn' and 'com.virgosol.odeon.step.StepImpl.dragAndDropColumn'"}
+{"logLevel":"debug","message":"Found {} li elementi sürükle ve bırak in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementPinWithTextsAndClick' and 'com.virgosol.odeon.step.StepImpl.findElementPinWithTextsAndClick'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} pin değerine tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClickAllignment' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClickAllignment'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olan ile aynı sıralamada yanındaki {} elementine tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkTextsElement' and 'com.virgosol.odeon.step.StepImpl.checkTextsElement'"}
+{"logLevel":"debug","message":"Found {} li elementlerin texti var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.sendKeyNextTo' and 'com.virgosol.odeon.step.StepImpl.sendKeyNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementine {} degerini yaz in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSaveText' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSaveText'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın textini {} olarak kaydet in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSendKeyNextToEnter' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSendKeyNextToEnter'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementinde Entere Tikla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkTextEquals' and 'com.virgosol.odeon.step.StepImpl.checkTextEquals'"}
+{"logLevel":"debug","message":"Found {} li elementin texti {} mi? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.clickElementNextTo' and 'com.virgosol.odeon.step.StepImpl.clickElementNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementine tikla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.excelReadData' and 'com.virgosol.odeon.step.StepImpl.excelReadData'"}
+{"logLevel":"debug","message":"Found Excel {} dosyasından veri okuma işlemi yapılır. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.clickEnter' and 'com.virgosol.odeon.step.StepImpl.clickEnter'"}
+{"logLevel":"debug","message":"Found Entere tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkElements' and 'com.virgosol.odeon.step.StepImpl.checkElements'"}
+{"logLevel":"debug","message":"Found {} li elementler var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckAttribute' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckAttribute'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın {} attributesi var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.forwardPage' and 'com.virgosol.odeon.step.StepImpl.forwardPage'"}
+{"logLevel":"debug","message":"Found Bulunduğun sayfada ileri git in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.backPage' and 'com.virgosol.odeon.step.StepImpl.backPage'"}
+{"logLevel":"debug","message":"Found Bulunduğun sayfada geri git in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementsCheckTextsAndCheckElementsTextNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementsCheckTextsAndCheckElementsTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden texti olanın yanındaki {} elementin texti var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndOrderAllignment' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndOrderAllignment'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olan ile aynı sıralamada altındaki {} verileri {} olarak sıralı mı in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.waitVisible' and 'com.virgosol.odeon.step.StepImpl.waitVisible'"}
+{"logLevel":"debug","message":"Found {} li elementi görünür olana kadar bekle in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.waitMinutes' and 'com.virgosol.odeon.step.StepImpl.waitMinutes'"}
+{"logLevel":"debug","message":"Found {} dakika bekle in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.refreshPage' and 'com.virgosol.odeon.step.StepImpl.refreshPage'"}
+{"logLevel":"debug","message":"Found Bulunduğun sayfayı yenile in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckElementNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckElementNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} element var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextAndCheckAttributeContainsTextNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextAndCheckAttributeContainsTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olan elementin {} attributesi {} içeriyor mu? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkTextNextTo' and 'com.virgosol.odeon.step.StepImpl.checkTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementinin texti var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkTitle' and 'com.virgosol.odeon.step.StepImpl.checkTitle'"}
+{"logLevel":"debug","message":"Found Sayfanın title ı {} mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSendKey' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSendKey'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olana {} değerini yaz in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.deleteText' and 'com.virgosol.odeon.step.StepImpl.deleteText'"}
+{"logLevel":"debug","message":"Found {} li elementin içindekileri sil in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.saveAttribute' and 'com.virgosol.odeon.step.StepImpl.saveAttribute'"}
+{"logLevel":"debug","message":"Found {} li elementin {} attributesini {} olarak kaydet in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextAndCheckAttributeText' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextAndCheckAttributeText'"}
+{"logLevel":"debug","message":"Found {} li elementin {} attributesi {} mi in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSaveTextNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSaveTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin textini {} olarak kaydet in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckAttributeTextNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckAttributeTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin {} attributesi {} içeriyor mu? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClickNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClickNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementine tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkTextNotExistsElements' and 'com.virgosol.odeon.step.StepImpl.checkTextNotExistsElements'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olan yok mu? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementsCheckTextsAndClickElementTextNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementsCheckTextsAndClickElementTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden yanındaki {} elementinin {} attributesi {} içerenin yanındaki {} elementine tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextAndCheckAttributeTextNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextAndCheckAttributeTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olan elementin {} attributesi {} mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.waitSeconds' and 'com.virgosol.odeon.step.StepImpl.waitSeconds'"}
+{"logLevel":"debug","message":"Found {} sn bekle in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findFile' and 'com.virgosol.odeon.step.StepImpl.findFile'"}
+{"logLevel":"debug","message":"Found {} li elemente tikla ve {} dosya secimini yap in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.clickElement' and 'com.virgosol.odeon.step.StepImpl.clickElement'"}
+{"logLevel":"debug","message":"Found Click element with key {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.clickElement' and 'com.virgosol.odeon.step.StepImpl.clickElement'"}
+{"logLevel":"debug","message":"Found {} li elemente tikla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.navigateWindow' and 'com.virgosol.odeon.step.StepImpl.navigateWindow'"}
+{"logLevel":"debug","message":"Found Yeni açılan sayfaya geç in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSetAttribute' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSetAttribute'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın {} attributesini {} yap in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.dateCompare' and 'com.virgosol.odeon.step.StepImpl.dateCompare'"}
+{"logLevel":"debug","message":"Found {} tarihi ile {} tarihini karşılaştır. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.sendKey' and 'com.virgosol.odeon.step.StepImpl.sendKey'"}
+{"logLevel":"debug","message":"Found Send keys to element with key {} and text {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.sendKey' and 'com.virgosol.odeon.step.StepImpl.sendKey'"}
+{"logLevel":"debug","message":"Found {} li elemente {} degerini yaz in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.hoverElement' and 'com.virgosol.odeon.step.StepImpl.hoverElement'"}
+{"logLevel":"debug","message":"Found {} li elementin üzerine gel in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.framegir' and 'com.virgosol.odeon.step.StepImpl.framegir'"}
+{"logLevel":"debug","message":"Found frame gir in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClickWithTextNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClickWithTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementlerinden {} değerine eşit olana tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.closeWait' and 'com.virgosol.odeon.step.StepImpl.closeWait'"}
+{"logLevel":"debug","message":"Found Beklemeleri kapat in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClickNextToWithIndex' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClickNextToWithIndex'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementlerinden indexe göre tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkElementVisible' and 'com.virgosol.odeon.step.StepImpl.checkElementVisible'"}
+{"logLevel":"debug","message":"Found {} li element görünür mü? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkNotExistAttribute' and 'com.virgosol.odeon.step.StepImpl.checkNotExistAttribute'"}
+{"logLevel":"debug","message":"Found {} li elementin {} attributesi yok mu in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndHover' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndHover'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın üzerine gel in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndHoverNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndHoverNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin üzerine gel in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndFindElementWithTextAndSaveTextNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndFindElementWithTextAndSaveTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin textini {} olarak kaydet in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.saveTextNextTo' and 'com.virgosol.odeon.step.StepImpl.saveTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementinin textini {} olarak kaydet in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndFindElementWithTextAndClickNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndFindElementWithTextAndClickNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} li elementlerden {} değerine eşit olanın yanındaki {} elementine tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSaveAttribute' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSaveAttribute'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın {} attributesini {} olarak kaydet in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.setAttributeNextTo' and 'com.virgosol.odeon.step.StepImpl.setAttributeNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementinin {} attributesini {} yap in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkTextEqualsNextTo' and 'com.virgosol.odeon.step.StepImpl.checkTextEqualsNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementinin texti {} mi? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.changeScreenResolution' and 'com.virgosol.odeon.step.StepImpl.changeScreenResolution'"}
+{"logLevel":"debug","message":"Found Ekran çözünürlüğünü {} yap. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSendKeyNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSendKeyNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementine {} değerini yaz in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkText' and 'com.virgosol.odeon.step.StepImpl.checkText'"}
+{"logLevel":"debug","message":"Found {} li elementin texti var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkElement' and 'com.virgosol.odeon.step.StepImpl.checkElement'"}
+{"logLevel":"debug","message":"Found {} li element var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.closePage' and 'com.virgosol.odeon.step.StepImpl.closePage'"}
+{"logLevel":"debug","message":"Found Bulunduğun sayfayı kapat in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkTextContains' and 'com.virgosol.odeon.step.StepImpl.checkTextContains'"}
+{"logLevel":"debug","message":"Found {} li elementin texti {} içeriyor mu? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkTextContainsNextTo' and 'com.virgosol.odeon.step.StepImpl.checkTextContainsNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementinin texti {} içeriyor mi? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.waitElement' and 'com.virgosol.odeon.step.StepImpl.waitElement'"}
+{"logLevel":"debug","message":"Found Wait {} element in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.waitElement' and 'com.virgosol.odeon.step.StepImpl.waitElement'"}
+{"logLevel":"debug","message":"Found {} li elementi bekle in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSendKeyAllignment' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSendKeyAllignment'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olan ile aynı sıralamada yanındaki {} elementine {} değerini yaz in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckAttrAndClickFirst' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckAttrAndClickFirst'"}
+{"logLevel":"debug","message":"Found {} li elementlerin yanındaki {} elementlerinden {} attributesi {} içermeyen ilk elemente tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithCheckAttributeText' and 'com.virgosol.odeon.step.StepImpl.findElementWithCheckAttributeText'"}
+{"logLevel":"debug","message":"Found {} li elementlerin {} attributesi {} mi in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndFindElementWithTextNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndFindElementWithTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} li elementlerden {} değerine eşit olan var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.handlingCAPTCHA' and 'com.virgosol.odeon.step.StepImpl.handlingCAPTCHA'"}
+{"logLevel":"debug","message":"Found {} textbox alanına captcha değeri yazılır. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkClickableNextTo' and 'com.virgosol.odeon.step.StepImpl.checkClickableNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementi tıklanabilir mi? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSelect' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSelect'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanı seç in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.deneme' and 'com.virgosol.odeon.step.StepImpl.deneme'"}
+{"logLevel":"debug","message":"Found {} li elementin uzunluğunun 10 olduğu doğrulanır. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSaveAttributeTextNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSaveAttributeTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin {} attributesini kaydet in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSaveAttributeTextNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSaveAttributeTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} li elementlerin textindeki tarihler doğru aralıkta mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextAndCheckAttributeEqualsTextNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextAndCheckAttributeEqualsTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin {} attributesi {} mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkElementNextTo' and 'com.virgosol.odeon.step.StepImpl.checkElementNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} element var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndFindElementCheckWithTextNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndFindElementCheckWithTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} li elementler {} değerine eşit mi? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithCheckAttribute' and 'com.virgosol.odeon.step.StepImpl.findElementWithCheckAttribute'"}
+{"logLevel":"debug","message":"Found {} li elementlerin {} attributesi var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkAttributeNextTo' and 'com.virgosol.odeon.step.StepImpl.checkAttributeNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementinin {} attributesi var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSetAttributeNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSetAttributeNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin {} attributesini {} yap in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSelectNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSelectNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementini seç in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.navigateFrame' and 'com.virgosol.odeon.step.StepImpl.navigateFrame'"}
+{"logLevel":"debug","message":"Found Frameden ana sayfaya geç in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkDataGridAndExcelColumn' and 'com.virgosol.odeon.step.StepImpl.checkDataGridAndExcelColumn'"}
+{"logLevel":"debug","message":"Found Excel {} dosyasının uzantısı kontrol edilir ve içeriğinin datagrid yapısıyla aynı olduğu kontrol edilir. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.navigateFrame' and 'com.virgosol.odeon.step.StepImpl.navigateFrame'"}
+{"logLevel":"debug","message":"Found {} isimli frame e geç in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckText' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckText'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olan var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.openInBrowser' and 'com.virgosol.odeon.step.StepImpl.openInBrowser'"}
+{"logLevel":"debug","message":"Found Url {} tarayıcıda açılır. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckClickableNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckClickableNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olan elementten önceki {} elementlerin tarihi {} attributesi {} içeriyor mu? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckClickableNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckClickableNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementi tıklanabilir mi? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.setAttribute' and 'com.virgosol.odeon.step.StepImpl.setAttribute'"}
+{"logLevel":"debug","message":"Found {} li elementin {} attributesini {} yap in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSaveAttributeNextTo' and 'com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSaveAttributeNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin {} attributesini {} olarak kaydet in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkUrl' and 'com.virgosol.odeon.step.StepImpl.checkUrl'"}
+{"logLevel":"debug","message":"Found Sayfanın url i {} mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.elementIsDisplayed' and 'com.virgosol.odeon.step.StepImpl.elementIsDisplayed'"}
+{"logLevel":"debug","message":"Found {} li element gözüküyor mu? in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\t{} li elementlerin {} attributesi {} mi : public void findElementWithCheckAttributeText(String key, String attr, String attrtext)"}
+{"logLevel":"debug","message":"\tExcel {} dosyasının doğru uzantıda olduğu kontrol edilir. : public void checkFilename(String excelFileName) throws IOException"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın {} attributesini {} yap : public void findElementWithTextsAndSetAttribute(String key, String text, String attr, String text2)"}
+{"logLevel":"debug","message":"\t{} li elementin tarih bilgisi kontrol edilir. : public void dateControl(String key1)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} elementi yok mu? : public void findElementWithTextsAndCheckElementNextToNotExists(String key, String text, String key2)"}
+{"logLevel":"debug","message":"\tBeklemeleri ac : public void openWait()"}
+{"logLevel":"debug","message":"\t{} li elementin textini {} olarak kaydet : public void saveText(String key, String key2)"}
+{"logLevel":"debug","message":"\t{} li elementin {} attributesi {} mi : public void findElementWithTextAndCheckAttributeText(String key, String attr, String attrtext)"}
+{"logLevel":"debug","message":"\t{} li elemente tikla ve {} dosya secimini yap : public void findFile(String key, String file)"}
+{"logLevel":"debug","message":"\tMesajda tamam butonuna basılır. : public void popUpAccept() throws IOException"}
+{"logLevel":"debug","message":"\t{} li elementin texti {} mi? : public void checkTextEquals(String key, String text)"}
+{"logLevel":"debug","message":"\tSayfanın title ı {} mı? : public void checkTitle(String title)"}
+{"logLevel":"debug","message":"\tBulunduğun sayfada ileri git : public void forwardPage()"}
+{"logLevel":"debug","message":"\t{} li elementin {} attributesi yok mu : public void checkNotExistAttribute(String key, String attr) throws IOException"}
+{"logLevel":"debug","message":"\t{} li elementin yanındaki {} elementi tıklanabilir mi? : public void checkClickableNextTo(String key, String key2)"}
+{"logLevel":"debug","message":"\t{} li element yok mu? : public void checkNotExistElement(String key)"}
+{"logLevel":"debug","message":"\t{} li elementin yanındaki {} elementinin üzerine gel : public void hoverElementNextTo(String key, String key2)"}
+{"logLevel":"debug","message":"\t{} li elementin üzerine gel : public void hoverElement(String key)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} li elementler {} değerine eşit olanın yanındaki {} elementinin id bilgisini kaydet ve {} elementlerinden yanındaki {} elementin delete butonuna tıkla : public void findElementWithTextsAndFindElementSaveTextAndClickIndexNextTo(String key, String text, String key2, String text2, String key3, String key4, String key5)"}
+{"logLevel":"debug","message":"\t{} li elementin {} attributesi var mı? : public void checkAttribute(String key, String attr)"}
+{"logLevel":"debug","message":"\t{} urle git : public void goToUrl(String url)"}
+{"logLevel":"debug","message":"\t{} dakika bekle : public void waitMinutes(String key) throws InterruptedException"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olan ile aynı sıralamada yanındaki {} elementine tıkla : public void findElementWithTextsAndClickAllignment(String key, String text, String key2)"}
+{"logLevel":"debug","message":"\tExcel {} dosyasının uzantısı kontrol edilir ve içeriğinin datagrid yapısıyla aynı olduğu kontrol edilir. : public void checkDataGridAndExcelColumn(String excelFileName) throws IOException, BiffException"}
+{"logLevel":"debug","message":"\t{} li elementlerin yanındaki {} elementlerinden {} attributesi {} içermeyen ilk elemente tıkla : public void findElementWithTextsAndCheckAttrAndClickFirst(String key, String key2, String attr, String attrtext)"}
+{"logLevel":"debug","message":"\t{} tarihi ile {} tarihini karşılaştır. : public void dateCompare(String key1, String key2) throws IOException"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın üzerine gel : public void findElementWithTextsAndHover(String key, String text)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olan elementin {} attributesi {} içeriyor mu? : public void findElementWithTextAndCheckAttributeContainsTextNextTo(String key, String text, String attr, String attrtext)"}
+{"logLevel":"debug","message":"\t{} li elemente {} degerini yaz : public void sendKey(String key, String text)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} elementini seç : public void findElementWithTextsAndSelectNextTo(String key, String text, String key2)"}
+{"logLevel":"debug","message":"\t{} li elementin yanındaki {} elementinin texti {} içeriyor mi? : public void checkTextContainsNextTo(String key, String key2, String text)"}
+{"logLevel":"debug","message":"\t{} li element var mı? : public void checkElement(String key)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} elementinin {} attributesi var mı? : public void findElementWithTextsAndCheckAttributeNextTo(String key, String text, String key2, String attr)"}
+{"logLevel":"debug","message":"\t{} li element tıklanabilir mi? : public void checkClickable(String key)"}
+{"logLevel":"debug","message":"\tBulunduğun sayfada geri git : public void backPage()"}
+{"logLevel":"debug","message":"\t{} li elementlerden yanındaki {} elementinin {} attributesi {} içerenin yanındaki {} elementine tıkla : public void findElementsCheckTextsAndClickElementTextNextTo(String key, String key2, String attr, String attrtext, String key3)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin texti {} mı? : public void findElementWithTextsAndFindElementWithTextAndFindWithTextNextTo(String key, String text, String key2, String text2, String key3, String text3)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} li elementler {} değerine eşit mi? : public void findElementWithTextsAndFindElementCheckWithTextNextTo(String key, String text, String key2, String text2)"}
+{"logLevel":"debug","message":"\tBeklemeleri kapat : public void closeWait()"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanı seç : public void findElementWithTextsAndSelect(String key, String text)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olan elementten önceki {} elementlerin tarihi {} attributesi {} içeriyor mu? : public void findElementWithTextsAndCheckClickableNextTo(String key, String text, String key2, String attr, String attrtext)"}
+{"logLevel":"debug","message":"\t{} li elementin yanındaki {} elementinin texti {} mi? : public void checkTextEqualsNextTo(String key, String key2, String text)"}
+{"logLevel":"debug","message":"\t{} li elementlerden id bilgisi silindi mi? : public void findElementsCheckTextsAndDeletedId(String key)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} elementinin {} attributesini kaydet : public void findElementWithTextsAndSaveAttributeTextNextTo(String key, String text, String key2, String attr)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olan ile aynı sıralamada altındaki {} verileri {} olarak sıralı mı : public void findElementWithTextsAndOrderAllignment(String key, String text, String key2, String text2)"}
+{"logLevel":"debug","message":"\tClick element with key {} : public void clickElement(String key)"}
+{"logLevel":"debug","message":"\t{} sn bekle : public void waitSeconds(String key) throws InterruptedException"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} elementlerinden {} değerine eşit olana tıkla : public void findElementWithTextsAndClickWithTextNextTo(String key, String text, String key2, String text2)"}
+{"logLevel":"debug","message":"\tUrl {} tarayıcıda açılır. : public void openInBrowser(String browserName) throws IOException"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} elementlerinden indexe göre tıkla : public void findElementWithTextsAndClickNextToWithIndex(String key, String text, String key2)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} elementine {} değerini yaz : public void findElementWithTextsAndSendKeyNextTo(String key, String text, String key2, String text2)"}
+{"logLevel":"debug","message":"\tEkran çözünürlüğünü {} yap. : public void changeScreenResolution(String screenResolution) throws IOException"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} elementinin {} attributesini {} olarak kaydet : public void findElementWithTextsAndSaveAttributeNextTo(String key, String text, String key2, String attr, String key3)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} elementinin {} attributesini {} yap : public void findElementWithTextsAndSetAttributeNextTo(String key, String text, String key2, String attr, String text2)"}
+{"logLevel":"debug","message":"\t{} li elementlerin texti var mı? : public void checkTextsElement(String key)"}
+{"logLevel":"debug","message":"\tSayfanın url i {} mı? : public void checkUrl(String url)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} pin değerine tıkla : public void findElementPinWithTextsAndClick(String key, String pin)"}
+{"logLevel":"debug","message":"\t{} li element gözüküyor mu? : public void elementIsDisplayed(String key)"}
+{"logLevel":"debug","message":"\tWait {} element : public void waitElement(String key)"}
+{"logLevel":"debug","message":"\tBulunduğun sayfayı kapat : public void closePage()"}
+{"logLevel":"debug","message":"\tEntere tıkla : public void clickEnter()"}
+{"logLevel":"debug","message":"\t{} li elementlerin {} attributesi var mı? : public void findElementWithCheckAttribute(String key, String attr)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} elementinde Entere Tikla : public void findElementWithTextsAndSendKeyNextToEnter(String key, String text, String key2)"}
+{"logLevel":"debug","message":"\t{} li elementin {} attributesini {} olarak kaydet : public void saveAttribute(String key, String attr, String key2)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olan var mı? : public void findElementWithTextsAndCheckText(String key, String text)"}
+{"logLevel":"debug","message":"\t{} li elementin yanındaki {} elementinin {} attributesi var mı? : public void checkAttributeNextTo(String key, String key2, String attr)"}
+{"logLevel":"debug","message":"\t{} li elementi sürükle ve bırak : public void dragAndDropColumn(String key)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olan elementin {} attributesi {} mı? : public void findElementWithTextAndCheckAttributeTextNextTo(String key, String text, String attr, String attrtext)"}
+{"logLevel":"debug","message":"\t{} li elementin yanındaki {} element var mı? : public void checkElementNextTo(String key, String key2)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olana tıkla : public void findElementWithTextsAndClick(String key, String text)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olan yok mu? : public void checkTextNotExistsElements(String key, String text)"}
+{"logLevel":"debug","message":"\t{} li elementi invisible olana kadar bekle : public void waitInVisible(String key)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} elementinin üzerine gel : public void findElementWithTextsAndHoverNextTo(String key, String text, String key2)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} elementine tıkla : public void findElementWithTextsAndClickNextTo(String key, String text, String key2)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olan tıklanabilir mi? : public void findElementWithTextsAndCheckClickable(String key, String text)"}
+{"logLevel":"debug","message":"\t{} li elemente tikla : public void clickElement(String key)"}
+{"logLevel":"debug","message":"\t{} li elementin uzunluğunun 10 olduğu doğrulanır. : public void deneme(String key) throws IOException"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın textini {} olarak kaydet : public void findElementWithTextsAndSaveText(String key, String text, String key2)"}
+{"logLevel":"debug","message":"\t{} li elementin {} attributesini {} yap : public void setAttribute(String key, String attr, String text)"}
+{"logLevel":"debug","message":"\t{} Entere tıkla : public void clickEnterWithElement(String key)"}
+{"logLevel":"debug","message":"\tYeni açılan sayfaya geç : public void navigateWindow()"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olan ile aynı sıralamada yanındaki {} elementine {} değerini yaz : public void findElementWithTextsAndSendKeyAllignment(String key, String text, String key2, String text2)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} li elementlerden {} değerine eşit olan var mı? : public void findElementWithTextsAndFindElementWithTextNextTo(String key, String text, String key2, String text2)"}
+{"logLevel":"debug","message":"\t{} li elementi görünür olana kadar bekle : public void waitVisible(String key)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın {} attributesini {} olarak kaydet : public void findElementWithTextsAndSaveAttribute(String key, String text, String attr, String key2)"}
+{"logLevel":"debug","message":"\t{} isimli frame e geç : public void navigateFrame(String frame)"}
+{"logLevel":"debug","message":"\t{} li element görünür mü? : public void checkElementVisible(String key)"}
+{"logLevel":"debug","message":"\t{} li elementi bekle : public void waitElement(String key)"}
+{"logLevel":"debug","message":"\tSend keys to element with key {} and text {} : public void sendKey(String key, String text)"}
+{"logLevel":"debug","message":"\tExcel {} dosyasından veri okuma işlemi yapılır. : public void excelReadData(String excelFileName) throws IOException"}
+{"logLevel":"debug","message":"\t{} li elementin yanındaki {} elementine tikla : public void clickElementNextTo(String key, String key2)"}
+{"logLevel":"debug","message":"\t{} li elementin yanındaki {} elementinin texti var mı? : public void checkTextNextTo(String key, String key2)"}
+{"logLevel":"debug","message":"\t{} textbox alanına captcha değeri yazılır. : public void handlingCAPTCHA(String key) throws IOException"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} elementi tıklanabilir mi? : public void findElementWithTextsAndCheckClickableNextTo(String key, String text, String key2)"}
+{"logLevel":"debug","message":"\t{} li elementin yanındaki {} elementinin textini {} olarak kaydet : public void saveTextNextTo(String key, String key2, String key3)"}
+{"logLevel":"debug","message":"\t{} li elementlerden texti olanın yanındaki {} elementi var mı? : public void findElementsCheckTextsAndCheckElementNextTo(String key, String key2)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} li elementlerden {} değerine eşit olanın yanındaki {} elementine tıkla : public void findElementWithTextsAndFindElementWithTextAndClickNextTo(String key, String text, String key2, String text2, String key3)"}
+{"logLevel":"debug","message":"\t{} li elementin yanındaki {} elementinin {} attributesini {} yap : public void setAttributeNextTo(String key, String key2, String attr, String text)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} elementinin {} attributesi {} içeriyor mu? : public void findElementWithTextsAndCheckAttributeTextNextTo(String key, String text, String key2, String attr, String attrtext)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin textini {} olarak kaydet : public void findElementWithTextsAndFindElementWithTextAndSaveTextNextTo(String key, String text, String key2, String text2, String key3, String text3)"}
+{"logLevel":"debug","message":"\t{} li elementin içindekileri sil : public void deleteText(String key)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} elementinin {} attributesi {} mı? : public void findElementWithTextAndCheckAttributeEqualsTextNextTo(String key, String text, String key2, String attr, String attrtext)"}
+{"logLevel":"debug","message":"\t{} li elementlerden texti olanın yanındaki {} elementin texti var mı? : public void findElementsCheckTextsAndCheckElementsTextNextTo(String key, String key2)"}
+{"logLevel":"debug","message":"\t{} li elementin texti {} içeriyor mu? : public void checkTextContains(String key, String text)"}
+{"logLevel":"debug","message":"\tFrameden ana sayfaya geç : public void navigateFrame()"}
+{"logLevel":"debug","message":"\t{} li elementler var mı? : public void checkElements(String key)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} elementinin textini {} olarak kaydet : public void findElementWithTextsAndSaveTextNextTo(String key, String text, String key2, String key3)"}
+{"logLevel":"debug","message":"\t{} li elementi temizle : public void deleteText2(String key)"}
+{"logLevel":"debug","message":"\t{} li elementin texti var mı? : public void checkText(String key)"}
+{"logLevel":"debug","message":"\t{} li elementin yanındaki {} elementinin {} attributesini {} olarak kaydet : public void saveAttributeNextTo(String key, String key2, String attr, String key3)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} li elementlerin textindeki tarihler doğru aralıkta mı? : public void findElementWithTextsAndSaveAttributeTextNextTo(String key, String text, String key2) throws ParseException"}
+{"logLevel":"debug","message":"\t{} li elementin yanındaki {} elementine {} degerini yaz : public void sendKeyNextTo(String key, String key2, String text)"}
+{"logLevel":"debug","message":"\tBulunduğun sayfayı yenile : public void refreshPage()"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın {} attributesi var mı? : public void findElementWithTextsAndCheckAttribute(String key, String text, String attr)"}
+{"logLevel":"debug","message":"\tframe gir : public void framegir()"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} element var mı? : public void findElementWithTextsAndCheckElementNextTo(String key, String text, String key2)"}
+{"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olana {} değerini yaz : public void findElementWithTextsAndSendKey(String key, String text, String text2)"}
+2021-10-28 06:50:07.491 [pool-2-thread-1] WARN  com.vrgsl.qa.setBaseUrl(41) - Env System Property Not Found Default Use Test Url
+2021-10-28 06:50:07.500 [pool-2-thread-1] INFO  com.vrgsl.qa.<init>(48) - Report create and save disabled configuration!
+2021-10-28 06:50:12.968 [pool-2-thread-1] INFO  org.mongodb.driver.cluster.info(71) - Cluster created with settings {hosts=[135.181.73.110:21325], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+Starting ChromeDriver 94.0.4606.41 (333e85df3c9b656b518b5f1add5ff246365b6c24-refs/branch-heads/4606@{#845}) on port 31028
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+2021-10-28 06:50:13.980 [cluster-ClusterId{value='617a1df4c88a9cc665ee6249', description='null'}-135.181.73.110:21325] INFO  org.mongodb.driver.connection.info(71) - Opened connection [connectionId{localValue:1, serverValue:124}] to 135.181.73.110:21325
+2021-10-28 06:50:14.097 [cluster-ClusterId{value='617a1df4c88a9cc665ee6249', description='null'}-135.181.73.110:21325] INFO  org.mongodb.driver.cluster.info(71) - Monitor thread successfully connected to server with description ServerDescription{address=135.181.73.110:21325, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 4, 5]}, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=113265292}
+[1635393019.102][WARNING]: This version of ChromeDriver has not been tested with Chrome version 95.
+Eki 28, 2021 6:50:19 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2021-10-28 06:50:19.525 [pool-2-thread-1] INFO  com.vrgsl.qa.initFeather(24) - Init Feather Injections
+2021-10-28 06:50:19.598 [pool-2-thread-1] INFO  com.vrgsl.qa.logWaitSelected(196) - Wait Configuration
+page load=true
+ajax load=true
+angular load=false
+2021-10-28 06:50:19.599 [pool-2-thread-1] INFO  com.vrgsl.qa.inject(8) - Inject Starting...
+2021-10-28 06:50:47.583 [pool-2-thread-1] INFO  com.vrgsl.qa.afterNavigateTo(67) - Navigate To Page Url=http://uatobbackoffice.odeontours.com
+Starting ChromeDriver 94.0.4606.41 (333e85df3c9b656b518b5f1add5ff246365b6c24-refs/branch-heads/4606@{#845}) on port 44507
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1635393049.794][WARNING]: This version of ChromeDriver has not been tested with Chrome version 95.
+Eki 28, 2021 6:50:50 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2021-10-28 06:50:50.024 [pool-2-thread-1] INFO  com.vrgsl.qa.initFeather(24) - Init Feather Injections
+2021-10-28 06:50:50.030 [pool-2-thread-1] INFO  com.vrgsl.qa.logWaitSelected(196) - Wait Configuration
+page load=true
+ajax load=true
+angular load=false
+2021-10-28 06:50:50.030 [pool-2-thread-1] INFO  com.vrgsl.qa.inject(8) - Inject Starting...
+2021-10-28 06:50:51.005 [pool-2-thread-1] INFO  org.mongodb.driver.connection.info(71) - Opened connection [connectionId{localValue:2, serverValue:125}] to 135.181.73.110:21325
+2021-10-28 06:51:21.937 [pool-2-thread-1] INFO  com.vrgsl.qa.afterNavigateTo(67) - Navigate To Page Url=http://uatobbackoffice.odeontours.com
+2021-10-28 06:51:23.863 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "http://uatobbackoffice.odeontours.com/reservationdetail" urle git adimi basladi
+{"logLevel":"debug","message":"Executing '{} urle git' using 'class com.virgosol.odeon.step.StepImpl.goToUrl"}
+2021-10-28 06:51:24.547 [pool-2-thread-1] INFO  com.vrgsl.qa.afterNavigateTo(67) - Navigate To Page Url=http://uatobbackoffice.odeontours.com/reservationdetail
+2021-10-28 06:51:24.587 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "http://uatobbackoffice.odeontours.com/reservationdetail" urle git adimi basariyla bitti
+log4j:WARN No appenders could be found for logger (org.apache.http.client.protocol.RequestAddCookies).
+log4j:WARN Please initialize the log4j system properly.
+2021-10-28 06:51:26.449 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - Sayfanın url i "http://uatobbackoffice.odeontours.com/reservationdetail" mı? adimi basladi
+{"logLevel":"debug","message":"Executing 'Sayfanın url i {} mı?' using 'class com.virgosol.odeon.step.StepImpl.checkUrl"}
+2021-10-28 06:51:26.499 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - Sayfanın url i "http://uatobbackoffice.odeontours.com/reservationdetail" mı? adimi basariyla bitti
+2021-10-28 06:51:28.250 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_loginHeader" li elementlerden "Username" değerine eşit olanın yanındaki "txtbx_loginInput" elementine "OdeonbedsAdmin" değerini yaz adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olanın yanındaki {} elementine {} değerini yaz' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSendKeyNextTo"}
+2021-10-28 06:51:28.322 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-required
+2021-10-28 06:51:28.400 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-required
+2021-10-28 06:51:28.445 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.xpath: ../..//input[@class='ant-input']
+2021-10-28 06:51:28.496 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.xpath: ../..//input[@class='ant-input'] TagName=label
+2021-10-28 06:51:28.908 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeChangeValueOf(136) - Set Value [Ljava.lang.CharSequence;@a6101ea
+2021-10-28 06:51:30.197 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_loginHeader" li elementlerden "Username" değerine eşit olanın yanındaki "txtbx_loginInput" elementine "OdeonbedsAdmin" değerini yaz adimi basariyla bitti
+2021-10-28 06:51:31.992 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_loginHeader" li elementlerden "Password" değerine eşit olanın yanındaki "txtbx_loginInput" elementine "De53Acy2.." değerini yaz adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olanın yanındaki {} elementine {} değerini yaz' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSendKeyNextTo"}
+2021-10-28 06:51:32.011 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-required
+2021-10-28 06:51:32.055 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-required
+2021-10-28 06:51:32.125 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.xpath: ../..//input[@class='ant-input']
+2021-10-28 06:51:32.150 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.xpath: ../..//input[@class='ant-input'] TagName=label
+2021-10-28 06:51:32.535 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeChangeValueOf(136) - Set Value [Ljava.lang.CharSequence;@5fc038a9
+2021-10-28 06:51:33.129 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_loginHeader" li elementlerden "Password" değerine eşit olanın yanındaki "txtbx_loginInput" elementine "De53Acy2.." değerini yaz adimi basariyla bitti
+2021-10-28 06:51:34.408 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "btn_pageButtons" li elementlerden "Submit" değerine eşit olana tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olana tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClick"}
+2021-10-28 06:51:34.422 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-btn,.ant-btn > span
+2021-10-28 06:51:34.462 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.cssSelector: .ant-btn,.ant-btn > span TagName=button
+2021-10-28 06:51:34.469 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-btn,.ant-btn > span
+2021-10-28 06:51:34.996 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "btn_pageButtons" li elementlerden "Submit" değerine eşit olana tıkla adimi basariyla bitti
+2021-10-28 06:51:36.178 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "img_OdeonLogo" li element var mı? adimi basladi
+{"logLevel":"debug","message":"Executing '{} li element var mı?' using 'class com.virgosol.odeon.step.StepImpl.checkElement"}
+2021-10-28 06:51:36.186 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: img[alt='OdeonBeds']
+2021-10-28 06:51:36.218 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.cssSelector: img[alt='OdeonBeds'] TagName=img
+2021-10-28 06:51:36.229 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "img_OdeonLogo" li element var mı? adimi basariyla bitti
+2021-10-28 06:51:37.363 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "btn_pageButtons" li elementlerden "EN" değerine eşit olana tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olana tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClick"}
+2021-10-28 06:51:37.367 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-btn,.ant-btn > span
+2021-10-28 06:51:37.387 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.cssSelector: .ant-btn,.ant-btn > span TagName=button
+2021-10-28 06:51:37.393 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-btn,.ant-btn > span
+2021-10-28 06:51:40.991 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "btn_pageButtons" li elementlerden "EN" değerine eşit olana tıkla adimi basariyla bitti
+2021-10-28 06:51:42.389 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_pageHeaderTexts" li elementlerden "Reservation Date" değerine eşit olanın yanındaki "txtbx_startDateInput" elementine tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olanın yanındaki {} elementine tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClickNextTo"}
+2021-10-28 06:51:42.396 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:51:42.419 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:51:42.530 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.xpath: ../following-sibling::div//input[@placeholder='Start date']
+2021-10-28 06:51:42.561 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.xpath: ../following-sibling::div//input[@placeholder='Start date'] TagName=label
+2021-10-28 06:51:43.308 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_pageHeaderTexts" li elementlerden "Reservation Date" değerine eşit olanın yanındaki "txtbx_startDateInput" elementine tıkla adimi basariyla bitti
+2021-10-28 06:51:44.914 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "date_startDay" li elementlerden "1" değerine eşit olana tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olana tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClick"}
+2021-10-28 06:51:44.924 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-picker-panels > div:first-child .ant-picker-cell-in-view
+2021-10-28 06:51:44.980 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.cssSelector: .ant-picker-panels > div:first-child .ant-picker-cell-in-view TagName=td
+2021-10-28 06:51:44.989 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-picker-panels > div:first-child .ant-picker-cell-in-view
+2021-10-28 06:51:45.944 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "date_startDay" li elementlerden "1" değerine eşit olana tıkla adimi basariyla bitti
+2021-10-28 06:51:47.535 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_pageHeaderTexts" li elementlerden "Reservation Date" değerine eşit olanın yanındaki "txtbx_endDateInput" elementine tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olanın yanındaki {} elementine tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClickNextTo"}
+2021-10-28 06:51:47.546 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:51:47.571 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:51:47.664 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.xpath: ../following-sibling::div//input[@placeholder='End date']
+2021-10-28 06:51:47.686 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.xpath: ../following-sibling::div//input[@placeholder='End date'] TagName=label
+2021-10-28 06:51:47.850 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_pageHeaderTexts" li elementlerden "Reservation Date" değerine eşit olanın yanındaki "txtbx_endDateInput" elementine tıkla adimi basariyla bitti
+2021-10-28 06:51:50.098 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "date_endDay" li elementlerden "30" değerine eşit olana tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olana tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClick"}
+2021-10-28 06:51:50.115 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-picker-panels > div:nth-child(2) .ant-picker-cell-in-view
+2021-10-28 06:51:50.145 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.cssSelector: .ant-picker-panels > div:nth-child(2) .ant-picker-cell-in-view TagName=td
+2021-10-28 06:51:50.151 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-picker-panels > div:nth-child(2) .ant-picker-cell-in-view
+2021-10-28 06:51:55.749 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "date_endDay" li elementlerden "30" değerine eşit olana tıkla adimi basariyla bitti
+2021-10-28 06:51:57.421 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_pageHeaderTexts" li elementlerden "Hotel Name" değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementine tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olanın yanındaki {} elementine tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClickNextTo"}
+2021-10-28 06:51:57.445 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:51:57.496 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:51:57.682 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.xpath: ../..//input[@class='ant-select-selection-search-input']
+2021-10-28 06:51:57.704 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.xpath: ../..//input[@class='ant-select-selection-search-input'] TagName=label
+2021-10-28 06:51:57.838 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_pageHeaderTexts" li elementlerden "Hotel Name" değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementine tıkla adimi basariyla bitti
+2021-10-28 06:51:59.352 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_pageHeaderTexts" li elementlerden "Hotel Name" değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementine "Istanbul Royal Hotel" değerini yaz adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olanın yanındaki {} elementine {} değerini yaz' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSendKeyNextTo"}
+2021-10-28 06:51:59.362 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:51:59.381 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:51:59.531 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.xpath: ../..//input[@class='ant-select-selection-search-input']
+2021-10-28 06:51:59.546 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.xpath: ../..//input[@class='ant-select-selection-search-input'] TagName=label
+2021-10-28 06:51:59.921 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeChangeValueOf(136) - Set Value [Ljava.lang.CharSequence;@74563fb5
+2021-10-28 06:52:02.571 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_pageHeaderTexts" li elementlerden "Hotel Name" değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementine "Istanbul Royal Hotel" değerini yaz adimi basariyla bitti
+2021-10-28 06:52:04.019 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "1" sn bekle adimi basladi
+{"logLevel":"debug","message":"Executing '{} sn bekle' using 'class com.virgosol.odeon.step.StepImpl.waitSeconds"}
+2021-10-28 06:52:05.045 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "1" sn bekle adimi basariyla bitti
+2021-10-28 06:52:06.511 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_pageHeaderTexts" li elementlerden "Hotel Name" değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementinde Entere Tikla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olanın yanındaki {} elementinde Entere Tikla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSendKeyNextToEnter"}
+2021-10-28 06:52:06.524 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:52:06.552 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:52:06.697 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.xpath: ../..//input[@class='ant-select-selection-search-input']
+2021-10-28 06:52:06.713 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.xpath: ../..//input[@class='ant-select-selection-search-input'] TagName=label
+2021-10-28 06:52:06.905 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeChangeValueOf(136) - Set Value [Ljava.lang.CharSequence;@748b5dbc
+2021-10-28 06:52:07.012 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_pageHeaderTexts" li elementlerden "Hotel Name" değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementinde Entere Tikla adimi basariyla bitti
+2021-10-28 06:52:08.558 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_pageHeaderTexts" li elementlerden "Hotel Name" değerine eşit olana tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olana tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClick"}
+2021-10-28 06:52:08.572 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:52:08.629 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.cssSelector: .ant-form-item-label > label TagName=label
+2021-10-28 06:52:08.637 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:52:10.470 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_pageHeaderTexts" li elementlerden "Hotel Name" değerine eşit olana tıkla adimi basariyla bitti
+2021-10-28 06:52:12.092 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "btn_pageButtons" li elementlerden "Search" değerine eşit olana tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olana tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClick"}
+2021-10-28 06:52:12.103 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-btn,.ant-btn > span
+2021-10-28 06:52:12.149 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.cssSelector: .ant-btn,.ant-btn > span TagName=button
+2021-10-28 06:52:12.156 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-btn,.ant-btn > span
+2021-10-28 06:52:14.460 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "btn_pageButtons" li elementlerden "Search" değerine eşit olana tıkla adimi basariyla bitti
+2021-10-28 06:52:15.915 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "icon_loading" li elementi invisible olana kadar bekle adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementi invisible olana kadar bekle' using 'class com.virgosol.odeon.step.StepImpl.waitInVisible"}
+2021-10-28 06:52:15.926 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-spin-dot.ant-spin-dot-spin,.ant-spin-dot-item
+2021-10-28 06:52:26.030 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "icon_loading" li elementi invisible olana kadar bekle adimi basariyla bitti
+2021-10-28 06:52:27.516 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "row_datas" li elementler var mı? adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementler var mı?' using 'class com.virgosol.odeon.step.StepImpl.checkElements"}
+2021-10-28 06:52:27.529 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .dx-datagrid-rowsview .dx-column-lines
+2021-10-28 06:52:27.581 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .dx-datagrid-rowsview .dx-column-lines
+2021-10-28 06:52:27.598 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "row_datas" li elementler var mı? adimi basariyla bitti
+2021-10-28 06:52:29.007 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_pageHeaderTexts" li elementlerden "Reservation Date" değerine eşit olanın yanındaki "txtbx_startDateInput" elementinin "value" attributesini kaydet adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olanın yanındaki {} elementinin {} attributesini kaydet' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSaveAttributeTextNextTo"}
+2021-10-28 06:52:29.014 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:52:29.057 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:52:29.145 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.xpath: ../following-sibling::div//input[@placeholder='Start date']
+2021-10-28 06:52:29.160 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.xpath: ../following-sibling::div//input[@placeholder='Start date'] TagName=label
+2021-10-28 06:52:29.170 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.xpath: ../following-sibling::div//input[@placeholder='Start date']
+2021-10-28 06:52:29.185 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.xpath: ../following-sibling::div//input[@placeholder='Start date'] TagName=label
+2021-10-28 06:52:29.200 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_pageHeaderTexts" li elementlerden "Reservation Date" değerine eşit olanın yanındaki "txtbx_startDateInput" elementinin "value" attributesini kaydet adimi basariyla bitti
+2021-10-28 06:52:31.317 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_pageHeaderTexts" li elementlerden "Reservation Date" değerine eşit olanın yanındaki "txtbx_endDateInput" elementinin "value" attributesini kaydet adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olanın yanındaki {} elementinin {} attributesini kaydet' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSaveAttributeTextNextTo"}
+2021-10-28 06:52:31.324 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:52:31.348 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:52:31.453 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.xpath: ../following-sibling::div//input[@placeholder='End date']
+2021-10-28 06:52:31.468 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.xpath: ../following-sibling::div//input[@placeholder='End date'] TagName=label
+2021-10-28 06:52:31.473 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.xpath: ../following-sibling::div//input[@placeholder='End date']
+2021-10-28 06:52:31.486 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.xpath: ../following-sibling::div//input[@placeholder='End date'] TagName=label
+2021-10-28 06:52:31.524 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_pageHeaderTexts" li elementlerden "Reservation Date" değerine eşit olanın yanındaki "txtbx_endDateInput" elementinin "value" attributesini kaydet adimi basariyla bitti
+2021-10-28 06:52:33.032 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_tableRowNames" li elementlerden "Reservation Date" değerine eşit olanın yanındaki "txt_tableRowHeaderNameWithRows" li elementlerin textindeki tarihler doğru aralıkta mı? adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olanın yanındaki {} li elementlerin textindeki tarihler doğru aralıkta mı?' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSaveAttributeTextNextTo"}
+2021-10-28 06:52:33.042 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .dx-datagrid-action > div:nth-child(2),dx-command-edit
+2021-10-28 06:52:33.086 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .dx-datagrid-action > div:nth-child(2),dx-command-edit
+Reservation Number
+Reservation Date
+2021-10-28 06:52:33.378 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.xpath: ../../../../../../..//tr[contains(@class,'dx-data-row')]/td[2]
+2021-10-28 06:52:33.457 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.xpath: ../../../../../../..//tr[contains(@class,'dx-data-row')]/td[2] TagName=div
+ Element Text: 07.10.2021 16:20:54
+Tarih: 07.10.2021
+End Date is : 30.11.2021
+result: 1
+result2: -1
+2021-10-28 06:52:33.646 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_tableRowNames" li elementlerden "Reservation Date" değerine eşit olanın yanındaki "txt_tableRowHeaderNameWithRows" li elementlerin textindeki tarihler doğru aralıkta mı? adimi basariyla bitti
+2021-10-28 06:52:34.942 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_tableRowNames" li elementlerden "Hotel Name" değerine eşit olanın yanındaki "txt_tableRowHeaderNameWithRows" li elementlerden "Istanbul Royal Hotel" değerine eşit olan var mı? adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olanın yanındaki {} li elementlerden {} değerine eşit olan var mı?' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndFindElementWithTextNextTo"}
+2021-10-28 06:52:34.949 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .dx-datagrid-action > div:nth-child(2),dx-command-edit
+2021-10-28 06:52:34.985 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .dx-datagrid-action > div:nth-child(2),dx-command-edit
+Reservation Number
+Reservation Date
+Check-in Date
+Check-out Date
+Hotel Name
+2021-10-28 06:52:35.839 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.xpath: ../../../../../../..//tr[contains(@class,'dx-data-row')]
+2021-10-28 06:52:35.858 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.xpath: ../../../../../../..//tr[contains(@class,'dx-data-row')] TagName=div
+4K597Z5UI 07.10.2021 16:20:54 02.02.2022 09.02.2022 Istanbul Royal Hotel DBL.ST DOUBLE STANDARD BED AND BREAKFAST beyzatest, buraktest turguttest, turguttest Cancelled
+2021-10-28 06:52:36.079 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_tableRowNames" li elementlerden "Hotel Name" değerine eşit olanın yanındaki "txt_tableRowHeaderNameWithRows" li elementlerden "Istanbul Royal Hotel" değerine eşit olan var mı? adimi basariyla bitti
+2021-10-28 06:52:37.461 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "btn_pageButtons" li elementlerden "Sign Out" değerine eşit olana tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olana tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClick"}
+2021-10-28 06:52:37.475 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-btn,.ant-btn > span
+2021-10-28 06:52:37.499 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.cssSelector: .ant-btn,.ant-btn > span TagName=button
+2021-10-28 06:52:37.510 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-btn,.ant-btn > span
+2021-10-28 06:52:38.543 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "btn_pageButtons" li elementlerden "Sign Out" değerine eşit olana tıkla adimi basariyla bitti
+2021-10-28 06:52:40.008 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "modal_SignOutPopup" li element var mı? adimi basladi
+{"logLevel":"debug","message":"Executing '{} li element var mı?' using 'class com.virgosol.odeon.step.StepImpl.checkElement"}
+2021-10-28 06:52:40.021 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-modal-confirm-body
+2021-10-28 06:52:40.065 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.cssSelector: .ant-modal-confirm-body TagName=div
+2021-10-28 06:52:40.074 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "modal_SignOutPopup" li element var mı? adimi basariyla bitti
+2021-10-28 06:52:41.403 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "btn_pageButtons" li elementlerden "OK" değerine eşit olan var mı? adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olan var mı?' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckText"}
+2021-10-28 06:52:41.415 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-btn,.ant-btn > span
+2021-10-28 06:52:41.453 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-btn,.ant-btn > span
+2021-10-28 06:52:42.367 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "btn_pageButtons" li elementlerden "OK" değerine eşit olan var mı? adimi basariyla bitti
+2021-10-28 06:52:43.784 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "btn_pageButtons" li elementlerden "Cancel" değerine eşit olan var mı? adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olan var mı?' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckText"}
+2021-10-28 06:52:43.792 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-btn,.ant-btn > span
+2021-10-28 06:52:43.820 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-btn,.ant-btn > span
+2021-10-28 06:52:44.578 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "btn_pageButtons" li elementlerden "Cancel" değerine eşit olan var mı? adimi basariyla bitti
+2021-10-28 06:52:45.872 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "btn_pageButtons" li elementlerden "OK" değerine eşit olana tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olana tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClick"}
+2021-10-28 06:52:45.887 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-btn,.ant-btn > span
+2021-10-28 06:52:45.918 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.cssSelector: .ant-btn,.ant-btn > span TagName=button
+2021-10-28 06:52:45.949 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-btn,.ant-btn > span
+2021-10-28 06:52:49.292 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "btn_pageButtons" li elementlerden "OK" değerine eşit olana tıkla adimi basariyla bitti
+2021-10-28 06:52:50.609 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - Sayfanın url i "http://uatobbackoffice.odeontours.com/reservationdetail" mı? adimi basladi
+{"logLevel":"debug","message":"Executing 'Sayfanın url i {} mı?' using 'class com.virgosol.odeon.step.StepImpl.checkUrl"}
+2021-10-28 06:52:50.642 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - Sayfanın url i "http://uatobbackoffice.odeontours.com/reservationdetail" mı? adimi basariyla bitti
+Starting ChromeDriver 94.0.4606.41 (333e85df3c9b656b518b5f1add5ff246365b6c24-refs/branch-heads/4606@{#845}) on port 25004
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1635393176.458][WARNING]: This version of ChromeDriver has not been tested with Chrome version 95.
+Eki 28, 2021 6:52:56 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2021-10-28 06:52:56.878 [pool-2-thread-1] INFO  com.vrgsl.qa.initFeather(24) - Init Feather Injections
+2021-10-28 06:52:56.911 [pool-2-thread-1] INFO  com.vrgsl.qa.logWaitSelected(196) - Wait Configuration
+page load=true
+ajax load=true
+angular load=false
+2021-10-28 06:52:56.912 [pool-2-thread-1] INFO  com.vrgsl.qa.inject(8) - Inject Starting...
+[1635393206.916][SEVERE]: Timed out receiving message from renderer: 29.703
+[1635393206.917][SEVERE]: Timed out receiving message from renderer: 29.703
+Starting ChromeDriver 94.0.4606.41 (333e85df3c9b656b518b5f1add5ff246365b6c24-refs/branch-heads/4606@{#845}) on port 1937
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1635393209.232][WARNING]: This version of ChromeDriver has not been tested with Chrome version 95.
+Eki 28, 2021 6:53:29 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2021-10-28 06:53:29.459 [pool-2-thread-1] INFO  com.vrgsl.qa.initFeather(24) - Init Feather Injections
+2021-10-28 06:53:29.481 [pool-2-thread-1] INFO  com.vrgsl.qa.logWaitSelected(196) - Wait Configuration
+page load=true
+ajax load=true
+angular load=false
+2021-10-28 06:53:29.482 [pool-2-thread-1] INFO  com.vrgsl.qa.inject(8) - Inject Starting...
+2021-10-28 06:53:29.482 [pool-2-thread-1] ERROR com.vrgsl.qa.afterScenario(50) - 
+Starting ChromeDriver 94.0.4606.41 (333e85df3c9b656b518b5f1add5ff246365b6c24-refs/branch-heads/4606@{#845}) on port 36391
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1635393210.894][WARNING]: This version of ChromeDriver has not been tested with Chrome version 95.
+Eki 28, 2021 6:53:31 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2021-10-28 06:53:31.233 [pool-2-thread-1] INFO  com.vrgsl.qa.initFeather(24) - Init Feather Injections
+2021-10-28 06:53:31.261 [pool-2-thread-1] INFO  com.vrgsl.qa.logWaitSelected(196) - Wait Configuration
+page load=true
+ajax load=true
+angular load=false
+2021-10-28 06:53:31.262 [pool-2-thread-1] INFO  com.vrgsl.qa.inject(8) - Inject Starting...
+2021-10-28 06:53:57.450 [pool-2-thread-1] INFO  com.vrgsl.qa.afterNavigateTo(67) - Navigate To Page Url=http://uatobbackoffice.odeontours.com
+Starting ChromeDriver 94.0.4606.41 (333e85df3c9b656b518b5f1add5ff246365b6c24-refs/branch-heads/4606@{#845}) on port 7072
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1635393239.925][WARNING]: This version of ChromeDriver has not been tested with Chrome version 95.
+Eki 28, 2021 6:54:00 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2021-10-28 06:54:00.230 [pool-2-thread-1] INFO  com.vrgsl.qa.initFeather(24) - Init Feather Injections
+2021-10-28 06:54:00.243 [pool-2-thread-1] INFO  com.vrgsl.qa.logWaitSelected(196) - Wait Configuration
+page load=true
+ajax load=true
+angular load=false
+2021-10-28 06:54:00.243 [pool-2-thread-1] INFO  com.vrgsl.qa.inject(8) - Inject Starting...
+2021-10-28 06:54:26.080 [pool-2-thread-1] INFO  com.vrgsl.qa.afterNavigateTo(67) - Navigate To Page Url=http://uatobbackoffice.odeontours.com
+2021-10-28 06:54:28.052 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "http://uatobbackoffice.odeontours.com/reservationdetail" urle git adimi basladi
+{"logLevel":"debug","message":"Executing '{} urle git' using 'class com.virgosol.odeon.step.StepImpl.goToUrl"}
+2021-10-28 06:54:28.573 [pool-2-thread-1] INFO  com.vrgsl.qa.afterNavigateTo(67) - Navigate To Page Url=http://uatobbackoffice.odeontours.com/reservationdetail
+2021-10-28 06:54:28.609 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "http://uatobbackoffice.odeontours.com/reservationdetail" urle git adimi basariyla bitti
+2021-10-28 06:54:30.068 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - Sayfanın url i "http://uatobbackoffice.odeontours.com/reservationdetail" mı? adimi basladi
+{"logLevel":"debug","message":"Executing 'Sayfanın url i {} mı?' using 'class com.virgosol.odeon.step.StepImpl.checkUrl"}
+2021-10-28 06:54:30.093 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - Sayfanın url i "http://uatobbackoffice.odeontours.com/reservationdetail" mı? adimi basariyla bitti
+2021-10-28 06:54:31.400 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_loginHeader" li elementlerden "Username" değerine eşit olanın yanındaki "txtbx_loginInput" elementine "OdeonbedsAdmin" değerini yaz adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olanın yanındaki {} elementine {} değerini yaz' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSendKeyNextTo"}
+2021-10-28 06:54:31.405 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-required
+2021-10-28 06:54:31.455 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-required
+2021-10-28 06:54:31.490 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.xpath: ../..//input[@class='ant-input']
+2021-10-28 06:54:31.542 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.xpath: ../..//input[@class='ant-input'] TagName=label
+2021-10-28 06:54:31.915 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeChangeValueOf(136) - Set Value [Ljava.lang.CharSequence;@180c3883
+2021-10-28 06:54:33.255 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_loginHeader" li elementlerden "Username" değerine eşit olanın yanındaki "txtbx_loginInput" elementine "OdeonbedsAdmin" değerini yaz adimi basariyla bitti
+2021-10-28 06:54:34.497 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_loginHeader" li elementlerden "Password" değerine eşit olanın yanındaki "txtbx_loginInput" elementine "De53Acy2.." değerini yaz adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olanın yanındaki {} elementine {} değerini yaz' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSendKeyNextTo"}
+2021-10-28 06:54:34.504 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-required
+2021-10-28 06:54:34.525 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-required
+2021-10-28 06:54:34.575 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.xpath: ../..//input[@class='ant-input']
+2021-10-28 06:54:34.596 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.xpath: ../..//input[@class='ant-input'] TagName=label
+2021-10-28 06:54:34.972 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeChangeValueOf(136) - Set Value [Ljava.lang.CharSequence;@2373e2c4
+2021-10-28 06:54:35.574 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_loginHeader" li elementlerden "Password" değerine eşit olanın yanındaki "txtbx_loginInput" elementine "De53Acy2.." değerini yaz adimi basariyla bitti
+2021-10-28 06:54:36.950 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "btn_pageButtons" li elementlerden "Submit" değerine eşit olana tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olana tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClick"}
+2021-10-28 06:54:36.960 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-btn,.ant-btn > span
+2021-10-28 06:54:37.006 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.cssSelector: .ant-btn,.ant-btn > span TagName=button
+2021-10-28 06:54:37.011 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-btn,.ant-btn > span
+2021-10-28 06:54:37.447 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "btn_pageButtons" li elementlerden "Submit" değerine eşit olana tıkla adimi basariyla bitti
+2021-10-28 06:54:38.702 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "img_OdeonLogo" li element var mı? adimi basladi
+{"logLevel":"debug","message":"Executing '{} li element var mı?' using 'class com.virgosol.odeon.step.StepImpl.checkElement"}
+2021-10-28 06:54:38.705 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: img[alt='OdeonBeds']
+2021-10-28 06:54:40.840 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.cssSelector: img[alt='OdeonBeds'] TagName=img
+2021-10-28 06:54:40.850 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "img_OdeonLogo" li element var mı? adimi basariyla bitti
+2021-10-28 06:54:42.383 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "btn_pageButtons" li elementlerden "EN" değerine eşit olana tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olana tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClick"}
+2021-10-28 06:54:42.391 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-btn,.ant-btn > span
+2021-10-28 06:54:42.427 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.cssSelector: .ant-btn,.ant-btn > span TagName=button
+2021-10-28 06:54:42.432 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-btn,.ant-btn > span
+2021-10-28 06:54:43.438 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "btn_pageButtons" li elementlerden "EN" değerine eşit olana tıkla adimi basariyla bitti
+2021-10-28 06:54:45.168 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementine tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olanın yanındaki {} elementine tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClickNextTo"}
+2021-10-28 06:54:45.184 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:54:45.222 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:54:45.551 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.xpath: ../..//input[@class='ant-select-selection-search-input']
+2021-10-28 06:54:45.572 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.xpath: ../..//input[@class='ant-select-selection-search-input'] TagName=label
+2021-10-28 06:54:46.115 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementine tıkla adimi basariyla bitti
+2021-10-28 06:54:47.703 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_dropdownOptions" li elementlerin texti var mı? adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerin texti var mı?' using 'class com.virgosol.odeon.step.StepImpl.checkTextsElement"}
+2021-10-28 06:54:47.706 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-select-dropdown > div > div > div > a,.ant-select-item-option-content
+2021-10-28 06:54:47.736 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-select-dropdown > div > div > div > a,.ant-select-item-option-content
+2021-10-28 06:54:47.857 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_dropdownOptions" li elementlerin texti var mı? adimi basariyla bitti
+2021-10-28 06:54:49.220 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementine tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olanın yanındaki {} elementine tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClickNextTo"}
+2021-10-28 06:54:49.224 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:54:49.247 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:54:49.512 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.xpath: ../..//input[@class='ant-select-selection-search-input']
+2021-10-28 06:54:49.530 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.xpath: ../..//input[@class='ant-select-selection-search-input'] TagName=label
+2021-10-28 06:54:49.578 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementine tıkla adimi basariyla bitti
+2021-10-28 06:54:50.881 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "1" sn bekle adimi basladi
+{"logLevel":"debug","message":"Executing '{} sn bekle' using 'class com.virgosol.odeon.step.StepImpl.waitSeconds"}
+2021-10-28 06:54:51.894 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "1" sn bekle adimi basariyla bitti
+2021-10-28 06:54:54.024 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementine "Confirmed" değerini yaz adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olanın yanındaki {} elementine {} değerini yaz' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSendKeyNextTo"}
+2021-10-28 06:54:54.037 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:54:54.085 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:54:54.306 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.xpath: ../..//input[@class='ant-select-selection-search-input']
+2021-10-28 06:54:54.321 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.xpath: ../..//input[@class='ant-select-selection-search-input'] TagName=label
+2021-10-28 06:54:54.675 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeChangeValueOf(136) - Set Value [Ljava.lang.CharSequence;@3a207943
+2021-10-28 06:54:54.904 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementine "Confirmed" değerini yaz adimi basariyla bitti
+2021-10-28 06:54:56.310 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_dropdownOptions" li elementlerden "Confirmed" değerine eşit olana tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olana tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClick"}
+2021-10-28 06:54:56.314 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-select-dropdown > div > div > div > a,.ant-select-item-option-content
+2021-10-28 06:54:56.347 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.cssSelector: .ant-select-dropdown > div > div > div > a,.ant-select-item-option-content TagName=a
+2021-10-28 06:54:56.355 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-select-dropdown > div > div > div > a,.ant-select-item-option-content
+2021-10-28 06:54:56.534 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_dropdownOptions" li elementlerden "Confirmed" değerine eşit olana tıkla adimi basariyla bitti
+2021-10-28 06:54:57.823 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olana tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olana tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClick"}
+2021-10-28 06:54:57.839 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:54:57.865 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.cssSelector: .ant-form-item-label > label TagName=label
+2021-10-28 06:54:57.871 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:55:00.958 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olana tıkla adimi basariyla bitti
+2021-10-28 06:55:02.792 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementine tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olanın yanındaki {} elementine tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClickNextTo"}
+2021-10-28 06:55:02.793 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:55:02.809 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:55:03.022 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.xpath: ../..//input[@class='ant-select-selection-search-input']
+2021-10-28 06:55:03.037 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.xpath: ../..//input[@class='ant-select-selection-search-input'] TagName=label
+2021-10-28 06:55:03.103 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementine tıkla adimi basariyla bitti
+2021-10-28 06:55:04.578 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "1" sn bekle adimi basladi
+{"logLevel":"debug","message":"Executing '{} sn bekle' using 'class com.virgosol.odeon.step.StepImpl.waitSeconds"}
+2021-10-28 06:55:05.645 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "1" sn bekle adimi basariyla bitti
+2021-10-28 06:55:07.226 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementine "Cancelled" değerini yaz adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olanın yanındaki {} elementine {} değerini yaz' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSendKeyNextTo"}
+2021-10-28 06:55:07.237 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:55:07.269 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:55:07.495 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.xpath: ../..//input[@class='ant-select-selection-search-input']
+2021-10-28 06:55:07.508 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.xpath: ../..//input[@class='ant-select-selection-search-input'] TagName=label
+2021-10-28 06:55:07.871 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeChangeValueOf(136) - Set Value [Ljava.lang.CharSequence;@30086de2
+2021-10-28 06:55:08.114 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementine "Cancelled" değerini yaz adimi basariyla bitti
+2021-10-28 06:55:09.491 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_dropdownOptions" li elementlerden "Cancelled" değerine eşit olana tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olana tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClick"}
+2021-10-28 06:55:09.498 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-select-dropdown > div > div > div > a,.ant-select-item-option-content
+2021-10-28 06:55:09.520 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.cssSelector: .ant-select-dropdown > div > div > div > a,.ant-select-item-option-content TagName=a
+2021-10-28 06:55:09.525 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-select-dropdown > div > div > div > a,.ant-select-item-option-content
+2021-10-28 06:55:09.698 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_dropdownOptions" li elementlerden "Cancelled" değerine eşit olana tıkla adimi basariyla bitti
+2021-10-28 06:55:11.075 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olana tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olana tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClick"}
+2021-10-28 06:55:11.079 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:55:11.105 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.cssSelector: .ant-form-item-label > label TagName=label
+2021-10-28 06:55:11.110 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:55:14.080 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olana tıkla adimi basariyla bitti
+2021-10-28 06:55:15.517 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementine tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olanın yanındaki {} elementine tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClickNextTo"}
+2021-10-28 06:55:15.524 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:55:15.558 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:55:15.776 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.xpath: ../..//input[@class='ant-select-selection-search-input']
+2021-10-28 06:55:15.791 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.xpath: ../..//input[@class='ant-select-selection-search-input'] TagName=label
+2021-10-28 06:55:15.879 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementine tıkla adimi basariyla bitti
+2021-10-28 06:55:17.696 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "1" sn bekle adimi basladi
+{"logLevel":"debug","message":"Executing '{} sn bekle' using 'class com.virgosol.odeon.step.StepImpl.waitSeconds"}
+2021-10-28 06:55:18.721 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "1" sn bekle adimi basariyla bitti
+2021-10-28 06:55:20.312 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementine "Cancellation Incomplete" değerini yaz adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olanın yanındaki {} elementine {} değerini yaz' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSendKeyNextTo"}
+2021-10-28 06:55:20.318 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:55:20.351 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:55:20.572 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.xpath: ../..//input[@class='ant-select-selection-search-input']
+2021-10-28 06:55:20.585 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.xpath: ../..//input[@class='ant-select-selection-search-input'] TagName=label
+2021-10-28 06:55:20.937 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeChangeValueOf(136) - Set Value [Ljava.lang.CharSequence;@53551d1e
+2021-10-28 06:55:21.169 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementine "Cancellation Incomplete" değerini yaz adimi basariyla bitti
+2021-10-28 06:55:22.505 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_dropdownOptions" li elementlerden "Cancellation Incomplete" değerine eşit olana tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olana tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClick"}
+2021-10-28 06:55:22.510 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-select-dropdown > div > div > div > a,.ant-select-item-option-content
+2021-10-28 06:55:22.534 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.cssSelector: .ant-select-dropdown > div > div > div > a,.ant-select-item-option-content TagName=a
+2021-10-28 06:55:22.539 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-select-dropdown > div > div > div > a,.ant-select-item-option-content
+2021-10-28 06:55:22.714 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_dropdownOptions" li elementlerden "Cancellation Incomplete" değerine eşit olana tıkla adimi basariyla bitti
+2021-10-28 06:55:24.732 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olana tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olana tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClick"}
+2021-10-28 06:55:24.740 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:55:24.772 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.cssSelector: .ant-form-item-label > label TagName=label
+2021-10-28 06:55:24.778 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:55:27.675 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olana tıkla adimi basariyla bitti
+2021-10-28 06:55:29.170 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementine tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olanın yanındaki {} elementine tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClickNextTo"}
+2021-10-28 06:55:29.176 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:55:29.197 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:55:29.459 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.xpath: ../..//input[@class='ant-select-selection-search-input']
+2021-10-28 06:55:29.477 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.xpath: ../..//input[@class='ant-select-selection-search-input'] TagName=label
+2021-10-28 06:55:29.574 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementine tıkla adimi basariyla bitti
+2021-10-28 06:55:31.062 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "1" sn bekle adimi basladi
+{"logLevel":"debug","message":"Executing '{} sn bekle' using 'class com.virgosol.odeon.step.StepImpl.waitSeconds"}
+2021-10-28 06:55:32.076 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "1" sn bekle adimi basariyla bitti
+2021-10-28 06:55:33.474 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementine "Pending" değerini yaz adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olanın yanındaki {} elementine {} değerini yaz' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSendKeyNextTo"}
+2021-10-28 06:55:33.481 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:55:33.512 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:55:33.736 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.xpath: ../..//input[@class='ant-select-selection-search-input']
+2021-10-28 06:55:33.749 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.xpath: ../..//input[@class='ant-select-selection-search-input'] TagName=label
+2021-10-28 06:55:34.108 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeChangeValueOf(136) - Set Value [Ljava.lang.CharSequence;@4f5b6d24
+2021-10-28 06:55:34.222 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementine "Pending" değerini yaz adimi basariyla bitti
+2021-10-28 06:55:35.571 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_dropdownOptions" li elementlerden "Pending" değerine eşit olana tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olana tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClick"}
+2021-10-28 06:55:35.574 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-select-dropdown > div > div > div > a,.ant-select-item-option-content
+2021-10-28 06:55:35.596 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.cssSelector: .ant-select-dropdown > div > div > div > a,.ant-select-item-option-content TagName=a
+2021-10-28 06:55:35.600 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-select-dropdown > div > div > div > a,.ant-select-item-option-content
+2021-10-28 06:55:35.784 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_dropdownOptions" li elementlerden "Pending" değerine eşit olana tıkla adimi basariyla bitti
+2021-10-28 06:55:37.107 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olana tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olana tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClick"}
+2021-10-28 06:55:37.110 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:55:37.132 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.cssSelector: .ant-form-item-label > label TagName=label
+2021-10-28 06:55:37.138 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:55:40.119 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olana tıkla adimi basariyla bitti
+2021-10-28 06:55:41.655 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementine tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olanın yanındaki {} elementine tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClickNextTo"}
+2021-10-28 06:55:41.664 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:55:41.700 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:55:41.918 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.xpath: ../..//input[@class='ant-select-selection-search-input']
+2021-10-28 06:55:41.935 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.xpath: ../..//input[@class='ant-select-selection-search-input'] TagName=label
+2021-10-28 06:55:42.039 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementine tıkla adimi basariyla bitti
+2021-10-28 06:55:43.561 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "1" sn bekle adimi basladi
+{"logLevel":"debug","message":"Executing '{} sn bekle' using 'class com.virgosol.odeon.step.StepImpl.waitSeconds"}
+2021-10-28 06:55:44.585 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "1" sn bekle adimi basariyla bitti
+2021-10-28 06:55:45.934 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementine "Failed" değerini yaz adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olanın yanındaki {} elementine {} değerini yaz' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndSendKeyNextTo"}
+2021-10-28 06:55:45.946 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:55:45.964 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:55:46.205 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.xpath: ../..//input[@class='ant-select-selection-search-input']
+2021-10-28 06:55:46.218 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.xpath: ../..//input[@class='ant-select-selection-search-input'] TagName=label
+2021-10-28 06:55:46.580 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeChangeValueOf(136) - Set Value [Ljava.lang.CharSequence;@5f2a6805
+2021-10-28 06:55:46.723 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olanın yanındaki "txtbx_pageHeaderInput" elementine "Failed" değerini yaz adimi basariyla bitti
+2021-10-28 06:55:48.335 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_dropdownOptions" li elementlerden "Failed" değerine eşit olana tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olana tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClick"}
+2021-10-28 06:55:48.339 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-select-dropdown > div > div > div > a,.ant-select-item-option-content
+2021-10-28 06:55:48.363 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.cssSelector: .ant-select-dropdown > div > div > div > a,.ant-select-item-option-content TagName=a
+2021-10-28 06:55:48.369 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-select-dropdown > div > div > div > a,.ant-select-item-option-content
+2021-10-28 06:55:48.585 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_dropdownOptions" li elementlerden "Failed" değerine eşit olana tıkla adimi basariyla bitti
+2021-10-28 06:55:49.988 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olana tıkla adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olana tıkla' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndClick"}
+2021-10-28 06:55:49.998 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:55:50.026 [pool-2-thread-1] INFO  com.vrgsl.qa.afterFindBy(112) - Find Element Success ByName=By.cssSelector: .ant-form-item-label > label TagName=label
+2021-10-28 06:55:50.033 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:55:52.965 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olana tıkla adimi basariyla bitti
+2021-10-28 06:55:54.495 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olan var mı? adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olan var mı?' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckText"}
+2021-10-28 06:55:54.502 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:55:54.524 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-form-item-label > label
+2021-10-28 06:55:55.553 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(77) - "txt_pageHeaderTexts" li elementlerden "Reservation Status" değerine eşit olan var mı? adimi basariyla bitti
+2021-10-28 06:55:56.988 [pool-2-thread-1] INFO  com.vrgsl.qa.testStepBefore(59) - "txt_inputSelectOptions" li elementlerden "Confirmed" değerine eşit olan var mı? adimi basladi
+{"logLevel":"debug","message":"Executing '{} li elementlerden {} değerine eşit olan var mı?' using 'class com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckText"}
+2021-10-28 06:55:56.993 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-select-selection-item-content
+2021-10-28 06:56:07.319 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-select-selection-item-content
+2021-10-28 06:56:17.642 [pool-2-thread-1] INFO  com.vrgsl.qa.beforeFindBy(104) - Finding Element  By.cssSelector: .ant-select-selection-item-content
+2021-10-28 06:56:27.730 [pool-2-thread-1] INFO  com.vrgsl.qa.testStep(65) - "txt_inputSelectOptions" li elementlerden "Confirmed" değerine eşit olan var mı? adimi basarisiz olarak bitti
+2021-10-28 06:56:27.731 [pool-2-thread-1] ERROR com.vrgsl.qa.testStep(66) - org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+com.virgosol.qa.web.core.wait.WaitingActionImpl.waitUntil(WaitingActionImpl.java:144)
+com.virgosol.odeon.step.StepImpl.findElementWithTextsAndCheckText(StepImpl.java:990)
+
+2021-10-28 06:56:29.441 [pool-2-thread-1] ERROR com.vrgsl.qa.afterScenario(50) - 
+Starting ChromeDriver 94.0.4606.41 (333e85df3c9b656b518b5f1add5ff246365b6c24-refs/branch-heads/4606@{#845}) on port 24758
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1635393393.274][WARNING]: This version of ChromeDriver has not been tested with Chrome version 95.
+Eki 28, 2021 6:56:33 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2021-10-28 06:56:33.714 [pool-2-thread-1] INFO  com.vrgsl.qa.initFeather(24) - Init Feather Injections
+2021-10-28 06:56:33.739 [pool-2-thread-1] INFO  com.vrgsl.qa.logWaitSelected(196) - Wait Configuration
+page load=true
+ajax load=true
+angular load=false
+2021-10-28 06:56:33.740 [pool-2-thread-1] INFO  com.vrgsl.qa.inject(8) - Inject Starting...
+[1635393423.744][SEVERE]: Timed out receiving message from renderer: 29.658
+[1635393423.745][SEVERE]: Timed out receiving message from renderer: 29.658
+Starting ChromeDriver 94.0.4606.41 (333e85df3c9b656b518b5f1add5ff246365b6c24-refs/branch-heads/4606@{#845}) on port 22479
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1635393426.115][WARNING]: This version of ChromeDriver has not been tested with Chrome version 95.
+Eki 28, 2021 6:57:06 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2021-10-28 06:57:06.345 [pool-2-thread-1] INFO  com.vrgsl.qa.initFeather(24) - Init Feather Injections
+2021-10-28 06:57:06.366 [pool-2-thread-1] INFO  com.vrgsl.qa.logWaitSelected(196) - Wait Configuration
+page load=true
+ajax load=true
+angular load=false
+2021-10-28 06:57:06.366 [pool-2-thread-1] INFO  com.vrgsl.qa.inject(8) - Inject Starting...
+2021-10-28 06:57:06.367 [pool-2-thread-1] ERROR com.vrgsl.qa.afterScenario(50) - 
+Starting ChromeDriver 94.0.4606.41 (333e85df3c9b656b518b5f1add5ff246365b6c24-refs/branch-heads/4606@{#845}) on port 29502
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1635393427.720][WARNING]: This version of ChromeDriver has not been tested with Chrome version 95.
+Eki 28, 2021 6:57:08 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2021-10-28 06:57:08.027 [pool-2-thread-1] INFO  com.vrgsl.qa.initFeather(24) - Init Feather Injections
+2021-10-28 06:57:08.049 [pool-2-thread-1] INFO  com.vrgsl.qa.logWaitSelected(196) - Wait Configuration
+page load=true
+ajax load=true
+angular load=false
+2021-10-28 06:57:08.050 [pool-2-thread-1] INFO  com.vrgsl.qa.inject(8) - Inject Starting...
+[1635393458.054][SEVERE]: Timed out receiving message from renderer: 29.673
+[1635393458.055][SEVERE]: Timed out receiving message from renderer: 29.673
+Starting ChromeDriver 94.0.4606.41 (333e85df3c9b656b518b5f1add5ff246365b6c24-refs/branch-heads/4606@{#845}) on port 16410
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1635393461.567][WARNING]: This version of ChromeDriver has not been tested with Chrome version 95.
+Eki 28, 2021 6:57:41 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2021-10-28 06:57:41.889 [pool-2-thread-1] INFO  com.vrgsl.qa.initFeather(24) - Init Feather Injections
+2021-10-28 06:57:41.907 [pool-2-thread-1] INFO  com.vrgsl.qa.logWaitSelected(196) - Wait Configuration
+page load=true
+ajax load=true
+angular load=false
+2021-10-28 06:57:41.908 [pool-2-thread-1] INFO  com.vrgsl.qa.inject(8) - Inject Starting...
+2021-10-28 06:57:41.910 [pool-2-thread-1] ERROR com.vrgsl.qa.afterScenario(50) - 
+Starting ChromeDriver 94.0.4606.41 (333e85df3c9b656b518b5f1add5ff246365b6c24-refs/branch-heads/4606@{#845}) on port 17535
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1635393464.293][WARNING]: This version of ChromeDriver has not been tested with Chrome version 95.
+Eki 28, 2021 6:57:44 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2021-10-28 06:57:44.530 [pool-2-thread-1] INFO  com.vrgsl.qa.initFeather(24) - Init Feather Injections
+2021-10-28 06:57:44.541 [pool-2-thread-1] INFO  com.vrgsl.qa.logWaitSelected(196) - Wait Configuration
+page load=true
+ajax load=true
+angular load=false
+2021-10-28 06:57:44.541 [pool-2-thread-1] INFO  com.vrgsl.qa.inject(8) - Inject Starting...
+[1635393494.545][SEVERE]: Timed out receiving message from renderer: 29.720
+[1635393494.546][SEVERE]: Timed out receiving message from renderer: 29.720
+Starting ChromeDriver 94.0.4606.41 (333e85df3c9b656b518b5f1add5ff246365b6c24-refs/branch-heads/4606@{#845}) on port 31354
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1635393497.017][WARNING]: This version of ChromeDriver has not been tested with Chrome version 95.
+Eki 28, 2021 6:58:17 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2021-10-28 06:58:17.231 [pool-2-thread-1] INFO  com.vrgsl.qa.initFeather(24) - Init Feather Injections
+2021-10-28 06:58:17.250 [pool-2-thread-1] INFO  com.vrgsl.qa.logWaitSelected(196) - Wait Configuration
+page load=true
+ajax load=true
+angular load=false
+2021-10-28 06:58:17.251 [pool-2-thread-1] INFO  com.vrgsl.qa.inject(8) - Inject Starting...
+2021-10-28 06:58:17.251 [pool-2-thread-1] ERROR com.vrgsl.qa.afterScenario(50) - 
+Starting ChromeDriver 94.0.4606.41 (333e85df3c9b656b518b5f1add5ff246365b6c24-refs/branch-heads/4606@{#845}) on port 6930
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1635393499.566][WARNING]: This version of ChromeDriver has not been tested with Chrome version 95.
+Eki 28, 2021 6:58:19 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2021-10-28 06:58:19.778 [pool-2-thread-1] INFO  com.vrgsl.qa.initFeather(24) - Init Feather Injections
+2021-10-28 06:58:19.783 [pool-2-thread-1] INFO  com.vrgsl.qa.logWaitSelected(196) - Wait Configuration
+page load=true
+ajax load=true
+angular load=false
+2021-10-28 06:58:19.784 [pool-2-thread-1] INFO  com.vrgsl.qa.inject(8) - Inject Starting...
+2021-10-28 06:58:31.583 [cluster-ClusterId{value='617a1df4c88a9cc665ee6249', description='null'}-135.181.73.110:21325] INFO  org.mongodb.driver.connection.info(71) - Opened connection [connectionId{localValue:3, serverValue:126}] to 135.181.73.110:21325
+[1635393529.788][SEVERE]: Timed out receiving message from renderer: 29.315
+[1635393529.789][SEVERE]: Timed out receiving message from renderer: 29.315
+Starting ChromeDriver 94.0.4606.41 (333e85df3c9b656b518b5f1add5ff246365b6c24-refs/branch-heads/4606@{#845}) on port 40206
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1635393533.117][WARNING]: This version of ChromeDriver has not been tested with Chrome version 95.
+Eki 28, 2021 6:58:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2021-10-28 06:58:53.756 [pool-2-thread-1] INFO  com.vrgsl.qa.initFeather(24) - Init Feather Injections
+2021-10-28 06:58:53.770 [pool-2-thread-1] INFO  com.vrgsl.qa.logWaitSelected(196) - Wait Configuration
+page load=true
+ajax load=true
+angular load=false
+2021-10-28 06:58:53.770 [pool-2-thread-1] INFO  com.vrgsl.qa.inject(8) - Inject Starting...
+2021-10-28 06:58:53.770 [pool-2-thread-1] ERROR com.vrgsl.qa.afterScenario(50) - 
+Starting ChromeDriver 94.0.4606.41 (333e85df3c9b656b518b5f1add5ff246365b6c24-refs/branch-heads/4606@{#845}) on port 20323
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1635393536.264][WARNING]: This version of ChromeDriver has not been tested with Chrome version 95.
+Eki 28, 2021 6:58:56 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2021-10-28 06:58:56.489 [pool-2-thread-1] INFO  com.vrgsl.qa.initFeather(24) - Init Feather Injections
+2021-10-28 06:58:56.504 [pool-2-thread-1] INFO  com.vrgsl.qa.logWaitSelected(196) - Wait Configuration
+page load=true
+ajax load=true
+angular load=false
+2021-10-28 06:58:56.506 [pool-2-thread-1] INFO  com.vrgsl.qa.inject(8) - Inject Starting...

@@ -1,500 +1,82 @@
 [
   {
-    "key": "txt_loginHeader",
-    "value": ".ant-form-item-required",
+    "key": "img_logo",
+    "value": "ul[class*='nav-main']+a[class*='logo'] > img",
     "type": "css"
   },
   {
-    "key": "txtbx_loginInput",
-    "value": "../..//input[@class='ant-input']",
-    "type": "xpath"
-  },
-  {
-    "key": "btn_pageButtons",
-    "value": ".ant-btn,.ant-btn > span",
+    "key": "txt_solUstMenuItem",
+    "value": "ul[class*='nav-main'] .nav-link",
     "type": "css"
   },
   {
-    "key": "img_OdeonLogo",
-    "value": "img[alt='OdeonBeds']",
-    "type": "css"
-  },
-  {
-    "key": "txt_pageHeaderTexts",
-    "value": ".ant-form-item-label > label",
-    "type": "css"
-  },
-  {
-    "key": "txtbx_pageHeaderInput",
-    "value": "../..//input[@class='ant-select-selection-search-input']",
-    "type": "xpath"
-  },
-  {
-    "key": "txtbx_pageHeaderInputClassic",
-    "value": "../..//input[@class='ant-input']",
-    "type": "xpath"
-  },
-  {
-    "key": "txtbx_pageHeaderSelectInput",
-    "value": "../following-sibling::div//span[@class='ant-tag']",
-    "type": "xpath"
-  },
-  {
-    "key": "txtbx_startDateInput",
-    "value": "../following-sibling::div//input[@placeholder='Start date']",
-    "type": "xpath"
-  },
-  {
-    "key": "txtbx_endDateInput",
-    "value": "../following-sibling::div//input[@placeholder='End date']",
-    "type": "xpath"
-  },
-  {
-    "key": "date_startDay",
-    "value": ".ant-picker-panels > div:first-child .ant-picker-cell-in-view",
-    "type": "css"
-  },
-  {
-    "key": "date_today",
-    "value": "td[class*='ant-picker-cell-today']:not(td[class*='ant-picker-cell-range-start']) > div",
-    "type": "css"
-  },
-  {
-    "key": "date_startDayDisableDay",
-    "value": ".ant-picker-cell-disabled",
-    "type": "css"
-  },
-  {
-    "key": "date_endDay",
-    "value": ".ant-picker-panels > div:nth-child(2) .ant-picker-cell-in-view",
-    "type": "css"
-  },
-  {
-    "key": "icon_dateCloseByPageHeaderText",
-    "value": "../following-sibling::div//span[@class='ant-picker-clear']",
-    "type": "xpath"
-  },
-  {
-    "key": "icon_dataDropdownCloseByPageHeaderText",
-    "value": "../following-sibling::div//span[@class='ant-select-clear']",
-    "type": "xpath"
-  },
-  {
-    "key": "txt_dropdownOptions",
-    "value": ".ant-select-dropdown > div > div > div > a,.ant-select-item-option-content",
-    "type": "css"
-  },
-  {
-    "key": "txt_inputSelectOptions",
-    "value": ".ant-select-selection-item-content",
-    "type": "css"
-  },
-  {
-    "key": "row_datas",
-    "value": ".dx-datagrid-rowsview .dx-column-lines",
-    "type": "css"
-  },
-  {
-    "key": "icon_loading",
-    "value": ".ant-spin-dot.ant-spin-dot-spin",
-    "type": "css"
-  },
-  {
-    "key": "icon_refresh",
-    "value": ".dx-icon-refresh",
-    "type": "css"
-  },
-  {
-    "key": "icon_columnChooser",
-    "value": ".dx-icon-column-chooser",
-    "type": "css"
-  },
-  {
-    "key": "content_columnChooserPopup",
-    "value": ".dx-datagrid-column-chooser-plain",
-    "type": "css"
-  },
-  {
-    "key": "icon_columnChooserPopupClose",
-    "value": ".dx-icon-close",
-    "type": "css"
-  },
-  {
-    "key": "txt_columnChooserCheckboxTexts",
-    "value": ".dx-treeview-item-content > span",
-    "type": "css"
-  },
-  {
-    "key": "icon_columnChooserCheckboxByTexts",
-    "value": "../../..//span[@class='dx-checkbox-icon']",
-    "type": "xpath"
-  },
-  {
-    "key": "icon_columnChooserCheckboxParentByTexts",
-    "value": "../../..//div[contains(@class,'dx-show-invalid-badge')]",
-    "type": "xpath"
-  },
-  {
-    "key": "icon_columnChooserCheckboxByParent",
-    "value": "div/span",
-    "type": "xpath"
-  },
-  {
-    "key": "txt_selectpageSearchItem",
-    "value": ".ant-tag",
-    "type": "css"
-  },
-  {
-    "key": "txt_selectpageDropdownItem",
-    "value": ".ant-select-selection-item-content",
-    "type": "css"
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-  ,{
-    "key": "btn_searchRadioTexts",
-    "value": ".ant-radio-wrapper > span:nth-child(2)",
-    "type": "css"
-  },
-  {
-    "key": "btn_searchRadio",
-    "value": "../span/input",
-    "type": "xpath"
-  },
-  {
-    "key": "btn_searchRadioAttr",
-    "value": "../span[1]",
-    "type": "xpath"
-  },
-  {
-    "key": "txt_pageTitleTexts",
-    "value": ".ant-card-head-title",
-    "type": "css"
-  },
-  {
-    "key": "txtbx_pageTitleInput",
-    "value": "../../..//input[@class='ant-select-selection-search-input']",
-    "type": "xpath"
-  },
-  {
-    "key": "txt_hotelNameAndChains",
-    "value": ".ant-select-item-option-content > span",
-    "type": "css"
-  },
-  {
-    "key": "txtbx_nightlyMinInput",
-    "value": ".ant-table-cell:first-child .ant-input",
-    "type": "css"
-  },
-  {
-    "key": "txtbx_nightlyMaxInput",
-    "value": ".ant-table-cell:nth-child(2) .ant-input",
-    "type": "css"
-  },
-  {
-    "key": "date_checkinDateBetween",
-    "value": "div[name='checkInStart-0']",
-    "type": "css"
-  },
-  {
-    "key": "date_accommondationDateBetween",
-    "value": "div[name='accommodationStartDate-0']",
-    "type": "css"
-  },
-  {
-    "key": "txt_accommondationStartDate",
-    "value": "accommodationStartDate-0",
+    "key": "btn_hamburgerMenu",
+    "value": "btn1",
     "type": "id"
   },
   {
-    "key": "date_bookingDateWindow",
-    "value": "div[name='bookingStart-0']",
+    "key": "txt_hamburgerMenuItems",
+    "value": ".full-page-nav__list-item > a",
     "type": "css"
   },
   {
-    "key": "date_rollingDate",
-    "value": "div[name='rollingD-0']",
+    "key": "txt_hamburgerMenuTel",
+    "value": ".margin-b-30 > a",
     "type": "css"
   },
   {
-    "key": "txt_markupInput",
-    "value": "type",
-    "type": "id"
-  },
-  {
-    "key": "txt_usingMarkupTypeInput",
-    "value": "valueType",
-    "type": "id"
-  },
-  {
-    "key": "txt_usingMarkupApplyTypeInput",
-    "value": "applyType",
-    "type": "id"
-  },
-  {
-    "key": "txt_markupValueInput",
-    "value": "markupValue",
-    "type": "id"
-  },
-  {
-    "key": "txt_currenyCodeInput",
-    "value": "currencyCode",
-    "type": "id"
-  },
-  {
-    "key": "txt_nameInput",
-    "value": "name",
-    "type": "id"
-  },
-  {
-    "key": "btn_isActive",
-    "value": "isActive",
-    "type": "id"
-  },
-  {
-    "key": "txt_descriptionInput",
-    "value": "description",
-    "type": "id"
-  },
-  {
-    "key": "txt_expireStartDate",
-    "value": "expireDays",
-    "type": "id"
-  },
-  {
-    "key": "modal_SignOutPopup",
-    "value": ".ant-modal-confirm-body",
+    "key": "txt_altMenuItem",
+    "value": ".footer-content ul > li > a",
     "type": "css"
   },
   {
-    "key": "txt_tableRowNames",
-    "value": ".dx-datagrid-action > div:nth-child(2),dx-command-edit",
+    "key": "txt_sayfaHeader",
+    "value": ".page-header h1",
     "type": "css"
   },
   {
-    "key": "txt_tableRowHeaderNameWithRows",
-    "value": "../../../../../../..//tr[contains(@class,'dx-data-row')]",
+    "key": "txt_inputHeaders",
+    "value": ".input-wrapper > span",
+    "type": "css"
+  },
+  {
+    "key": "txtbx_input",
+    "value": "following-sibling::input",
     "type": "xpath"
   },
   {
-    "key": "txt_tableIdRowWithRowInformationByHeader",
-    "value": "../td[1]",
+    "key": "dropdown_input",
+    "value": "following-sibling::select",
     "type": "xpath"
   },
   {
-    "key": "txt_tableRowHeaderNameWithUsersName",
-    "value": "../../../../../../..//tr[contains(@class,'dx-data-row')]/td[5]",
+    "key": "dropdown_items",
+    "value": "following-sibling::select/option",
     "type": "xpath"
   },
   {
-    "key": "img_deleteIcon",
-    "value": ".anticon.anticon-delete",
-    "type": "css"
-  },
-  {
-    "key": "txt_searchTypeInput",
-    "value": "input[id='category:filter']",
-    "type": "css"
-  },
-  {
-    "key": "txt_secondUsingMarkupTypeInput",
-    "value": "input[id='valueType:filter']",
-    "type": "css"
-  },
-  {
-    "key": "txt_secondUsingMarkupTypeInputt",
-    "value": "input[id='applyType:filter']",
-    "type": "css"
-  },
-  {
-    "key": "txt_tableRowHeaderNameWithusingMarkupType",
-    "value": "../../../../../../..//tr[contains(@class,'dx-data-row')]/td[16]",
-    "type": "xpath"
-  },
-  {
-    "key": "txt_markupFilterCurrenyCodeInput",
-    "value": "currencyCode:filter",
+    "key": "chkbx_kullanimKabul",
+    "value": "readed",
     "type": "id"
   },
   {
-    "key": "txt_markupFilterAccommondationStartDate",
-    "value": "dates.accommodationStartDate-dates.accommodationEndDate:range",
-    "type": "id"
-  },
-  {
-    "key": "txt_markupFilterDatagridPager",
-    "value": ".dx-page",
+    "key": "btn_footer",
+    "value": ".footer-top a",
     "type": "css"
   },
   {
-    "key": "btn_markupFilterSecondPage",
-    "value": ".dx-page",
-    "type": "css"
-  },
-  {
-    "key": "btn_refresh",
-    "value": "div[aria-label='refresh']",
-    "type": "css"
-  },
-  {
-    "key": "btn_exportExcel",
-    "value": "div[aria-label='export-excel-button']",
-    "type": "css"
-  },
-  {
-    "key": "txt_columnChooserFilter",
-    "value": ".dx-treeview-item > div > span",
-    "type": "css"
-  },
-  {
-    "key": "txt_selectColumnChooserFilter",
-    "value": ".dx-checkbox-icon",
-    "type": "css"
-  },
-  {
-    "key": "txt_id",
-    "value": ".dx-row.dx-data-row.dx-column-lines:nth-child(1) >td",
-    "type": "css"
-  },
-  {
-    "key": "txt_dataGridMarkupIdRow",
-    "value": ".dx-scrollable-container .dx-column-lines > td:first-child",
-    "type": "css"
-  },
-  {
-    "key": "txt_dataGridDeleteIkonByMarkupId",
-    "value": "../../../../../../../following-sibling::div//span[contains(@class,'anticon-delete')]",
+    "key": "btn_footerDivParent",
+    "value": "..",
     "type": "xpath"
   },
   {
-    "key": "popUp_deletePopup",
-    "value": ".ant-popover-message-title",
+    "key": "btn_sorulanSorularHeaders",
+    "value": ".nav-tabs .nav-link",
     "type": "css"
   },
   {
-    "key": "img_editIcon",
-    "value": ".anticon-edit",
-    "type": "css"
-  },
-  {
-    "key": "txt_dataGridEditIkonByMarkupId",
-    "value": "../../../../../../../following-sibling::div//span[contains(@class,'anticon-edit')]",
-    "type": "xpath"
-  },
-  {
-    "key": "txt_usingMarkupTypeNoData",
-    "value": ".ant-empty-description",
-    "type": "css"
-  },
-  {
-    "key": "txt_rollingDays",
-    "value": "dates.rollingDays:filter",
-    "type": "id"
-  },
-  {
-    "key": "txt_sourceTypeMarkupIdRow",
-    "value": ".dx-scrollable-container .dx-column-lines > td[aria-colindex='16']",
-    "type": "css"
-  },
-  {
-    "key": "txt_disabledCheckInDateBetween",
-    "value": "div[name='checkInStart-0']",
-    "type": "css"
-  },
-  {
-    "key": "txt_disabledBookingDateWindow",
-    "value": "div[name='bookingStart-0']",
-    "type": "css"
-  },
-  {
-    "key": "txt_disabledRollingDate",
-    "value": "div[name='rollingD-0']",
-    "type": "css"
-  },
-  {
-    "key": "txt_disabledRollingDays",
-    "value": "div[field='rollingDays-0'] > div > div > div > div> div",
-    "type": "css"
-  },
-  {
-    "key": "txt_disabledAccommodationDateBetween",
-    "value": "div[name='accommodationStartDate-0']",
-    "type": "css"
-  },
-  {
-    "key": "txt_newCheckInDateBetween",
-    "value": "div[name='checkInStart-1']",
-    "type": "css"
-  },
-  {
-    "key": "txt_newBookingDateWindow",
-    "value": "div[name='bookingStart-1']",
-    "type": "css"
-  },
-  {
-    "key": "txt_newRollingDate",
-    "value": "div[name='rollingD-1']",
-    "type": "css"
-  },
-  {
-    "key": "txt_newRollingDays",
-    "value": "div[field='rollingDays-1'] > div > div > div > div> div",
-    "type": "css"
-  },
-  {
-    "key": "txt_newAccommodationDateBetween",
-    "value": "div[name='accommodationStartDate-1']",
-    "type": "css"
-  },
-  {
-    "key": "txt_clearFilter",
-    "value": ".ant-select-selection-item",
-    "type": "css"
-  },
-  {
-    "key": "txt_selectedColumnChooser",
-    "value": "dx-item-content dx-treeview-item-content > span",
-    "type": "css"
-  },
-  {
-    "key": "btn_selectColumnChooser",
-    "value": ".dx-checkbox-icon",
-    "type": "css"
-  },
-  {
-    "key": "txt_deleteDisabled",
-    "value": ".ant-select,.ant-select-single,.ant-select-allow-clear,.ant-select-show-arrow,.ant-select-disabled,.ant-select-show-search",
-    "type": "css"
-  },
-  {
-    "key": "txt_dragAndDropColumnClientNationality",
-    "value": "td[aria-label='Column Client Nationality']",
-    "type": "css"
-  },
-  {
-    "key": "alert_requiredArea",
-    "value": ".ant-form-item-explain-error",
-    "type": "css"
-  },
-  {
-    "key": "txt_deleteInformation",
-    "value": ".ant-popover-message-title",
-    "type": "css"
-  },
-  {
-    "key": "txt_pager",
-    "value": ".dx-page",
+    "key": "btn_sorularBasliklar",
+    "value": "#faqTabs > div[class*='active show'] button,#faqTabs > div[class*='show active'] button",
     "type": "css"
   }
 ]

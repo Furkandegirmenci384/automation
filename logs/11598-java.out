@@ -1,0 +1,21 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+16:43:36,333 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+16:43:36,336 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.groovy] at [file:/Users/dilekaysegun/Desktop/Odeon/target/test-classes/logback.groovy]
+16:43:36,343 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.groovy] occurs multiple times on the classpath.
+16:43:36,343 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.groovy] occurs at [jar:file:/Users/dilekaysegun/.m2/repository/com/vrgsl/qa/qa-common/1.0.0/qa-common-1.0.0.jar!/logback.groovy]
+16:43:36,343 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.groovy] occurs at [file:/Users/dilekaysegun/Desktop/Odeon/target/test-classes/logback.groovy]
+16:43:42,503 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@47be5d69 - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+16:43:42,505 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@47be5d69 - Naming appender as [STDOUT]
+16:43:42,690 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@47be5d69 - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+16:43:42,691 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@47be5d69 - Naming appender as [FILE]
+16:43:42,695 |-INFO in ch.qos.logback.core.FileAppender[FILE] - File property is set to [target/slnarch.log]
+16:43:42,699 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@47be5d69 - Setting level of logger [com.virgosol.bilyonerMobileWeb] to DEBUG
+16:43:42,706 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@47be5d69 - Setting level of logger [org.reflections.Reflections] to OFF
+16:43:42,709 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@47be5d69 - Setting level of logger [ROOT] to INFO
+16:43:42,711 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@47be5d69 - Attaching appender named [STDOUT] to Logger[ROOT]
+16:43:42,713 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@47be5d69 - Attaching appender named [FILE] to Logger[ROOT]
+
+{"logLevel":"debug","message":"gauge-java took 8300milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 8300"}
+{"logLevel":"debug","message":"starting gRPC server..."}

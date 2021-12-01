@@ -10,22 +10,35 @@ import com.virgosol.qa.web.core.element.Element;
 import com.virgosol.qa.web.core.model.Configuration;
 import com.virgosol.qa.web.core.wait.WaitingAction;
 import jxl.read.biff.BiffException;
+import org.apache.commons.lang.time.DateUtils;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.junit.Assert;
 import org.openqa.selenium.*;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.inject.Inject;
+import javax.swing.*;
 import java.awt.*;
+import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.io.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Set;
@@ -49,17 +62,215 @@ public class StepImpl {
 
 
     @Step("<url> urle git")
-    public void goToUrl(String url){
+    public void goToUrl(String url) {
         driver.navigate().to(url);
+    }
+
+    @Step("Mesajda tamam butonuna basılır.")
+    public void popUpAccept() throws IOException {
+        Alert simpleAlert = driver.switchTo().alert();
+        simpleAlert.accept();
+    }
+
+    @Step("<key> li elementin uzunluğunun 10 olduğu doğrulanır.")
+        public void numberOfDataInDatagrid(String key) throws IOException {
+        By byElement = ElementHelper.getElementInfoToBy(key);
+        waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement));
+        List<WebElement> elements = driver.findElements(byElement);
+        int elementSize = elements.size();
+        if(elementSize <= 10)
+            System.out.println("Elementin uzunluğu...:" + elementSize + "dur." );
+        else
+            Assert.fail("Element uzunluğu 10'dan büyüktür.");
+    }
+
+    @Step("<key> textbox alanına captcha değeri yazılır.")
+    public void handlingCAPTCHA( String key) throws IOException {
+        By byElement = ElementHelper.getElementInfoToBy(key);
+        waitingAction.waitUntil(ExpectedConditions.presenceOfElementLocated(byElement));
+        WebElement fileInput = driver.findElement(byElement);
+        String captchaVal = JOptionPane.showInputDialog("Please enter the captcha value:");
+        fileInput.sendKeys(captchaVal);
+    }
+
+    @Step("<key> li element gözüküyor mu?")
+    public void elementIsDisplayed(String key) {
+        By byElement2 = ElementHelper.getElementInfoToBy(key);
+        waitingAction.waitUntil(ExpectedConditions.presenceOfElementLocated(byElement2));
+        WebElement element = driver.findElement(byElement2);
+        Boolean result = element.isDisplayed();
+        System.out.println(result);
+        if(result!=true){
+            Assert.fail("Element sayfada görünür değil.");
+        }
+    }
+
+    @Step("Ekran çözünürlüğünü <screenResolution> yap.")
+    public void changeScreenResolution(String screenResolution) throws IOException {
+
+        if (screenResolution.contains("1920x1080")) {
+            driver.manage().window().setSize(new Dimension(1920, 1080));
+        }
+        else if (screenResolution.contains("1280x768")) {
+            driver.manage().window().setSize(new Dimension(1280, 768));
+        }
+        else if (screenResolution.contains("1680x1050")) {
+            driver.manage().window().setSize(new Dimension(1680, 1050));
+        }
+        else if (screenResolution.contains("1360x768")) {
+             driver.manage().window().setSize(new Dimension(1360, 768));
+        }
+        else if (screenResolution.contains("1024x768")) {
+             driver.manage().window().setSize(new Dimension(1024, 768));
+        }
+        else if (screenResolution.contains("800x600")) {
+             driver.manage().window().setSize(new Dimension(800, 600));
+        }
+    }
+
+    @Step("<key1> tarihi ile <key2> tarihini karşılaştır.")
+    public void dateCompare(String key1, String key2) throws IOException {
+
+        By byElement = ElementHelper.getElementInfoToBy(key1);
+        waitingAction.waitUntil(ExpectedConditions.presenceOfElementLocated(byElement));
+        WebElement element = driver.findElement(byElement);
+        String date1 = element.getAttribute("value");
+        System.out.println(date1);
+
+        By byElement2 = ElementHelper.getElementInfoToBy(key2);
+        waitingAction.waitUntil(ExpectedConditions.presenceOfElementLocated(byElement2));
+        WebElement element2 = driver.findElement(byElement2);
+        String date2 = element2.getAttribute("value");
+        System.out.println(date2);
+
+        if (date1.compareTo(date2) < 0) {
+            System.out.println("Cancellation Date, Cancellation Start Date' den önce gelmektedir.");
+        } else if (date1.compareTo(date2) == 0 || date1.compareTo(date2) > 0) {
+            Assert.fail("Cancellation Date, Cancellation Start Date' den önce gelmemektedir.");
+        }
+    }
+
+    @Step("<browserType> tarayıcını aç")
+    public void openBrowser(String browserName) throws IOException {
+
+        if (browserName.contains("Firefox")) {
+            System.setProperty("webdriver.gecko.driver", "drivers/geckodriver");
+            WebDriver driver = new FirefoxDriver();
+            driver.manage().window().maximize();
+            this.driver = driver;
+        }else if (browserName.contains("Microsoft Edge")) {
+            System.setProperty("webdriver.edge.driver", "drivers/msedgedriver");
+            EdgeDriver driver = new EdgeDriver();
+            driver.manage().window().maximize();
+            this.driver = driver;
+        }
+    }
+
+    @Step("Url <screenResolution> tarayıcıda açılır.")
+    public void openInBrowser(String browserName) throws IOException {
+
+        if (browserName.contains("Firefox")) {
+            System.setProperty("webdriver.gecko.driver", "drivers/geckodriver");
+            WebDriver driver = new FirefoxDriver();
+            driver.manage().window().maximize();
+            String url = "http://uatobbackoffice.odeontours.com/reservationdetail/H3IQNUNDB";
+            driver.get(url);
+            driver.manage().timeouts().implicitlyWait(2, TimeUnit.MINUTES);
+            WebElement usernameSpace = driver.findElement(By.id("basic_username"));
+            usernameSpace.click();
+            usernameSpace.sendKeys("OdeonbedsAdmin");
+            driver.manage().timeouts().implicitlyWait(2, TimeUnit.MINUTES);
+            WebElement passwordSpace = driver.findElement(By.id("basic_password"));
+            passwordSpace.click();
+            passwordSpace.sendKeys("De53Acy2..");
+            driver.manage().timeouts().implicitlyWait(2, TimeUnit.MINUTES);
+            WebElement submitButton = driver.findElement(By.cssSelector("[class=\"ant-btn ant-btn-primary\"]"));
+            submitButton.click();
+            driver.manage().timeouts().implicitlyWait(5, TimeUnit.MINUTES);
+            Assert.assertEquals("http://uatobbackoffice.odeontours.com/reservationdetail/H3IQNUNDB",driver.getCurrentUrl());
+        }
+
+        else if (browserName.contains("Microsoft Edge")) {
+            System.setProperty("webdriver.edge.driver", "drivers/msedgedriver");
+            EdgeDriver driver = new EdgeDriver();
+            driver.manage().window().maximize();
+            String url = "http://uatobbackoffice.odeontours.com/reservationdetail/H3IQNUNDB";
+            driver.get(url);
+            driver.manage().timeouts().implicitlyWait(2, TimeUnit.MINUTES);
+            WebElement usernameSpace = driver.findElement(By.id("basic_username"));
+            usernameSpace.click();
+            usernameSpace.sendKeys("OdeonbedsAdmin");
+            driver.manage().timeouts().implicitlyWait(2, TimeUnit.MINUTES);
+            WebElement passwordSpace = driver.findElement(By.id("basic_password"));
+            passwordSpace.click();
+            passwordSpace.sendKeys("De53Acy2..");
+            driver.manage().timeouts().implicitlyWait(2, TimeUnit.MINUTES);
+            WebElement submitButton = driver.findElement(By.cssSelector("[class=\"ant-btn ant-btn-primary\"]"));
+            submitButton.click();
+            driver.manage().timeouts().implicitlyWait(5, TimeUnit.MINUTES);
+            Assert.assertEquals("http://uatobbackoffice.odeontours.com/reservationdetail/H3IQNUNDB",driver.getCurrentUrl());
+        }
     }
 
     @Step({"Click element with key <key>",
             "<key> li elemente tikla"})
-    public void clickElement(String key) {
+    public void clickElement(String key) throws InterruptedException {
         By byElement = ElementHelper.getElementInfoToBy(key);
         waitingAction.waitUntil(ExpectedConditions.presenceOfElementLocated(byElement));
+        swipeToElement(driver.findElement(byElement));
+        //waitingAction.waitUntil(ExpectedConditions.elementToBeClickable(byElement));
         driver.findElement(byElement).click();
     }
+
+    @Step({"<key> li elemente tikla ve <file> dosya secimini yap"})
+    public void findFile(String key, String filePath) {
+        By byElement = ElementHelper.getElementInfoToBy(key);
+        waitingAction.waitUntil(ExpectedConditions.presenceOfElementLocated(byElement));
+        WebElement fileInput = driver.findElement(byElement);
+        //JavascriptExecutor executor = (JavascriptExecutor)driver;
+        //executor.executeScript("arguments[0].click();", fileInput);
+        fileInput.click();
+        File file = new File(filePath);
+        StringSelection stringSelection = new StringSelection(file.getAbsolutePath());
+        //Copy to clipboard
+        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
+
+        Robot robot = null;
+        try {
+            robot = new Robot();
+        } catch (AWTException e) {
+            e.printStackTrace();
+        }
+
+        // Cmd + Tab is needed since it launches a Java app and the browser looses focus
+        robot.keyPress(KeyEvent.VK_META);
+        robot.keyPress(KeyEvent.VK_TAB);
+        robot.keyRelease(KeyEvent.VK_META);
+        robot.keyRelease(KeyEvent.VK_TAB);
+        robot.delay(500);
+
+        //Open Goto window
+        robot.keyPress(KeyEvent.VK_META);
+        robot.keyPress(KeyEvent.VK_SHIFT);
+        robot.keyPress(KeyEvent.VK_G);
+        robot.keyRelease(KeyEvent.VK_META);
+        robot.keyRelease(KeyEvent.VK_SHIFT);
+        robot.keyRelease(KeyEvent.VK_G);
+
+        //Paste the clipboard value
+        robot.keyPress(KeyEvent.VK_META);
+        robot.keyPress(KeyEvent.VK_V);
+        robot.keyRelease(KeyEvent.VK_META);
+        robot.keyRelease(KeyEvent.VK_V);
+
+        //Press Enter key to close the Goto window and Upload window
+        robot.keyPress(KeyEvent.VK_ENTER);
+        robot.keyRelease(KeyEvent.VK_ENTER);
+        robot.delay(500);
+        robot.keyPress(KeyEvent.VK_ENTER);
+        robot.keyRelease(KeyEvent.VK_ENTER);
+    }
+
 
     @Step("<key> sn bekle")
     public void waitSeconds(String key) throws InterruptedException {
@@ -76,10 +287,10 @@ public class StepImpl {
 
     @Step("<key> li elementi görünür olana kadar bekle")
     public void waitVisible(String key) {
-        try{
+        try {
             By byElement = ElementHelper.getElementInfoToBy(key);
             waitingAction.waitUntil(ExpectedConditions.visibilityOfAllElementsLocatedBy(byElement));
-        }catch (TimeoutException t){
+        } catch (TimeoutException t) {
             return;
         }
     }
@@ -101,20 +312,20 @@ public class StepImpl {
     @Step({"Wait <key> element",
             "<key> li elementi bekle"})
     public void waitElement(String key) {
-        try{
+        try {
             By byElement = ElementHelper.getElementInfoToBy(key);
             waitingAction.waitUntil(ExpectedConditions.presenceOfElementLocated(byElement));
-        }catch (TimeoutException t){
+        } catch (TimeoutException t) {
             return;
         }
     }
 
     @Step("<key> li elementi invisible olana kadar bekle")
     public void waitInVisible(String key) {
-        try{
+        try {
             By byElement = ElementHelper.getElementInfoToBy(key);
             waitingAction.waitUntil(ExpectedConditions.invisibilityOfElementLocated(byElement));
-        }catch (TimeoutException t){
+        } catch (TimeoutException t) {
             return;
         }
     }
@@ -134,7 +345,7 @@ public class StepImpl {
             By byElement = ElementHelper.getElementInfoToBy(key);
             waitingAction.waitUntil(ExpectedConditions.presenceOfElementLocated(byElement));
             WebElement element = driver.findElement(byElement);
-            waitingAction.waitUntil(ExpectedConditions.attributeToBe(element,attr,attrtext));
+            waitingAction.waitUntil(ExpectedConditions.attributeToBe(element, attr, attrtext));
         } catch (Exception e) {
             Assert.assertTrue(false);
         }
@@ -157,6 +368,28 @@ public class StepImpl {
         StoreHelper.saveValue(key2, element.getText());
     }
 
+    @Step({"<key> li elementin tarih bilgisi kontrol edilir."})
+    public void dateControl(String key1) {
+
+      By byElement = ElementHelper.getElementInfoToBy(key1);
+      waitingAction.waitUntil(ExpectedConditions.presenceOfElementLocated(byElement));
+      WebElement element = driver.findElement(byElement);
+      String updatedDate = element.getText();
+      System.out.println(updatedDate);
+
+      LocalDateTime dateTime = LocalDateTime.now();
+      DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH");
+      String date = dateTime.format(formatter);
+      System.out.println(dateTime.format(formatter));
+
+      if(updatedDate.contains(date)){
+              System.out.println("Tarihler eşit.");
+      }
+      else
+          Assert.fail("Tarihler eşit değil.");
+    }
+
+
     @Step({"<key> li elementin <attr> attributesini <key2> olarak kaydet"})
     public void saveAttribute(String key, String attr, String key2) {
         By byElement = ElementHelper.getElementInfoToBy(key);
@@ -168,16 +401,36 @@ public class StepImpl {
 
     @Step({"<key> li elementlerden <text> değerine eşit olana tıkla"})
     public void findElementWithTextsAndClick(String key, String text) {
-        By byElement = ElementHelper.getElementInfoToBy(key);
-        waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement));
-        List<WebElement> elements = driver.findElements(byElement);
-        for (WebElement element : elements) {
-            swipeToElement(element);
-            if ((text.startsWith("Deger_") && element.getText().contains(StoreHelper.getValue(text))) || element.getText().equals(text)) {
-                if (!element.isDisplayed())
-                    waitingAction.waitUntil(ExpectedConditions.visibilityOfElementLocated(byElement));
-                element.click();
+        String elementText = null;
+        boolean flag=true;
+        int count=1;
+        while(flag){
+            try {
+                By byElement = ElementHelper.getElementInfoToBy(key);
+                waitingAction.waitUntil(ExpectedConditions.presenceOfElementLocated(byElement));
+                List<WebElement> elements = driver.findElements(byElement);
+                for (WebElement element : elements) {
+                    swipeToElement(element);
+                    if ((text.startsWith("Deger_") && element.getText().contains(StoreHelper.getValue(text))) || element.getText().equals(text)) {
+                        if (!element.isDisplayed())
+                            waitingAction.waitUntil(ExpectedConditions.visibilityOfElementLocated(byElement));
+                        elementText = element.getText();
+                        //Thread.sleep(1);
+                        element.click();
+                        break;
+                    }
+                }
+                flag=false;
                 break;
+            }
+
+            catch(StaleElementReferenceException e) {
+                count=count+1;
+                scrollDown();
+                if(text.equals(elementText))
+                {
+                    break;
+                }
             }
         }
     }
@@ -188,7 +441,7 @@ public class StepImpl {
         waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement));
         List<WebElement> elements = driver.findElements(byElement);
         int k = 1;
-        for (int i = 0; i < pin.length(); i++){
+        for (int i = 0; i < pin.length(); i++) {
             String pinNo = pin.substring(i, k++);
             for (WebElement element : elements) {
                 if ((pinNo.startsWith("Deger_") && element.getText().contains(StoreHelper.getValue(pinNo))) || element.getText().contains(pinNo)) {
@@ -377,6 +630,7 @@ public class StepImpl {
         int count = 0;
         int pager = 1;
         int pageSize = 0;
+        boolean check = false;
         do {
             By byElement = ElementHelper.getElementInfoToBy(key);
             waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement));
@@ -385,14 +639,15 @@ public class StepImpl {
             for (int i = 0; i < size; i++) {
                 swipeToElement(elements.get(i));
                 if ((text.startsWith("Deger_") && elements.get(i).getText().contains(StoreHelper.getValue(text))) || elements.get(i).getText().equals(text)) {
+                    check = true;
                     List<WebElement> elementsNextTo = elements.get(i).findElements(ElementHelper.getElementInfoToBy(key2));
                     //waitingAction.waitUntil(ExpectedConditions.elementToBeClickable((elementNextTo)));
                     elementsNextTo.get(i).click();
                     return;
-                }else if(i == size-1){
+                } else if (i == size - 1 && check == false) {
                     if (pager == elements.size())
                         break;
-                    if (pager < elements.size()){
+                    if (pager < elements.size()) {
                         By byElement2 = ElementHelper.getElementInfoToBy("txt_pager");
                         waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement2));
                         List<WebElement> elementsPage = driver.findElements(byElement2);
@@ -402,7 +657,7 @@ public class StepImpl {
                     pager++;
                 }
             }
-        }while (count < pageSize);
+        } while (count < pageSize);
     }
 
     @Step({"<key> li elementlerden <text> değerine eşit olanın yanındaki <key2> elementlerinden <text2> değerine eşit olana tıkla"})
@@ -411,12 +666,16 @@ public class StepImpl {
         waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement));
         List<WebElement> elements = driver.findElements(byElement);
         for (WebElement element : elements) {
-            if ((text.startsWith("Deger_") && element.getText().contains(StoreHelper.getValue(text))) || element.getText().contains(text)) {
+            swipeToElement(element);
+            if ((text.startsWith("Deger_") && element.getText().contains(StoreHelper.getValue(text))) || element.getText().equals(text)) {
                 List<WebElement> elementsNextTo = element.findElements(ElementHelper.getElementInfoToBy(key2));
                 for (WebElement lastElement : elementsNextTo) {
-                    if ((text.startsWith("Deger_") && element.getText().contains(StoreHelper.getValue(text2))) || lastElement.getText().contains(text2)) {
+                    if ((text.startsWith("Deger_") && element.getText().contains(StoreHelper.getValue(text2))) || lastElement.getText().equals(text2)) {
                         waitingAction.waitUntil(ExpectedConditions.elementToBeClickable((lastElement)));
+                        JavascriptExecutor js = (JavascriptExecutor)driver;
+                        js.executeScript("arguments[0].setAttribute('style', 'border: 2px solid red;');", lastElement);
                         lastElement.click();
+                        //js.executeScript("arguments[0].click();", lastElement);
                         break;
                     }
                 }
@@ -426,7 +685,7 @@ public class StepImpl {
     }
 
     @Step({"<key> li elementlerden <text> değerine eşit olanın yanındaki <key2> elementine <text2> değerini yaz"})
-    public void findElementWithTextsAndSendKeyNextTo(String key, String text, String key2, String text2) {
+    public void findElementWithTextsAndSendKeyNextTo(String key, String text, String key2, String text2) throws InterruptedException {
         By byElement = ElementHelper.getElementInfoToBy(key);
         waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement));
         List<WebElement> elements = driver.findElements(byElement);
@@ -436,11 +695,20 @@ public class StepImpl {
                 //System.out.println(element.getText() + "gİrdİ");
                 WebElement elementNextTo = element.findElement(ElementHelper.getElementInfoToBy(key2));
                 //waitingAction.waitUntil(ExpectedConditions.visibilityOf(elementNextTo));
-                elementNextTo.clear();
-                if (text2.startsWith("Deger_")) {
+                //elementNextTo.clear();
+                if (text2.startsWith("Deger_") && elementNextTo.getText().contains(StoreHelper.getValue(text2))) {
                     elementNextTo.sendKeys(StoreHelper.getValue(text2));
                 } else {
-                    elementNextTo.sendKeys(text2);
+                    //elementNextTo.click();
+                    //Actions action = new Actions(driver);
+                    Thread.sleep(1);
+                    //action.click(elementNextTo).perform();
+                    ////action.moveToElement(elementNextTo,0,0).sendKeys(text2);
+                    //action.moveByOffset(0,0).sendKeys(text2).perform();
+                    JavascriptExecutor js = ((JavascriptExecutor)driver);
+                    js.executeScript("arguments[0].setAttribute('style', 'border: 2px solid red;');", elementNextTo);
+                    js.executeScript("arguments[0].value='"+text2+"';", elementNextTo);
+                    //elementNextTo.sendKeys(text2);
                 }
                 break;
             }
@@ -620,34 +888,47 @@ public class StepImpl {
         }
     }
 
+    @Step({"<key> li element görünür mü?"})
+    public void checkElementVisible(String key) {
+        try {
+            By byElement = ElementHelper.getElementInfoToBy(key);
+            waitingAction.waitUntil(ExpectedConditions.visibilityOfAllElementsLocatedBy(byElement));
+            WebElement element = driver.findElement(byElement);
+            if (!element.isDisplayed())
+                Assert.fail("Element görünür değil.");
+        } catch (Exception e) {
+            Assert.assertTrue("Element görünür değil.", false);
+        }
+    }
+
     @Step({"<key> li element yok mu?"})
     public void checkNotExistElement(String key) {
-        try{
+        try {
             By byElement = ElementHelper.getElementInfoToBy(key);
             waitingAction.waitUntil(ExpectedConditions.presenceOfElementLocated(byElement));
             WebElement element = driver.findElement(byElement);
             if (element != null)
                 Assert.assertFalse("Element bulundu.", true);
             else return;
-        }catch (Exception e){
+        } catch (Exception e) {
             Assert.assertTrue(true);
         }
     }
 
     @Step({"<key> li elementlerden <text> değerine eşit olan yok mu?"})
     public void checkTextNotExistsElements(String key, String text) {
-        try{
+        try {
             By byElement = ElementHelper.getElementInfoToBy(key);
             waitingAction.waitUntil(ExpectedConditions.presenceOfElementLocated(byElement));
             List<WebElement> elements = driver.findElements(byElement);
             int size = elements.size();
-            for (int i = 0; i < size; ){
+            for (int i = 0; i < size; ) {
                 if (elements.get(i).getText().equals(text))
                     Assert.assertFalse("Element bulundu.", true);
                 if (i == size - 1) return;
                 i++;
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             Assert.assertTrue(true);
         }
     }
@@ -686,6 +967,60 @@ public class StepImpl {
         }
     }
 
+    @Step({"<key> li elementin <attr> attributesi yok mu"})
+    public void checkNotExistAttribute(String key, String attr) throws IOException {
+
+        By byElement = ElementHelper.getElementInfoToBy(key);
+        waitingAction.waitUntil(ExpectedConditions.presenceOfElementLocated(byElement));
+        WebElement element = driver.findElement(byElement);
+        waitingAction.waitUntil(ExpectedConditions.attributeToBeNotEmpty(element, attr));
+        if (attr != null) {
+            Assert.assertFalse("Elementin " + attr + " attributesi var.", true);
+        } else return;
+    }
+
+    @Step({"<key> li elementlerin <attr> attributesi yok mu?"})
+    public void secondCheckNotExistAttribute(String key, String attr) throws IOException {
+
+        By byElement = ElementHelper.getElementInfoToBy(key);
+        waitingAction.waitUntil(ExpectedConditions.presenceOfElementLocated(byElement));
+        List<WebElement> elements = driver.findElements(byElement);
+        for (WebElement element : elements) {
+            waitingAction.waitUntil(ExpectedConditions.attributeToBeNotEmpty(element, attr));
+            if (attr != null) {
+                Assert.assertFalse("Elementin " + attr + " attributesi var.", true);
+            } else return;
+        }
+    }
+
+    @Step({"<key> li elementlerin <attr> attributesi var mı?"})
+    public void findElementWithCheckAttribute(String key, String attr) {
+        try {
+            By byElement = ElementHelper.getElementInfoToBy(key);
+            waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement));
+            List<WebElement> elements = driver.findElements(byElement);
+            for (WebElement element : elements) {
+                waitingAction.waitUntil(ExpectedConditions.attributeToBeNotEmpty(element, attr));
+            }
+        } catch (Exception e) {
+            Assert.assertTrue("Elementlerin " + attr + " attributesi yok.", false);
+        }
+    }
+
+    @Step({"<key> li elementlerin <attr> attributesi <attrtext> mi"})
+    public void findElementWithCheckAttributeText(String key, String attr, String attrtext) {
+        try {
+            By byElement = ElementHelper.getElementInfoToBy(key);
+            waitingAction.waitUntil(ExpectedConditions.presenceOfElementLocated(byElement));
+            List<WebElement> elements = driver.findElements(byElement);
+            for (WebElement element : elements) {
+                waitingAction.waitUntil(ExpectedConditions.attributeToBe(element, attr, attrtext));
+            }
+        } catch (Exception e) {
+            Assert.assertTrue(false);
+        }
+    }
+
     @Step({"<key> li element tıklanabilir mi?"})
     public void checkClickable(String key) {
         try {
@@ -704,7 +1039,7 @@ public class StepImpl {
             By byElement = ElementHelper.getElementInfoToBy(key);
             waitingAction.waitUntil(ExpectedConditions.presenceOfElementLocated(byElement));
             WebElement element = driver.findElement(byElement);
-            if ((text.startsWith("Deger_") && element.getText().replaceAll("\\s+", "").contains(StoreHelper.getValue(text).replaceAll("\\s+", ""))) || element.getText().replaceAll("\\s+", "").contains(text.replaceAll("\\s+", ""))) {
+            if ((text.startsWith("Deger_") && element.getText().replaceAll("\\s+", "").contains(StoreHelper.getValue(text).replaceAll("\\s+", ""))) || element.getText().replaceAll("\\s+", "").equals(text.replaceAll("\\s+", ""))) {
             } else {
                 Assert.assertTrue(false);
             }
@@ -731,24 +1066,24 @@ public class StepImpl {
     @Step({"<key> li elementlerden <text> değerine eşit olan var mı?"})
     public void findElementWithTextsAndCheckText(String key, String text) {
         int count = 0;
-        while(count < 5){
+        while (count < 5) {
             try {
                 By byElement = ElementHelper.getElementInfoToBy(key);
                 waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement));
                 List<WebElement> elements = driver.findElements(byElement);
-                for (int i = 0; i < elements.size();) {
+                for (int i = 0; i < elements.size(); ) {
                     if ((text.startsWith("Deger_") && elements.get(i).getText().contains(StoreHelper.getValue(text))) || elements.get(i).getText().equals(text)) {
                         return;
                     }
                     if (i % 3 == 0) swipeToElement(elements.get(i));
-                    if (i == elements.size()-1) break;
+                    if (i == elements.size() - 1) break;
                     i++;
                 }
-            }catch (StaleElementReferenceException s){
+            } catch (StaleElementReferenceException s) {
             }
             count++;
         }
-        Assert.fail(text+" değerine eşit element bulunamadı.");
+        Assert.fail(text + " değerine eşit element bulunamadı.");
     }
 
     @Step({"<key> li elementlerden <text> değerine eşit olanın <attr> attributesi var mı?"})
@@ -872,7 +1207,7 @@ public class StepImpl {
     }
 
     @Step({"<key> li elementlerden <text> değerine eşit olan elementin <attr> attributesi <attrtext> içeriyor mu?"})
-    public void findElementWithTextAndCheckAttributeContainsTextNextTo(String key, String text, String attr,String attrtext) {
+    public void findElementWithTextAndCheckAttributeContainsTextNextTo(String key, String text, String attr, String attrtext) {
         try {
             Boolean var = false;
             By byElement = ElementHelper.getElementInfoToBy(key);
@@ -881,7 +1216,7 @@ public class StepImpl {
             for (WebElement element : elements) {
                 if ((text.startsWith("Deger_") && element.getText().contains(StoreHelper.getValue(text))) || element.getText().contains(text)) {
                     waitingAction.waitUntil(ExpectedConditions.presenceOfElementLocated(byElement));
-                    if(element.getAttribute(attr).contains(attrtext))
+                    if (element.getAttribute(attr).contains(attrtext))
                         break;
                 }
             }
@@ -993,7 +1328,7 @@ public class StepImpl {
             if (lastElement.getAttribute(attr).contains(attrtext))
                 i++;
         }
-        for (WebElement element : elements){
+        for (WebElement element : elements) {
             scrollToElement(element);
             By byElement2 = ElementHelper.getElementInfoToBy(key2);
             WebElement lastElement = element.findElement(byElement2);
@@ -1044,16 +1379,16 @@ public class StepImpl {
             waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement));
             List<WebElement> elements = driver.findElements(byElement);
             int sizeParent = elements.size();
-            for (int k = 0 ; k < sizeParent; k++) {
+            for (int k = 0; k < sizeParent; k++) {
                 swipeToElement(elements.get(k));
                 System.out.println(elements.get(k).getText());
                 if (elements.get(k).getText().equals(text)) {
                     var = true;
                     ElementInfo elementInfo = ElementHelper.getElementInfo(key2);
-                    String by = (elementInfo.getValue()+"/td["+(k+1)+"]");
+                    String by = (elementInfo.getValue() + "/td[" + (k + 1) + "]");
                     List<WebElement> lastElements = elements.get(k).findElements(By.xpath(by));
                     int size = lastElements.size();
-                    System.out.println(text2+" Size: "+size);
+                    System.out.println(text2 + " Size: " + size);
                     for (int i = 0; i < size; ) {
                         swipeToElement(lastElements.get(i));
                         System.out.println(" Element Text: " + lastElements.get(i).getText());
@@ -1062,16 +1397,15 @@ public class StepImpl {
                         {
                             if (i == size - 1) break;
                             i++;
-                        }
-                        else Assert.fail(text2 + " li elementlerin hepsi eşit değil.");
+                        } else Assert.fail(text2 + " li elementlerin hepsi eşit değil.");
                     }
                     break;
                 }
             }
-            if (var == false){
-                Assert.fail(text+" li element bulunamadı.");
+            if (var == false) {
+                Assert.fail(text + " li element bulunamadı.");
             }
-        }else {
+        } else {
             By byElement = ElementHelper.getElementInfoToBy(key);
             waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement));
             List<WebElement> elements = driver.findElements(byElement);
@@ -1088,14 +1422,13 @@ public class StepImpl {
                         if (lastElements.get(i).getText().equals(text2)) {
                             if (i == size - 1) break;
                             i++;
-                        }
-                        else Assert.fail(text2 + " li elementlerin hepsi eşit değil.");
+                        } else Assert.fail(text2 + " li elementlerin hepsi eşit değil.");
                     }
                     break;
                 }
             }
-            if (var == false){
-                Assert.fail(text+" li element bulunamadı.");
+            if (var == false) {
+                Assert.fail(text + " li element bulunamadı.");
             }
         }
     }
@@ -1110,27 +1443,27 @@ public class StepImpl {
             waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement));
             List<WebElement> elements = driver.findElements(byElement);
             int sizeParent = elements.size();
-            for (int k = 0 ; k < sizeParent; k++) {
+            for (int k = 0; k < sizeParent; k++) {
                 swipeToElement(elements.get(k));
                 System.out.println(elements.get(k).getText());
                 if (elements.get(k).getText().equals(text)) {
                     var = true;
                     ElementInfo elementInfo = ElementHelper.getElementInfo(key2);
-                    String by = (elementInfo.getValue()+"/td["+(k+1)+"]");
+                    String by = (elementInfo.getValue() + "/td[" + (k + 1) + "]");
                     List<WebElement> lastElements = elements.get(k).findElements(By.xpath(by));
                     int size = lastElements.size();
-                    System.out.println(text2+" Size: "+size);
+                    System.out.println(text2 + " Size: " + size);
                     for (int i = 0; i < size; ) {
                         swipeToElement(lastElements.get(i));
                         System.out.println(" Element Text: " + lastElements.get(i).getText());
                         String lastText = lastElements.get(i).getText();
                         if (lastElements.get(i).getText().contains(text2)) // equalsti fakat rowda başka içerikte vardı // Guest Name
                         {
-                            System.out.println("Data Row Text(İF İÇİNDE): "+lastElements.get(i).getText());
+                            System.out.println("Data Row Text(İF İÇİNDE): " + lastElements.get(i).getText());
                             By byElement3 = ElementHelper.getElementInfoToBy(key3);
                             WebElement element = lastElements.get(i).findElement(byElement3);
                             dataMarkupId = element.getText();
-                            System.out.println("Silinecek Data Id: "+dataMarkupId);
+                            System.out.println("Silinecek Data Id: " + dataMarkupId);
                             findElementWithTextsAndClickNextToWithIndex(key4, dataMarkupId, key5);
                             return;
                         }
@@ -1139,8 +1472,8 @@ public class StepImpl {
                     break;
                 }
             }
-            if (var == false){
-                Assert.fail(text+" li element bulunamadı.");
+            if (var == false) {
+                Assert.fail(text + " li element bulunamadı.");
             }
         }
     }
@@ -1148,7 +1481,7 @@ public class StepImpl {
 
     @Step({"<key> li elementlerden id bilgisi silindi mi?"})
     public void findElementsCheckTextsAndDeletedId(String key) {
-        System.out.println("Silindiği kontrol edilecek data: "+dataMarkupId);
+        System.out.println("Silindiği kontrol edilecek data: " + dataMarkupId);
         checkTextNotExistsElements(key, dataMarkupId);
     }
 
@@ -1266,7 +1599,7 @@ public class StepImpl {
     }
 
     @Step({"<key> li elementlerden <text> değerine eşit olan elementin <attr> attributesi <attrtext> mı?"})
-    public void findElementWithTextAndCheckAttributeTextNextTo(String key, String text, String attr,String attrtext) {
+    public void findElementWithTextAndCheckAttributeTextNextTo(String key, String text, String attr, String attrtext) {
         try {
             Boolean var = false;
             By byElement = ElementHelper.getElementInfoToBy(key);
@@ -1274,7 +1607,7 @@ public class StepImpl {
             List<WebElement> elements = driver.findElements(byElement);
             for (WebElement element : elements) {
                 if ((text.startsWith("Deger_") && element.getText().contains(StoreHelper.getValue(text))) || element.getText().contains(text)) {
-                    waitingAction.waitUntil(ExpectedConditions.attributeToBe(element,attr,attrtext));
+                    waitingAction.waitUntil(ExpectedConditions.attributeToBe(element, attr, attrtext));
                     break;
                 }
             }
@@ -1284,7 +1617,7 @@ public class StepImpl {
     }
 
     @Step({"<key> li elementlerden <text> değerine eşit olanın yanındaki <key2> elementinin <attr> attributesi <attrtext> içeriyor mu?"})
-    public void findElementWithTextsAndCheckAttributeTextNextTo(String key, String text, String key2, String attr,String attrtext) {
+    public void findElementWithTextsAndCheckAttributeTextNextTo(String key, String text, String key2, String attr, String attrtext) {
         By byElement = ElementHelper.getElementInfoToBy(key);
         waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement));
         List<WebElement> elements = driver.findElements(byElement);
@@ -1295,17 +1628,17 @@ public class StepImpl {
                 WebElement childElement = element.findElement(ElementHelper.getElementInfoToBy(key2));
                 //waitingAction.waitUntil(ExpectedConditions.attributeToBe(childElement,attr,attrtext));
                 String attrText = childElement.getAttribute(attr);
-                System.out.println("Element attr: "+childElement.getAttribute(attr));
-                System.out.println("Gönderilen attr: "+attrtext);
+                System.out.println("Element attr: " + childElement.getAttribute(attr));
+                System.out.println("Gönderilen attr: " + attrtext);
                 if (childElement.getAttribute(attr).contains(attrtext))
                     return;
             }
         }
-        Assert.fail(text+" li element değer içermiyor veya yanındaki elementin "+attr+" attributesine ait değer bulunamadı.");
+        Assert.fail(text + " li element değer içermiyor veya yanındaki elementin " + attr + " attributesine ait değer bulunamadı.");
     }
 
     @Step({"<key> li elementlerden <text> değerine eşit olanın yanındaki <key2> elementinin <attr> attributesi <attrtext> mı?"})
-    public void findElementWithTextAndCheckAttributeEqualsTextNextTo(String key, String text, String key2, String attr,String attrtext) {
+    public void findElementWithTextAndCheckAttributeEqualsTextNextTo(String key, String text, String key2, String attr, String attrtext) {
         By byElement = ElementHelper.getElementInfoToBy(key);
         waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement));
         List<WebElement> elements = driver.findElements(byElement);
@@ -1316,13 +1649,13 @@ public class StepImpl {
                 WebElement childElement = element.findElement(ElementHelper.getElementInfoToBy(key2));
                 //waitingAction.waitUntil(ExpectedConditions.attributeToBe(childElement,attr,attrtext));
                 String attrText = childElement.getAttribute(attr);
-                System.out.println("Element attr: "+childElement.getAttribute(attr));
-                System.out.println("Gönderilen attr: "+attrtext);
+                System.out.println("Element attr: " + childElement.getAttribute(attr));
+                System.out.println("Gönderilen attr: " + attrtext);
                 if (childElement.getAttribute(attr).equals(attrtext))
                     return;
             }
         }
-        Assert.fail(text+" li element değer içermiyor veya yanındaki elementin "+attr+" attributesine ait değer bulunamadı.");
+        Assert.fail(text + " li element değer içermiyor veya yanındaki elementin " + attr + " attributesine ait değer bulunamadı.");
     }
 
     private String startDate = "";
@@ -1331,7 +1664,7 @@ public class StepImpl {
     @Step({"<key> li elementlerden <text> değerine eşit olanın yanındaki <key2> elementinin <attr> attributesini kaydet"})
     public void findElementWithTextsAndSaveAttributeTextNextTo(String key, String text, String key2, String attr) {
         try {
-            if (key2.equals("txtbx_startDateInput")){
+            if (key2.equals("txtbx_startDateInput")) {
                 By byElement = ElementHelper.getElementInfoToBy(key);
                 waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement));
                 List<WebElement> elements = driver.findElements(byElement);
@@ -1343,7 +1676,7 @@ public class StepImpl {
                         break;
                     }
                 }
-            }else if (key2.equals("txtbx_endDateInput")){
+            } else if (key2.equals("txtbx_endDateInput")) {
                 By byElement = ElementHelper.getElementInfoToBy(key);
                 waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement));
                 List<WebElement> elements = driver.findElements(byElement);
@@ -1370,41 +1703,41 @@ public class StepImpl {
             waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement));
             List<WebElement> elements = driver.findElements(byElement);
             int sizeParent = elements.size();
-            for (int k = 0 ; k < sizeParent; k++) {
+            for (int k = 0; k < sizeParent; k++) {
                 swipeJS(elements.get(k));
                 System.out.println(elements.get(k).getText());
                 if (elements.get(k).getText().equals(text)) {
                     var = true;
                     ElementInfo elementInfo = ElementHelper.getElementInfo(key2);
-                    String by = (elementInfo.getValue()+"/td["+(k+1)+"]");
+                    String by = (elementInfo.getValue() + "/td[" + (k + 1) + "]");
                     List<WebElement> lastElements = elements.get(k).findElements(By.xpath(by));
                     int size = lastElements.size();
                     for (int i = 0; i < size; ) {
 
                         swipeJS(lastElements.get(i));
                         System.out.println(" Element Text: " + lastElements.get(i).getText());
-                        if (lastElements.get(i).getText().contains(" ")){
+                        if (lastElements.get(i).getText().contains(" ")) {
                             int spaceIndex = lastElements.get(i).getText().indexOf(" ");
                             lastText = lastElements.get(i).getText().substring(0, spaceIndex);
-                        }else {
+                        } else {
                             lastText = lastElements.get(i).getText();
                         }
-                        System.out.println("Tarih: "+lastText);
+                        System.out.println("Tarih: " + lastText);
                         SimpleDateFormat sdf = new SimpleDateFormat("dd.MM.yyyy");
                         Date tableRowStartDate = sdf.parse(lastText);
                         Date pageHeaderStartDate = sdf.parse(startDate);
                         Date pageHeaderEndDate = null;
-                        System.out.println("End Date is : "+ endDate);
+                        System.out.println("End Date is : " + endDate);
                         int result;
                         int result2;
-                        if (endDate.equals("")){
+                        if (endDate.equals("")) {
                             Date nowDate = new Date(System.currentTimeMillis());
                             //endDate = sdf.format(nowDate);
                             //pageHeaderEndDate = sdf.parse(sdf.format(nowDate));
-                            System.out.println("End Date Now Time : "+endDate);
+                            System.out.println("End Date Now Time : " + endDate);
                             result = tableRowStartDate.compareTo(pageHeaderStartDate);
                             result2 = -1;
-                        }else{
+                        } else {
                             pageHeaderEndDate = sdf.parse(endDate);
                             result = tableRowStartDate.compareTo(pageHeaderStartDate);
                             result2 = tableRowStartDate.compareTo(pageHeaderEndDate);
@@ -1416,7 +1749,7 @@ public class StepImpl {
                             Assert.fail("Tarih sıralaması yanlıştır.");
                             //System.out.println("Date1 is equal to Date2");
                         }
-                            //pageHeaderEndDate = sdf.parse(endDate);
+                        //pageHeaderEndDate = sdf.parse(endDate);
 
                         /*int result = tableRowStartDate.compareTo(pageHeaderStartDate);
                         int result2 = tableRowStartDate.compareTo(pageHeaderEndDate);
@@ -1443,8 +1776,8 @@ public class StepImpl {
                     break;
                 }
             }
-            if (var == false){
-                Assert.fail(text+" li element bulunamadı.");
+            if (var == false) {
+                Assert.fail(text + " li element bulunamadı.");
             }
         }
     }
@@ -1459,17 +1792,17 @@ public class StepImpl {
             List<WebElement> elements = driver.findElements(byElement);
             int size = elements.size();
             int disableDayCount = 0;
-            for (int i = 0; i < size; i++){
-                if (!elements.get(i).getText().equals(text)){
+            for (int i = 0; i < size; i++) {
+                if (!elements.get(i).getText().equals(text)) {
                     disableDayCount++;
-                }else break;
+                } else break;
             }
             By byElement2 = ElementHelper.getElementInfoToBy(key2);
             waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement2));
             List<WebElement> elements2 = driver.findElements(byElement2);
-            for (int i = 0; i < disableDayCount; ){
+            for (int i = 0; i < disableDayCount; ) {
                 if (!elements2.get(i).getAttribute(attr).contains(attrtext))
-                    Assert.fail(text+" li elementlerden önceki elementlerin "+attr+" attributesi "+attrtext+" içermiyor.");
+                    Assert.fail(text + " li elementlerden önceki elementlerin " + attr + " attributesi " + attrtext + " içermiyor.");
                 if (i == size - 1) break;
                 i++;
             }
@@ -1493,13 +1826,20 @@ public class StepImpl {
             By byElement3 = ElementHelper.getElementInfoToBy("txt_accommondationStartDate");
             waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement3));
             WebElement element = driver.findElement(byElement3);
-            for (int i = 0; i < elements2.size(); i++){
+            for (int i = 0; i < elements2.size(); i++) {
                 //swipeToElement(elements2.get(i));
-                if (element.getAttribute("value").equals("")){
-                    if (i == elements2.size()-1){
+                if (element.getAttribute("value").equals("")) {
+                    if (i == elements2.size() - 1) {
+                        System.out.println("Size: " + i);
+                        System.out.println("Elements Size: " + elements.size());
+                        System.out.println("Elements2 Size: " + elements2.size());
+                        System.out.println("Elements Son Attr: " + elements.get(i).getAttribute("class"));
+                        System.out.println("Elements Son: " + elements2.get(i).getText());
                         var = true;
-                        if (!elements.get(i+1).getAttribute(attr).contains(attrtext)) {
-                            elements.get(i+1).click();
+                        if (!elements.get(i + 1).getAttribute(attr).contains(attrtext)) {
+                            System.out.println("1. " + elements.get(i).getText());
+                            System.out.println("2. " + elements.get(i + 1).getText());
+                            elements.get(i + 1).click();
                             return;
                         }
                     }
@@ -1512,10 +1852,6 @@ public class StepImpl {
     }
 
 
-
-
-
-
     @Step({"<key> li elementlerden <text> değerine eşit olanın yanındaki <key2> elementi tıklanabilir mi?"})
     public void findElementWithTextsAndCheckClickableNextTo(String key, String text, String key2) {
         try {
@@ -1525,7 +1861,7 @@ public class StepImpl {
             List<WebElement> elements = driver.findElements(byElement);
             for (WebElement element : elements) {
                 if ((text.startsWith("Deger_") && element.getText().contains(StoreHelper.getValue(text))) || element.getText().equals(text)) {
-                    System.out.println("Element Text: "+element.getText());
+                    System.out.println("Element Text: " + element.getText());
                     var = true;
                     waitingAction.waitUntil(ExpectedConditions.presenceOfNestedElementLocatedBy(element, ElementHelper.getElementInfoToBy(key2)));
                     WebElement childElement = element.findElement(ElementHelper.getElementInfoToBy(key2));
@@ -1554,7 +1890,7 @@ public class StepImpl {
             waitingAction.waitUntil(ExpectedConditions.urlToBe(url));
 
         } catch (Exception e) {
-            Assert.assertTrue("Sayfanın url i " + url + " değil. Url: "+driver.getCurrentUrl(), false);
+            Assert.assertTrue("Sayfanın url i " + url + " değil. Url: " + driver.getCurrentUrl(), false);
         }
     }
 
@@ -1597,9 +1933,9 @@ public class StepImpl {
     @Step({"Bulunduğun sayfayı kapat"})
     public void closePage() {
         try {
-
             driver.close();
-            driver.switchTo().window(winHandleBefore);
+           // driver.switchTo().window(winHandleBefore);
+           // driver.navigate().to("http://uatb2b.odeontours.com/");
         } catch (Exception e) {
             Assert.assertTrue(false);
         }
@@ -1657,7 +1993,7 @@ public class StepImpl {
         element.clear();
         if (System.getProperty("os.name").contains("Mac"))
             element.sendKeys(Keys.COMMAND + "a");
-        else if(System.getProperty("os.name").contains("Windows"))
+        else if (System.getProperty("os.name").contains("Windows"))
             element.sendKeys(Keys.CONTROL + "a");
         element.sendKeys(Keys.DELETE);
     }
@@ -1670,7 +2006,7 @@ public class StepImpl {
         WebElement element = driver.findElement(byElement);
         if (System.getProperty("os.name").contains("Mac"))
             s = Keys.chord(Keys.COMMAND, "a");
-        else if(System.getProperty("os.name").contains("Windows"))
+        else if (System.getProperty("os.name").contains("Windows"))
             s = Keys.chord(Keys.CONTROL, "a");
         element.sendKeys(s);
         element.sendKeys(Keys.DELETE);
@@ -1720,20 +2056,18 @@ public class StepImpl {
         waitingAction.waitUntil(ExpectedConditions.visibilityOfElementLocated(byElement));
         WebElement element = driver.findElement(byElement);
         action.moveToElement(element).perform();
-        action.dragAndDropBy(element, 150,0).perform();
+        action.dragAndDropBy(element, 150, 0).perform();
     }
 
-    @Step({"Excel <excelFileName> dosyasının doğru uzantıda olduğu kontrol edilir."})
-    public void checkFilename(String excelFileName) throws IOException {
 
+    @Step({"Excel <excelFileName> dosyasından veri okuma işlemi yapılır."})
+    public void excelReadData(String excelFileName) throws IOException {
         ExcelHelper excel = null;
         String fileNamePath = "";
         LocalDateTime dateTime = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy-HH.mm");
         String date = dateTime.format(formatter);
         System.out.println(dateTime.format(formatter));
-
-        //date = date.substring(date.length()-2, date.length()-1);
 
         if (excelFileName.contains("Markup")){
             fileNamePath = excelFileName+"-"+date+".xlsx";
@@ -1744,7 +2078,74 @@ public class StepImpl {
             System.out.println(fileNamePath);
         }
         try {
-            excel = new ExcelHelper("/Users/virgosol-furkan/Downloads/"+fileNamePath);
+           // excel = new ExcelHelper("/Users/dilekaysegun/Downloads/"+fileNamePath);
+           // File file = new File("/Users/dilekaysegun/Downloads/reservation-04.10.2021-11.37.xlsx");
+           // ExcelHelper excel = new ExcelHelper("/Users/dilekaysegun/Downloads/"+fileNamePath);
+            File file = new File("/Users/dilekaysegun/Downloads/"+fileNamePath);
+            FileInputStream inputStream = new FileInputStream(file);
+            XSSFWorkbook wb = new XSSFWorkbook(inputStream);
+            XSSFSheet sheet = wb.getSheet("Sheet");
+            int rowCount = sheet.getLastRowNum() - sheet.getFirstRowNum();
+            //her hücrede bulunan verileri yazdırmak için tüm satırı gez
+            for (int i = 0; i <= rowCount; i++) {
+                //hücre sayısını al
+                int cellcount = sheet.getRow(i).getLastCellNum();
+                System.out.println("Row" + i + " data is :");
+                for (int j = 0; j < cellcount; j++) {
+                    System.out.print(sheet.getRow(i).getCell(j).getStringCellValue() + ",");
+                    String deneme= sheet.getRow(i).getCell(j).getStringCellValue();
+                        //System.out.println("deneme :"+ deneme);
+                    char harf = deneme.charAt(4);
+                    char ch = 'ç';
+                    int asciiKod = (int) ch;
+
+                }
+                System.out.println();
+            }
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+        //excel.deleteExcel();
+}
+
+
+    @Step({"Excel <excelFileName> dosyasının doğru uzantıda olduğu kontrol edilir."})
+    public void checkFilename(String excelFileName) throws IOException, ParseException {
+
+        ExcelHelper excel = null;
+        String fileNamePath = "";
+        //LocalDateTime dateTime = LocalDateTime.now();
+        Date dateTime = new Date();
+        //DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy-HH.mm");
+
+        //String date = dateTime.format(formatter);
+        //System.out.println(dateTime.format(formatter));
+
+        SimpleDateFormat format = new SimpleDateFormat("dd.MM.yyyy-HH.mm");
+
+        String date = format.format(dateTime);
+
+        //date = date.substring(date.length()-2, date.length()-1);
+
+        if (excelFileName.contains("Markup")){
+            fileNamePath = excelFileName+"-"+date+".xlsx";
+            System.out.println(fileNamePath);
+
+        }
+        else if(excelFileName.contains("reservation"))    {
+            fileNamePath = excelFileName+"-"+date+".xlsx";
+            System.out.println(fileNamePath);
+        }
+        try {
+            File file = new File(fileNamePath);
+
+            if (!file.exists()) {
+                DateUtils.addMinutes(dateTime, 1);
+                date = format.format(dateTime);
+                fileNamePath = excelFileName+"-"+date+".xlsx";
+            }
+
+            excel = new ExcelHelper("/Users/dilekaysegun/Downloads/"+fileNamePath);
             String row0 = excel.getData(0,0,0);
             System.out.println("Data from Excel is: "+row0);
         }catch (Exception e){
@@ -1812,7 +2213,7 @@ public class StepImpl {
             System.out.println(fileNamePath);
         }
         try {
-            excel = new ExcelHelper("/Users/virgosol-furkan/Downloads/"+fileNamePath);
+            excel = new ExcelHelper("/Users/dilekaysegun/Downloads/"+fileNamePath);
             String row0 = excel.getData(0,0,0);
             System.out.println("Data from Excel is: "+row0);
         }catch (Exception e){
@@ -1936,6 +2337,18 @@ public class StepImpl {
         excel.deleteExcel();
     }*/
 
+    @Step("<key> swipe element")
+    public void swipeToElement(String key) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        By byElement = ElementHelper.getElementInfoToBy(key);
+        waitingAction.waitUntil(ExpectedConditions.presenceOfElementLocated(byElement));
+        WebElement element = driver.findElement(byElement);
+        for(int i=0;i<25;i++) {
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS) ;
+            js.executeScript("arguments[0].scrollIntoView({behavior: \"auto\", block: \"center\", inline: \"center\"});", element);
+        }
+    }
+
     @Step("frame gir")
     public void framegir() {
         waitingAction.waitUntil(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".ms-rtestate-field iframe")));
@@ -1947,6 +2360,10 @@ public class StepImpl {
         for(int i=0;i<30;i++) {
             js.executeScript("arguments[0].scrollIntoView(true);", element);
         }
+    }
+
+    public void wait(int s) throws InterruptedException {
+        Thread.sleep(s*1000L);
     }
 
     // TRUE FUNCTION
