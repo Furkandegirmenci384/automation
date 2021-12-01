@@ -1,4 +1,4 @@
-package com.virgosol.odeon.hook;
+package com.virgosol.hepsijet.hook;
 
 import com.thoughtworks.gauge.AfterScenario;
 import com.thoughtworks.gauge.AfterStep;
@@ -6,26 +6,29 @@ import com.thoughtworks.gauge.BeforeScenario;
 import com.thoughtworks.gauge.BeforeStep;
 import com.thoughtworks.gauge.ExecutionContext;
 import com.virgosol.qa.report.ReportManager;
-import com.virgosol.qa.web.core.di.page.InjectablePageTestImpl;
+import com.virgosol.qa.web.core.di.Injectable;
 import com.virgosol.qa.web.core.driver.DriverAction;
-import com.virgosol.qa.web.core.helper.ConfigurationHelper;
-import org.openqa.selenium.Dimension;
+import com.virgosol.qa.web.gauge.hook.ScenarioHook;
+import org.openqa.selenium.WebDriver;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import javax.inject.Inject;
 
-public class HookImpl extends InjectablePageTestImpl {
+public class ScenarioHook2 implements Injectable {
 
     @Inject
     DriverAction driverAction;
 
-    public HookImpl() {
-        super();
-        inject();
-    }
+    @Inject
+    WebDriver driver;
+
+    private Logger logger = LoggerFactory.getLogger(ScenarioHook2.class);
 
     @BeforeScenario
-    public void beforeScenario(ExecutionContext executionContext) throws Exception{
+    public void beforeScenario2(ExecutionContext executionContext) throws Exception{
+        inject();
         logger.debug("Before Scenario");
         ReportManager reportManager = ReportManager.getInstance();
         reportManager.createNewExtentTest(executionContext.getCurrentScenario().getName());
@@ -37,8 +40,8 @@ public class HookImpl extends InjectablePageTestImpl {
         //Dimension expectedWindowSize = new Dimension(1920, 1080);
         //getDriver().manage().window().setSize(expectedWindowSize);
         //getCapabilities();
-        getDriver().navigate().to(ConfigurationHelper.INSTANCE.getBaseUrl());
-        getDriver().manage().window().maximize();
+        //driver.navigate().to(ConfigurationHelper.INSTANCE.getBaseUrl());
+        driver.manage().window().maximize();
         //getDriver().manage().window().setSize(new Dimension(375, 812)); // IPHONE X
         //getDriver().navigate().refresh();
         Thread.sleep(1500);
@@ -50,8 +53,6 @@ public class HookImpl extends InjectablePageTestImpl {
             logger.error(executionContext.getCurrentStep().getStackTrace());
         }
         logger.debug("After Scenario");
-
-        getDriver().quit();
     }
 
     @BeforeStep

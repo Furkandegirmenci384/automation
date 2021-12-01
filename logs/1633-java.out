@@ -1,26 +1,26 @@
 {"logLevel":"debug","message":"multithreading is set to false"}
 {"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
-16:19:15,228 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
-16:19:15,228 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.groovy] at [file:/Users/virgosol-furkan/Documents/Virgosol%20Projects/HepsiJetPOC/target/test-classes/logback.groovy]
-16:19:15,229 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.groovy] occurs multiple times on the classpath.
-16:19:15,229 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.groovy] occurs at [jar:file:/Users/virgosol-furkan/.m2/repository/com/vrgsl/qa/qa-common/2.0.14/qa-common-2.0.14.jar!/logback.groovy]
-16:19:15,229 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.groovy] occurs at [file:/Users/virgosol-furkan/Documents/Virgosol%20Projects/HepsiJetPOC/target/test-classes/logback.groovy]
-16:19:16,727 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@fe3354bf - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
-16:19:16,731 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@fe3354bf - Naming appender as [STDOUT]
-16:19:16,974 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@fe3354bf - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
-16:19:16,975 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@fe3354bf - Naming appender as [FILE]
-16:19:16,982 |-INFO in ch.qos.logback.core.FileAppender[FILE] - File property is set to [target/slnarch.log]
-16:19:16,989 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@fe3354bf - Setting level of logger [com.virgosol.hepsijet] to DEBUG
-16:19:16,999 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@fe3354bf - Setting level of logger [org.reflections.Reflections] to OFF
-16:19:17,003 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@fe3354bf - Setting level of logger [ROOT] to INFO
-16:19:17,007 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@fe3354bf - Attaching appender named [STDOUT] to Logger[ROOT]
-16:19:17,009 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@fe3354bf - Attaching appender named [FILE] to Logger[ROOT]
+16:07:09,181 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+16:07:09,181 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.groovy] at [file:/Users/virgosol-furkan/Documents/Virgosol%20Projects/HepsiJetPOC/target/test-classes/logback.groovy]
+16:07:09,545 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.groovy] occurs multiple times on the classpath.
+16:07:09,545 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.groovy] occurs at [jar:file:/Users/virgosol-furkan/.m2/repository/com/vrgsl/qa/qa-common/2.0.14/qa-common-2.0.14.jar!/logback.groovy]
+16:07:09,545 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.groovy] occurs at [file:/Users/virgosol-furkan/Documents/Virgosol%20Projects/HepsiJetPOC/target/test-classes/logback.groovy]
+16:07:11,313 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@da7d4994 - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+16:07:11,321 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@da7d4994 - Naming appender as [STDOUT]
+16:07:11,603 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@da7d4994 - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+16:07:11,604 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@da7d4994 - Naming appender as [FILE]
+16:07:11,606 |-INFO in ch.qos.logback.core.FileAppender[FILE] - File property is set to [target/slnarch.log]
+16:07:11,614 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@da7d4994 - Setting level of logger [com.virgosol.hepsijet] to DEBUG
+16:07:11,621 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@da7d4994 - Setting level of logger [org.reflections.Reflections] to OFF
+16:07:11,624 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@da7d4994 - Setting level of logger [ROOT] to INFO
+16:07:11,628 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@da7d4994 - Attaching appender named [STDOUT] to Logger[ROOT]
+16:07:11,629 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@da7d4994 - Attaching appender named [FILE] to Logger[ROOT]
 
-{"logLevel":"debug","message":"gauge-java took 4075milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
-{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 4075"}
+{"logLevel":"debug","message":"gauge-java took 4933milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 4933"}
 {"logLevel":"debug","message":"starting gRPC server..."}
-{"logLevel":"debug","message":"started gRPC server on port 51720"}
-{"logLevel":"info","message":"Listening on port:51720"}
+{"logLevel":"debug","message":"started gRPC server on port 51235"}
+{"logLevel":"info","message":"Listening on port:51235"}
 {"logLevel":"debug","message":"Scanning packages for steps"}
 {"logLevel":"debug","message":"Comparing 'com.virgosol.odeon.step.StepImpl.checkNotExistElement' and 'com.virgosol.odeon.step.StepImpl.checkNotExistElement'"}
 {"logLevel":"debug","message":"Found {} li element yok mu? in current project scope."}
@@ -384,24 +384,43 @@
 {"logLevel":"debug","message":"\tframe gir : public void framegir()"}
 {"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olanın yanındaki {} element var mı? : public void findElementWithTextsAndCheckElementNextTo(String key, String text, String key2)"}
 {"logLevel":"debug","message":"\t{} li elementlerden {} değerine eşit olana {} değerini yaz : public void findElementWithTextsAndSendKey(String key, String text, String text2)"}
-2021-12-01 16:19:30.329 [pool-2-thread-1] INFO  com.vrgsl.qa.<init>(48) - Report create and save disabled configuration!
-2021-12-01 16:19:30.589 [pool-2-thread-1] INFO  com.vrgsl.qa.inject(8) - Inject Starting...
-2021-12-01 16:19:30.607 [pool-2-thread-1] WARN  com.vrgsl.qa.setBaseUrl(41) - Env System Property Not Found Default Use Test Url
-Starting ChromeDriver 95.0.4638.69 (6a1600ed572fedecd573b6c2b90a22fe6392a410-refs/branch-heads/4638@{#984}) on port 38360
+2021-12-01 16:07:31.314 [pool-2-thread-1] INFO  com.vrgsl.qa.<init>(48) - Report create and save disabled configuration!
+2021-12-01 16:07:31.656 [pool-2-thread-1] WARN  com.vrgsl.qa.setBaseUrl(41) - Env System Property Not Found Default Use Test Url
+Starting ChromeDriver 95.0.4638.69 (6a1600ed572fedecd573b6c2b90a22fe6392a410-refs/branch-heads/4638@{#984}) on port 43430
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1638364775.901][WARNING]: This version of ChromeDriver has not been tested with Chrome version 96.
-Dec 01, 2021 4:19:36 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1638364056.628][WARNING]: This version of ChromeDriver has not been tested with Chrome version 96.
+Dec 01, 2021 4:07:37 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-2021-12-01 16:19:36.151 [pool-2-thread-1] INFO  com.vrgsl.qa.initFeather(24) - Init Feather Injections
-2021-12-01 16:19:36.404 [pool-2-thread-1] INFO  com.vrgsl.qa.logWaitSelected(196) - Wait Configuration
+2021-12-01 16:07:37.397 [pool-2-thread-1] INFO  com.vrgsl.qa.initFeather(24) - Init Feather Injections
+2021-12-01 16:07:37.760 [pool-2-thread-1] INFO  com.vrgsl.qa.logWaitSelected(196) - Wait Configuration
 page load=true
 ajax load=true
 angular load=false
-2021-12-01 16:19:36.407 [pool-2-thread-1] INFO  com.vrgsl.qa.inject(8) - Inject Starting...
-2021-12-01 16:19:36.511 [pool-2-thread-1] ERROR com.virgosol.hepsijet.hook.ScenarioHook2.afterScenario(56) -
-2021-12-01 16:19:36.512 [pool-2-thread-1] DEBUG com.virgosol.hepsijet.hook.ScenarioHook2.afterScenario(58) - After Scenario
+2021-12-01 16:07:37.764 [pool-2-thread-1] INFO  com.vrgsl.qa.inject(8) - Inject Starting...
+2021-12-01 16:07:37.770 [pool-2-thread-1] DEBUG com.virgosol.hepsijet.hook.ScenarioHook2.beforeScenario(34) - Before Scenario
+Starting ChromeDriver 95.0.4638.69 (6a1600ed572fedecd573b6c2b90a22fe6392a410-refs/branch-heads/4638@{#984}) on port 38480
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1638364061.931][WARNING]: This version of ChromeDriver has not been tested with Chrome version 96.
+Dec 01, 2021 4:07:41 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+2021-12-01 16:07:41.998 [pool-2-thread-1] INFO  com.vrgsl.qa.initFeather(24) - Init Feather Injections
+2021-12-01 16:07:42.085 [pool-2-thread-1] INFO  com.vrgsl.qa.logWaitSelected(196) - Wait Configuration
+page load=true
+ajax load=true
+angular load=false
+2021-12-01 16:07:42.095 [pool-2-thread-1] INFO  com.vrgsl.qa.inject(8) - Inject Starting...
+2021-12-01 16:07:46.366 [pool-2-thread-1] INFO  com.vrgsl.qa.afterNavigateTo(67) - Navigate To Page Url=https://hepsijet.com/
+2021-12-01 16:07:46.877 [pool-2-thread-1] INFO  com.virgosol.hepsijet.hook.ScenarioHook2.testStepBefore(62) - Sayfanın url i "https://hepsijet.com/" mı? adimi basladi
+{"logLevel":"debug","message":"Executing 'Sayfanın url i {} mı?' using 'class com.virgosol.odeon.step.StepImpl.checkUrl"}
+2021-12-01 16:07:46.934 [pool-2-thread-1] INFO  com.virgosol.hepsijet.hook.ScenarioHook2.testStep(80) - Sayfanın url i "https://hepsijet.com/" mı? adimi basariyla bitti
+2021-12-01 16:07:50.172 [pool-2-thread-1] INFO  com.virgosol.hepsijet.hook.ScenarioHook2.testStepBefore(62) - "2" sn bekle adimi basladi
+{"logLevel":"debug","message":"Executing '{} sn bekle' using 'class com.virgosol.odeon.step.StepImpl.waitSeconds"}
+2021-12-01 16:07:52.182 [pool-2-thread-1] INFO  com.virgosol.hepsijet.hook.ScenarioHook2.testStep(80) - "2" sn bekle adimi basariyla bitti
+2021-12-01 16:07:53.345 [pool-2-thread-1] DEBUG com.virgosol.hepsijet.hook.ScenarioHook2.afterScenario(57) - After Scenario
 log4j:WARN No appenders could be found for logger (freemarker.cache).
 log4j:WARN Please initialize the log4j system properly.
-2021-12-01 16:19:37.222 [pool-2-thread-1] INFO  com.vrgsl.qa.saveReport(128) - Report create and save disabled configuration!
+2021-12-01 16:07:54.349 [pool-2-thread-1] INFO  com.vrgsl.qa.saveReport(128) - Report create and save disabled configuration!

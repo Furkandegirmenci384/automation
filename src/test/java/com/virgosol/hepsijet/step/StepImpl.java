@@ -1,10 +1,10 @@
 package com.virgosol.odeon.step;
 
 import com.thoughtworks.gauge.Step;
-import com.virgosol.odeon.helper.ElementHelper;
-import com.virgosol.odeon.config.ExcelHelper;
-import com.virgosol.odeon.helper.StoreHelper;
-import com.virgosol.odeon.model.ElementInfo;
+import com.virgosol.hepsijet.helper.ElementHelper;
+import com.virgosol.hepsijet.config.ExcelHelper;
+import com.virgosol.hepsijet.helper.StoreHelper;
+import com.virgosol.hepsijet.model.ElementInfo;
 import com.virgosol.qa.web.core.di.InjectionHelper;
 import com.virgosol.qa.web.core.element.Element;
 import com.virgosol.qa.web.core.model.Configuration;

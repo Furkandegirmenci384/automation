@@ -1,8 +1,8 @@
-package com.virgosol.odeon.helper;
+package com.virgosol.hepsijet.helper;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.virgosol.odeon.model.ElementInfo;
+import com.virgosol.hepsijet.model.ElementInfo;
 import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.List;

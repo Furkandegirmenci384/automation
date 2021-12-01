@@ -1,4 +1,4 @@
-package com.virgosol.odeon.config;
+package com.virgosol.hepsijet.config;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

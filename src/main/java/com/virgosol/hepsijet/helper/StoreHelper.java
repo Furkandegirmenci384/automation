@@ -1,4 +1,4 @@
-package com.virgosol.odeon.helper;
+package com.virgosol.hepsijet.helper;
 
 import com.google.gson.Gson;
 import java.io.InputStreamReader;
