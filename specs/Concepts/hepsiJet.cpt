@@ -77,7 +77,8 @@
 # Kişisel Verilerin Korunması tabında <soruBaslik> alanının olduğu kontrol edilir.
 * "btn_sorularBasliklar" li elementlerden <soruBaslik> değerine eşit olan var mı?
 
-
+# <sn> saniye bekle
+* <sn> sn bekle
 
 
 

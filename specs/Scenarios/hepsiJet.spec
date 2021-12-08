@@ -27,6 +27,7 @@
 * Alt menüde "K.V.K.K. Aydınlatma Metni" alanının olduğu kontrol edilir.
 * Alt menüde "Veri Sorumlusuna Başvuru Formu" alanının olduğu kontrol edilir.
 * Alt menüde "Müşterilere İlişkin Aydınlatma Metni" alanının olduğu kontrol edilir.
+* "1" saniye bekle
 
 ## TC2 - Anasayfa Taşımacı Başvurusu Alanının Doldurulması Ve Taşımacı Butonlarının Doğru Yönlendirmesinin Kontrolü
 * "https://hepsijet.com/" urlinin açıldığı doğrulanır.
@@ -58,6 +59,7 @@
 * Sayfada bulunan "Kargo Tecrübesi" alanından "Evet Kargo Tecrübem Var" değeri seçilir.
 * Sayfada bulunan "Bizi Nerden Duydunuz" alanından "Sosyal Medya" değeri seçilir.
 * Kullanım koşullarını okudum checkbox'ı işaretlenir.
+* "1" saniye bekle
 
 ## TC3 - Anasayfa Beraber Çalışalım Alanının Doldurulması Ve Müşterimiz Olun Butonlarının Doğru Yönlendirmesinin Kontrolü
 * "https://hepsijet.com/" urlinin açıldığı doğrulanır.
@@ -77,7 +79,7 @@
 * Sayfada bulunan "Yetkili Adı - Soyadı (*)" alanına "Miraç Emektar" değeri girilir.
 * Sayfada bulunan "Telefon Kodu (*)" alanına "538" değeri girilir.
 * Sayfada bulunan "Telefon Numarası (*)" alanına "6542345" değeri girilir.
-
+* "1" saniye bekle
 
 ## TC4 - Sıkça Sorulan Sorular Alanının Ve Sıkça Sorulanlar Butonlarının Kontrolü
 * "https://hepsijet.com/" urlinin açıldığı doğrulanır.
@@ -116,7 +118,7 @@
 * Kişisel Verilerin Korunması tabında "İlgili Kişi Başvuru Formu" alanının olduğu kontrol edilir.
 * Kişisel Verilerin Korunması tabında "Gönderi Sorgulama Formu Aracılığıyla Kişisel Verilerinin İşlenmesine İlişkin Aydınlatma Metni" alanının olduğu kontrol edilir.
 * Kişisel Verilerin Korunması tabında "İletişim Formu Aracılığıyla Kişisel Verilerinin İşlenmesine İlişkin Aydınlatma Metni" alanının olduğu kontrol edilir.
-
+* "1" saniye bekle
 
 
 
