@@ -1,4 +1,4 @@
-package com.virgosol.odeon.step;
+package com.virgosol.hepsijet.step;
 
 import com.thoughtworks.gauge.Step;
 import com.virgosol.hepsijet.helper.ElementHelper;
@@ -59,7 +59,6 @@ public class StepImpl {
     public StepImpl() {
         InjectionHelper.getInstance().getFeather().injectFields(this);
     }
-
 
     @Step("<url> urle git")
     public void goToUrl(String url) {

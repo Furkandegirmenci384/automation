@@ -1,8 +1,10 @@
 [
-	"/usr/local/bin/gauge",
+	"gauge",
 	"run",
-	"--machine-readable",
-	"--hide-suggestion",
-	"--simple-console",
-	"/Users/virgosol-furkan/Documents/Virgosol Projects/HepsiJetPOC/specs/Scenarios/hepsiJet.spec"
+	"--parallel",
+	"-n",
+	"3",
+	"-p",
+	"--dir=/Users/virgosol-furkan/Documents/Virgosol Projects/HepsiJetPOC",
+	"/Users/virgosol-furkan/Documents/Virgosol Projects/HepsiJetPOC/specs/Scenarios"
 ]
