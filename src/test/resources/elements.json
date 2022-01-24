@@ -5,6 +5,11 @@
     "type": "css"
   },
   {
+    "key": "txtbx_google",
+    "value": "input[name='q']",
+    "type": "css"
+  },
+  {
     "key": "txt_solUstMenuItem",
     "value": "ul[class*='nav-main'] .nav-link",
     "type": "css"

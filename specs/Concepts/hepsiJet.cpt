@@ -1,6 +1,9 @@
 # <url> urlinin açıldığı doğrulanır.
 * Sayfanın url i <url> mı?
 
+# Arama alanına <name> yazılır.
+* "txtbx_google" li elemente <name> degerini yaz
+
 # Hepsijet logosunun geldiği kontrol edilir.
 * "img_logo" li element var mı?
 

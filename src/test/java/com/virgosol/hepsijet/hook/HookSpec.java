@@ -11,6 +11,9 @@ import com.thoughtworks.gauge.BeforeSuite;
 import com.virgosol.qa.common.file.FileHelper;
 import com.virgosol.qa.report.ReportManager;
 import com.virgosol.qa.web.core.helper.ConfigurationHelper;
+import com.virgosol.qa.web.gauge.hook.SpecHook;
+import com.virgosol.qa.web.gauge.hook.ScenarioHook;
+import com.virgosol.qa.web.core.webdriver.VirgosolEventFiringWebDriver;
 
 import java.io.File;
 import java.io.IOException;
