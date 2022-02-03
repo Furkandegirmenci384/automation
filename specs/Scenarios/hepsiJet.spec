@@ -37,7 +37,6 @@ tags: deneme
 * "1" saniye bekle
 
 ## TC2 - Anasayfa Taşımacı Başvurusu Alanının Doldurulması Ve Taşımacı Butonlarının Doğru Yönlendirmesinin Kontrolü
-tags: deneme
 * "https://hepsijet.com/" urlinin açıldığı doğrulanır.
 * Hepsijet logosunun geldiği kontrol edilir.
 * Üst menüden "Taşımacı Başvurusu" alanına tıklanır.
