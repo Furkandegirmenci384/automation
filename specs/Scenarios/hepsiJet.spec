@@ -3,6 +3,7 @@
 ## TC0 - Deneme
 * "https://www.google.com/" urlinin açıldığı doğrulanır.
 * Arama alanına "Virgosol" yazılır.
+* Arama alanındaki değer "Deger_AramaText" olarak kaydedilir.
 * "3" saniye bekle
 
 ## TC1 - Sayfadaki Üst Menu Ve Hamburger Menu Kontrolü
@@ -33,7 +34,6 @@
 * Alt menüde "Veri Sorumlusuna Başvuru Formu" alanının olduğu kontrol edilir.
 * Alt menüde "Müşterilere İlişkin Aydınlatma Metni" alanının olduğu kontrol edilir.
 * "1" saniye bekle
-
 
 ## TC2 - Anasayfa Taşımacı Başvurusu Alanının Doldurulması Ve Taşımacı Butonlarının Doğru Yönlendirmesinin Kontrolü
 tags: deneme

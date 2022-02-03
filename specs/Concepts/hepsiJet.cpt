@@ -4,6 +4,9 @@
 # Arama alanına <name> yazılır.
 * "txtbx_google" li elemente <name> degerini yaz
 
+# Arama alanındaki değer <inputText> olarak kaydedilir.
+* "txtbx_google" li elementin textini <inputText> olarak kaydet
+
 # Hepsijet logosunun geldiği kontrol edilir.
 * "img_logo" li element var mı?
 
