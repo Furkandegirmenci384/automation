@@ -1,6 +1,7 @@
 # HepsiJET POC Senaryolar
 
 ## TC0 - Deneme
+tags: deneme
 * "https://www.google.com/" urlinin açıldığı doğrulanır.
 * Arama alanına "Virgosol" yazılır.
 * Arama alanındaki değer "Deger_AramaText" olarak kaydedilir.
