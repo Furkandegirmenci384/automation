@@ -13,6 +13,7 @@ tags: deneme
 * Arama alanındaki değer "Deger_AramaText" olarak kaydedilir.
 * "3" saniye bekle
 
+
 ## TC1 - Sayfadaki Üst Menu Ve Hamburger Menu Kontrolü
 * "https://hepsijet.com/" urlinin açıldığı doğrulanır.
 * Hepsijet logosunun geldiği kontrol edilir.

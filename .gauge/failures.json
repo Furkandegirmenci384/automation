@@ -5,7 +5,5 @@
 		"--hide-suggestion",
 		"--simple-console"
 	],
-	"FailedItems": [
-		"specs/Scenarios/hepsiJet.spec:3"
-	]
+	"FailedItems": []
 }

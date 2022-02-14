@@ -9,7 +9,7 @@
   <artifactId>HepsiJet</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>Odeon Web Test Automation</name>
+  <name>HepsiJet Web Test Automation</name>
   <url>http://192.168.186.88:81</url>
 
 
