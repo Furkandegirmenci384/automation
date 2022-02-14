@@ -2,17 +2,18 @@
 
 ## TC0 - Deneme
 tags: deneme
+* "https://www.google.com/" urle git
 * "https://www.google.com/" urlinin açıldığı doğrulanır.
 * Arama alanına "Virgosol" yazılır.
 * Arama alanındaki değer "Deger_AramaText" olarak kaydedilir.
 * "3" saniye bekle
 
 ## TC0 - Deneme2
+* "https://www.google.com/" urle git
 * "https://www.google.com/" urlinin açıldığı doğrulanır.
 * Arama alanına "Virgosol2" yazılır.
 * Arama alanındaki değer "Deger_AramaText" olarak kaydedilir.
 * "3" saniye bekle
-
 
 ## TC1 - Sayfadaki Üst Menu Ve Hamburger Menu Kontrolü
 * "https://hepsijet.com/" urlinin açıldığı doğrulanır.
