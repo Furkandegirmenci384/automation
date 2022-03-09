@@ -12,7 +12,6 @@
   <name>HepsiJet Web Test Automation</name>
   <url>http://192.168.186.88:81</url>
 
-
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.complier.version>3.6.0</maven.complier.version>
