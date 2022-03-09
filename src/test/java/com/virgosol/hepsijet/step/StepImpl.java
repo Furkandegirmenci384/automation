@@ -143,9 +143,9 @@ public class StepImpl {
         System.out.println(date2);
 
         if (date1.compareTo(date2) < 0) {
-            System.out.println("Cancellation Date, Cancellation Start Date' den önce gelmektedir.");
+            System.out.println("1. Tarih, 2. Tarihten önce gelmektedir.");
         } else if (date1.compareTo(date2) == 0 || date1.compareTo(date2) > 0) {
-            Assert.fail("Cancellation Date, Cancellation Start Date' den önce gelmemektedir.");
+            Assert.fail("1. Tarih, 2. Tarihten sonra gelmektedir.");
         }
     }
 
@@ -162,52 +162,6 @@ public class StepImpl {
             EdgeDriver driver = new EdgeDriver();
             driver.manage().window().maximize();
             this.driver = driver;
-        }
-    }
-
-    @Step("Url <screenResolution> tarayıcıda açılır.")
-    public void openInBrowser(String browserName) throws IOException {
-
-        if (browserName.contains("Firefox")) {
-            System.setProperty("webdriver.gecko.driver", "drivers/geckodriver");
-            WebDriver driver = new FirefoxDriver();
-            driver.manage().window().maximize();
-            String url = "http://uatobbackoffice.odeontours.com/reservationdetail/H3IQNUNDB";
-            driver.get(url);
-            driver.manage().timeouts().implicitlyWait(2, TimeUnit.MINUTES);
-            WebElement usernameSpace = driver.findElement(By.id("basic_username"));
-            usernameSpace.click();
-            usernameSpace.sendKeys("OdeonbedsAdmin");
-            driver.manage().timeouts().implicitlyWait(2, TimeUnit.MINUTES);
-            WebElement passwordSpace = driver.findElement(By.id("basic_password"));
-            passwordSpace.click();
-            passwordSpace.sendKeys("De53Acy2..");
-            driver.manage().timeouts().implicitlyWait(2, TimeUnit.MINUTES);
-            WebElement submitButton = driver.findElement(By.cssSelector("[class=\"ant-btn ant-btn-primary\"]"));
-            submitButton.click();
-            driver.manage().timeouts().implicitlyWait(5, TimeUnit.MINUTES);
-            Assert.assertEquals("http://uatobbackoffice.odeontours.com/reservationdetail/H3IQNUNDB",driver.getCurrentUrl());
-        }
-
-        else if (browserName.contains("Microsoft Edge")) {
-            System.setProperty("webdriver.edge.driver", "drivers/msedgedriver");
-            EdgeDriver driver = new EdgeDriver();
-            driver.manage().window().maximize();
-            String url = "http://uatobbackoffice.odeontours.com/reservationdetail/H3IQNUNDB";
-            driver.get(url);
-            driver.manage().timeouts().implicitlyWait(2, TimeUnit.MINUTES);
-            WebElement usernameSpace = driver.findElement(By.id("basic_username"));
-            usernameSpace.click();
-            usernameSpace.sendKeys("OdeonbedsAdmin");
-            driver.manage().timeouts().implicitlyWait(2, TimeUnit.MINUTES);
-            WebElement passwordSpace = driver.findElement(By.id("basic_password"));
-            passwordSpace.click();
-            passwordSpace.sendKeys("De53Acy2..");
-            driver.manage().timeouts().implicitlyWait(2, TimeUnit.MINUTES);
-            WebElement submitButton = driver.findElement(By.cssSelector("[class=\"ant-btn ant-btn-primary\"]"));
-            submitButton.click();
-            driver.manage().timeouts().implicitlyWait(5, TimeUnit.MINUTES);
-            Assert.assertEquals("http://uatobbackoffice.odeontours.com/reservationdetail/H3IQNUNDB",driver.getCurrentUrl());
         }
     }
 
@@ -274,14 +228,11 @@ public class StepImpl {
     @Step("<key> sn bekle")
     public void waitSeconds(String key) throws InterruptedException {
         Thread.sleep(Integer.parseInt(key) * 1000);
-        //driver.wait(Integer.parseInt(key) * 1000);
     }
 
     @Step("<key> dakika bekle")
     public void waitMinutes(String key) throws InterruptedException {
         Thread.sleep(Integer.parseInt(key) * 1000 * 60);
-        //driver.sleep(Integer.parseInt(key) * 1000 * 60);
-        //driver.wait(300000);
     }
 
     @Step("<key> li elementi görünür olana kadar bekle")
@@ -429,24 +380,6 @@ public class StepImpl {
                 if(text.equals(elementText))
                 {
                     break;
-                }
-            }
-        }
-    }
-
-    @Step({"<key> li elementlerden <pin> pin değerine tıkla"})
-    public void findElementPinWithTextsAndClick(String key, String pin) {
-        By byElement = ElementHelper.getElementInfoToBy(key);
-        waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement));
-        List<WebElement> elements = driver.findElements(byElement);
-        int k = 1;
-        for (int i = 0; i < pin.length(); i++) {
-            String pinNo = pin.substring(i, k++);
-            for (WebElement element : elements) {
-                if ((pinNo.startsWith("Deger_") && element.getText().contains(StoreHelper.getValue(pinNo))) || element.getText().contains(pinNo)) {
-                    waitingAction.waitUntil(ExpectedConditions.elementToBeClickable(element));
-                    element.click();
-                    //break;
                 }
             }
         }
@@ -1432,59 +1365,6 @@ public class StepImpl {
         }
     }
 
-    String dataMarkupId = "";
-
-    @Step({"<key> li elementlerden <text> değerine eşit olanın yanındaki <key2> li elementler <text2> değerine eşit olanın yanındaki <key3> elementinin id bilgisini kaydet ve <key4> elementlerinden yanındaki <key5> elementin delete butonuna tıkla"})
-    public void findElementWithTextsAndFindElementSaveTextAndClickIndexNextTo(String key, String text, String key2, String text2, String key3, String key4, String key5) {
-        Boolean var = false;
-        if (key2.equals("txt_tableRowHeaderNameWithRows")) {
-            By byElement = ElementHelper.getElementInfoToBy(key);
-            waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement));
-            List<WebElement> elements = driver.findElements(byElement);
-            int sizeParent = elements.size();
-            for (int k = 0; k < sizeParent; k++) {
-                swipeToElement(elements.get(k));
-                System.out.println(elements.get(k).getText());
-                if (elements.get(k).getText().equals(text)) {
-                    var = true;
-                    ElementInfo elementInfo = ElementHelper.getElementInfo(key2);
-                    String by = (elementInfo.getValue() + "/td[" + (k + 1) + "]");
-                    List<WebElement> lastElements = elements.get(k).findElements(By.xpath(by));
-                    int size = lastElements.size();
-                    System.out.println(text2 + " Size: " + size);
-                    for (int i = 0; i < size; ) {
-                        swipeToElement(lastElements.get(i));
-                        System.out.println(" Element Text: " + lastElements.get(i).getText());
-                        String lastText = lastElements.get(i).getText();
-                        if (lastElements.get(i).getText().contains(text2)) // equalsti fakat rowda başka içerikte vardı // Guest Name
-                        {
-                            System.out.println("Data Row Text(İF İÇİNDE): " + lastElements.get(i).getText());
-                            By byElement3 = ElementHelper.getElementInfoToBy(key3);
-                            WebElement element = lastElements.get(i).findElement(byElement3);
-                            dataMarkupId = element.getText();
-                            System.out.println("Silinecek Data Id: " + dataMarkupId);
-                            findElementWithTextsAndClickNextToWithIndex(key4, dataMarkupId, key5);
-                            return;
-                        }
-                        //else Assert.fail(text2 + " li elementlerin hepsi eşit değil.");
-                    }
-                    break;
-                }
-            }
-            if (var == false) {
-                Assert.fail(text + " li element bulunamadı.");
-            }
-        }
-    }
-
-
-    @Step({"<key> li elementlerden id bilgisi silindi mi?"})
-    public void findElementsCheckTextsAndDeletedId(String key) {
-        System.out.println("Silindiği kontrol edilecek data: " + dataMarkupId);
-        checkTextNotExistsElements(key, dataMarkupId);
-    }
-
-
     @Step({"<key> li elementlerden <text> değerine eşit olanın yanındaki <key2> li elementlerden <text2> değerine eşit olanın yanındaki <key3> elementinin texti <text3> mı?"})
     public void findElementWithTextsAndFindElementWithTextAndFindWithTextNextTo(String key, String text, String key2, String text2, String key3, String text3) {
         try {
@@ -1810,47 +1690,6 @@ public class StepImpl {
         }
     }
 
-    @Step({"<key> li elementlerin yanındaki <key2> elementlerinden <attr> attributesi <attrtext> içermeyen ilk elemente tıkla"})
-    public void findElementWithTextsAndCheckAttrAndClickFirst(String key, String key2, String attr, String attrtext) {
-        Boolean var = false;
-        try {
-            By byElement = ElementHelper.getElementInfoToBy(key);
-            waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement));
-            List<WebElement> elements = driver.findElements(byElement);
-
-            By byElement2 = ElementHelper.getElementInfoToBy(key2);
-            waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement2));
-            List<WebElement> elements2 = driver.findElements(byElement2);
-
-            By byElement3 = ElementHelper.getElementInfoToBy("txt_accommondationStartDate");
-            waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement3));
-            WebElement element = driver.findElement(byElement3);
-            for (int i = 0; i < elements2.size(); i++) {
-                //swipeToElement(elements2.get(i));
-                if (element.getAttribute("value").equals("")) {
-                    if (i == elements2.size() - 1) {
-                        System.out.println("Size: " + i);
-                        System.out.println("Elements Size: " + elements.size());
-                        System.out.println("Elements2 Size: " + elements2.size());
-                        System.out.println("Elements Son Attr: " + elements.get(i).getAttribute("class"));
-                        System.out.println("Elements Son: " + elements2.get(i).getText());
-                        var = true;
-                        if (!elements.get(i + 1).getAttribute(attr).contains(attrtext)) {
-                            System.out.println("1. " + elements.get(i).getText());
-                            System.out.println("2. " + elements.get(i + 1).getText());
-                            elements.get(i + 1).click();
-                            return;
-                        }
-                    }
-                }
-            }
-        } catch (Exception e) {
-            if (var == false) Assert.fail("Elementin size değeri i değerine eşit değil.");
-            //Assert.fail("Elementin "+attr+" attributesi "+attrtext+" içeriyor.");
-        }
-    }
-
-
     @Step({"<key> li elementlerden <text> değerine eşit olanın yanındaki <key2> elementi tıklanabilir mi?"})
     public void findElementWithTextsAndCheckClickableNextTo(String key, String text, String key2) {
         try {
@@ -1983,32 +1822,21 @@ public class StepImpl {
         configuration.setWaitAngular(false);
     }
 
-
-    @Step("<key> li elementin içindekileri sil")
-    public void deleteText(String key) {
-        By byElement = ElementHelper.getElementInfoToBy(key);
-        waitingAction.waitUntil(ExpectedConditions.presenceOfElementLocated(byElement));
-        WebElement element = driver.findElement(byElement);
-        element.clear();
-        if (System.getProperty("os.name").contains("Mac"))
-            element.sendKeys(Keys.COMMAND + "a");
-        else if (System.getProperty("os.name").contains("Windows"))
-            element.sendKeys(Keys.CONTROL + "a");
-        element.sendKeys(Keys.DELETE);
-    }
-
     @Step("<key> li elementi temizle")
     public void deleteText2(String key) {
         String s = "";
         By byElement = ElementHelper.getElementInfoToBy(key);
         waitingAction.waitUntil(ExpectedConditions.presenceOfElementLocated(byElement));
         WebElement element = driver.findElement(byElement);
-        if (System.getProperty("os.name").contains("Mac"))
+        if (System.getProperty("os.name").toLowerCase().contains("Mac".toLowerCase())){
             s = Keys.chord(Keys.COMMAND, "a");
-        else if (System.getProperty("os.name").contains("Windows"))
-            s = Keys.chord(Keys.CONTROL, "a");
-        element.sendKeys(s);
-        element.sendKeys(Keys.DELETE);
+            element.sendKeys(s);
+            element.sendKeys(Keys.DELETE);
+        } if (System.getProperty("os.name").toLowerCase().contains("Windows".toLowerCase())
+                || element.getText() != "") {
+            element.sendKeys(Keys.CONTROL, "a");
+            element.sendKeys(Keys.DELETE);
+        }
     }
 
     @Step("<key> Entere tıkla")
@@ -2058,56 +1886,6 @@ public class StepImpl {
         action.dragAndDropBy(element, 150, 0).perform();
     }
 
-
-    @Step({"Excel <excelFileName> dosyasından veri okuma işlemi yapılır."})
-    public void excelReadData(String excelFileName) throws IOException {
-        ExcelHelper excel = null;
-        String fileNamePath = "";
-        LocalDateTime dateTime = LocalDateTime.now();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy-HH.mm");
-        String date = dateTime.format(formatter);
-        System.out.println(dateTime.format(formatter));
-
-        if (excelFileName.contains("Markup")){
-            fileNamePath = excelFileName+"-"+date+".xlsx";
-            System.out.println(fileNamePath);
-        }
-        else if(excelFileName.contains("reservation"))    {
-            fileNamePath = excelFileName+"-"+date+".xlsx";
-            System.out.println(fileNamePath);
-        }
-        try {
-           // excel = new ExcelHelper("/Users/dilekaysegun/Downloads/"+fileNamePath);
-           // File file = new File("/Users/dilekaysegun/Downloads/reservation-04.10.2021-11.37.xlsx");
-           // ExcelHelper excel = new ExcelHelper("/Users/dilekaysegun/Downloads/"+fileNamePath);
-            File file = new File("/Users/dilekaysegun/Downloads/"+fileNamePath);
-            FileInputStream inputStream = new FileInputStream(file);
-            XSSFWorkbook wb = new XSSFWorkbook(inputStream);
-            XSSFSheet sheet = wb.getSheet("Sheet");
-            int rowCount = sheet.getLastRowNum() - sheet.getFirstRowNum();
-            //her hücrede bulunan verileri yazdırmak için tüm satırı gez
-            for (int i = 0; i <= rowCount; i++) {
-                //hücre sayısını al
-                int cellcount = sheet.getRow(i).getLastCellNum();
-                System.out.println("Row" + i + " data is :");
-                for (int j = 0; j < cellcount; j++) {
-                    System.out.print(sheet.getRow(i).getCell(j).getStringCellValue() + ",");
-                    String deneme= sheet.getRow(i).getCell(j).getStringCellValue();
-                        //System.out.println("deneme :"+ deneme);
-                    char harf = deneme.charAt(4);
-                    char ch = 'ç';
-                    int asciiKod = (int) ch;
-
-                }
-                System.out.println();
-            }
-        }catch (Exception e){
-            System.out.println(e.getMessage());
-        }
-        //excel.deleteExcel();
-}
-
-
     @Step({"Excel <excelFileName> dosyasının doğru uzantıda olduğu kontrol edilir."})
     public void checkFilename(String excelFileName) throws IOException, ParseException {
 
@@ -2144,197 +1922,15 @@ public class StepImpl {
                 fileNamePath = excelFileName+"-"+date+".xlsx";
             }
 
-            excel = new ExcelHelper("/Users/dilekaysegun/Downloads/"+fileNamePath);
+            excel = new ExcelHelper("<fileRootPath>"+fileNamePath);
             String row0 = excel.getData(0,0,0);
             System.out.println("Data from Excel is: "+row0);
         }catch (Exception e){
             System.out.println(e.getMessage());
         }
-
-        excel.deleteExcel();
-
-        //"/Users/virgosol-furkan/Downloads/"
-
-        //File file = new File("/Users/virgosol-furkan/Downloads/");
-//
-        //FileInputStream fileInputStream = new FileInputStream(file);
-//
-        //XSSFWorkbook wb = new XSSFWorkbook(fileInputStream);
-//
-        //XSSFSheet sheet1 = wb.getSheetAt(0); //name verilebiliyor.
-//
-        //String data0 = sheet1.getRow(0).getCell(0).getStringCellValue();
-//
-        //System.out.println("Data from Excel is : "+data0);
-//
-        //wb.close();
-
-
-
-        //FİRST COLUMN VALUES
-        /*int rowCount = sheet1.getLastRowNum();
-
-        System.out.println("Total rows is : "+rowCount);
-
-        for(int i = 0; i < rowCount; i++){
-            String data0 = sheet1.getRow(i).getCell(0).getStringCellValue();
-            System.out.println("Test Data from Excel is : "+data0);
-            System.out.println("Data From Row"+i+" is: "+data0);
-        }*/
-
-        // SET CELL VALUE
-        //sheet1.getRow(0).createCell(2).setCellValue("Pass");
-        //sheet1.getRow(1).createCell(2).setCellValue("Fail");
-
-        //FileOutputStream fileOutputStream = new FileOutputStream(file);
-        //wb.write(fileOutputStream);
-
-
-    }
-
-    @Step({"Excel <excelFileName> dosyasının uzantısı kontrol edilir ve içeriğinin datagrid yapısıyla aynı olduğu kontrol edilir."})
-    public void checkDataGridAndExcelColumn(String excelFileName) throws IOException, BiffException {
-
-        ExcelHelper excel = null;
-        String fileNamePath = "";
-        LocalDateTime dateTime = LocalDateTime.now();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy-HH.mm");
-        String date = dateTime.format(formatter);
-        System.out.println(dateTime.format(formatter));
-
-        if (excelFileName.contains("Markup")){
-            fileNamePath = excelFileName+"-"+date+".xlsx";
-            System.out.println(fileNamePath);
-
-        }
-        else if(excelFileName.contains("reservation"))    {
-            fileNamePath = excelFileName+"-"+date+".xlsx";
-            System.out.println(fileNamePath);
-        }
-        try {
-            excel = new ExcelHelper("/Users/dilekaysegun/Downloads/"+fileNamePath);
-            String row0 = excel.getData(0,0,0);
-            System.out.println("Data from Excel is: "+row0);
-        }catch (Exception e){
-            System.out.println(e.getMessage());
-        }
-
-        By byElement = ElementHelper.getElementInfoToBy("txt_tableRowNames");
-        waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement));
-        List<WebElement> elements = driver.findElements(byElement);
-        int size = elements.size();
-
-        ElementInfo elementInfo = ElementHelper.getElementInfo("txt_tableRowHeaderNameWithRows");
-        String by = (elementInfo.getValue()+"/td["+(1)+"]");
-        List<WebElement> rowElements = elements.get(0).findElements(By.xpath(by));
-        int firstRowSize = rowElements.size();
-
-        String data[][] = new String[size][firstRowSize+1];
-        int rowSize = 0;
-
-        for (int i = 0; i < size; ){
-            swipeToElement(elements.get(i));
-            data[i][0] = elements.get(i).getText();
-            System.out.println("Dizi İçeriği: "+data[i][0]);
-            if (i == size - 1) break;
-            i++;
-        }
-
-        for (int k = 0 ; k < size; k++) {
-            swipeToElement(elements.get(k));
-            System.out.println(elements.get(k).getText());
-            if (elements.get(k).getText().equals(data[k][0])) {
-                ElementInfo elementInfo1 = ElementHelper.getElementInfo("txt_tableRowHeaderNameWithRows");
-                String by1 = (elementInfo1.getValue()+"/td["+(k+1)+"]");
-                List<WebElement> lastElements = elements.get(k).findElements(By.xpath(by1));
-                rowSize = lastElements.size();
-                for (int i = 0; i < rowSize; i++) {
-                    swipeToElement(lastElements.get(i));
-                    data[k][i+1] = lastElements.get(i).getText();
-                }
-            }
-        }
-
-        /*for(int i = 0; i < size;i++){
-            for(int k = 0; k < rowSize+1; k++){
-                System.out.println("Array List ["+i+"]"+"["+k+"] :" +data[i][k]);
-            }
-        }
-        System.out.println("Excel Data: ");*/
-
-        //System.out.println("Array List ["+1+"]"+"["+1+"] :" +excel.getData(0,1,1));
-
-        /*for(int i = 0; i < size;i++){
-            for(int k = 0; k < rowSize+1; k++){
-                System.out.println("Array List ["+i+"]"+"["+k+"] :" +excel.getData(0,k,i));
-            }
-        }*/
-
-        for (int i = 0; i < size; i++){
-            for(int k = 0; k < rowSize+1; k++){
-                if (!(data[i][k].equals(excel.getData(0,k,i))))
-                    Assert.fail(data[i][k]+" texti "+excel.getData(0,k,i)+" textine eşit değil.");
-            }
-        }
-
-        //key txt_tableRowNames
-
-        //System.out.println("Element Data Grid Size: "+size);
-        //System.out.println("Excel Table First Column Y: "+excel.getYCount(0));
-        //System.out.println("Excel Table Last Column X: "+excel.getXCount(0));
 
         excel.deleteExcel();
     }
-
-    /*@Step({"Excel <excelFileName> dosyasının uzantısı kontrol edilir ve içeriğinin datagrid yapısıyla aynı olduğu kontrol edilir."})
-    public void checkDataGridAndExcelColumn2(String excelFileName) throws IOException {
-
-        ExcelHelper excel = null;
-        String fileNamePath = "";
-        LocalDateTime dateTime = LocalDateTime.now();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy-HH.mm");
-        String date = dateTime.format(formatter);
-        System.out.println(dateTime.format(formatter));
-
-        if (excelFileName.contains("Markup")){
-            fileNamePath = excelFileName+"-"+date+".xlsx";
-            System.out.println(fileNamePath);
-
-        }
-        else if(excelFileName.contains("reservation"))    {
-            fileNamePath = excelFileName+"-"+date+".xlsx";
-            System.out.println(fileNamePath);
-        }
-        try {
-            excel = new ExcelHelper("/Users/virgosol-furkan/Downloads/"+fileNamePath);
-            String row0 = excel.getData(0,0,0);
-            System.out.println("Data from Excel is: "+row0);
-        }catch (Exception e){
-            System.out.println(e.getMessage());
-        }
-
-        By byElement = ElementHelper.getElementInfoToBy("txt_tableRowNames");
-        waitingAction.waitUntil(ExpectedConditions.presenceOfAllElementsLocatedBy(byElement));
-        List<WebElement> elements = driver.findElements(byElement);
-        int size = elements.size();
-        String data[] = new String[size];
-        for (int i = 0; i < size; ){
-            swipeToElement(elements.get(i));
-            data[i] = elements.get(i).getText();
-            System.out.println("Dizi İçeriği: "+data[i]);
-            if (i == size - 1) break;
-            i++;
-        }
-
-        for (int i = 0; i < size; ){
-            if (!(data[i].equals(excel.getData(0,0,i))))
-                Assert.fail(data[i]+" texti "+excel.getData(0,0,i)+" textine eşit değil.");
-            if (i == size - 1) break;
-            i++;
-        }
-
-        excel.deleteExcel();
-    }*/
 
     @Step("<key> swipe element")
     public void swipeToElement(String key) {

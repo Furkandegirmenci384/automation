@@ -13,38 +13,19 @@
   <url>http://192.168.186.88:81</url>
 
 
-  <!--
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.complier.version>3.8.1</maven.complier.version>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-    <gauge.java.version>0.7.15</gauge.java.version>
-    <junit.version>4.12</junit.version>
-    <gauge.plugin.version>1.4.2</gauge.plugin.version>
-    <virgosol.qa.version>1.0.0</virgosol.qa.version>
-  </properties>
-  -->
-
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.complier.version>3.6.0</maven.complier.version>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <gauge.java.version>0.7.9</gauge.java.version>
     <junit.version>4.12</junit.version>
-    <gauge.plugin.version>1.4.1</gauge.plugin.version>
+    <gauge.plugin.version>1.5.0</gauge.plugin.version>
     <!-- <virgosol.qa.version>1.0.0</virgosol.qa.version> -->
     <!-- <virgosol.qa.version>2.0.10</virgosol.qa.version> -->
-     <virgosol.qa.version>2.0.14</virgosol.qa.version>
+    <virgosol.qa.version>2.0.22</virgosol.qa.version>
   </properties>
 
   <dependencies>
-    <dependency>
-      <groupId>com.vrgsl.qa</groupId>
-      <artifactId>qa-report</artifactId>
-      <version>${virgosol.qa.version}</version>
-    </dependency>
     <dependency>
       <groupId>com.vrgsl.qa</groupId>
       <artifactId>web-gauge</artifactId>
@@ -54,17 +35,6 @@
       <groupId>com.aventstack</groupId>
       <artifactId>klov-reporter</artifactId>
       <version>5.0.6</version>
-    </dependency>
-    <dependency>
-      <groupId>com.thoughtworks.gauge</groupId>
-      <artifactId>gauge-java</artifactId>
-      <version>${gauge.java.version}</version>
-      <exclusions>
-        <exclusion>
-          <groupId>com.google.guava</groupId>
-          <artifactId>guava</artifactId>
-        </exclusion>
-      </exclusions>
     </dependency>
     <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
     <dependency>
@@ -96,38 +66,7 @@
         <groupId>com.thoughtworks.gauge.maven</groupId>
         <artifactId>gauge-maven-plugin</artifactId>
         <version>${gauge.plugin.version}</version>
-        <!-- <executions>
-          <execution>
-            <phase>test</phase>
-            <configuration>
-              <specsDir>specs/Scenarios</specsDir>
-            </configuration>
-            <goals>
-              <goal>execute</goal>
-            </goals>
-          </execution>
-        </executions>
-        <configuration>
-
-        </configuration> -->
       </plugin>
-      <!-- <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.19.1</version>
-        <configuration>
-          <properties>
-            <property>
-              <name>browserType</name>
-              <value>${browserType}</value>
-            </property>
-          </properties>
-          <systemPropertyVariables>
-            <driverPath>$(System.how to )</driverPath>
-            <browserType>Safari</browserType>
-          </systemPropertyVariables>
-        </configuration>
-      </plugin>-->
     </plugins>
   </build>
 </project>
