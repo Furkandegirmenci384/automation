@@ -2,7 +2,7 @@
 
 ## TC1 - Deneme
 tags: deneme
-* "https://www.google.comm/" urlinin açıldığı doğrulanır.
+* "https://www.google.com/" urlinin açıldığı doğrulanır.
 
 ## TC2 - Deneme
 tags: deneme2
