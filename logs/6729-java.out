@@ -1,0 +1,255 @@
+{"logLevel":"debug","message":"multithreading is set to true"}
+{"logLevel":"debug","message":"multithreading enabled, number of threads=8"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.codehaus.groovy.reflection.CachedClass (file:/Users/virgosol-furkan/.m2/repository/org/codehaus/groovy/groovy-all/2.4.13/groovy-all-2.4.13.jar) to method java.lang.Object.finalize()
+WARNING: Please consider reporting this to the maintainers of org.codehaus.groovy.reflection.CachedClass
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+16:14:56,937 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+16:14:56,937 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.groovy] at [file:/Users/virgosol-furkan/Documents/Virgosol%20Projects/HepsiJetPOC/target/test-classes/logback.groovy]
+16:14:56,938 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.groovy] occurs multiple times on the classpath.
+16:14:56,938 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.groovy] occurs at [file:/Users/virgosol-furkan/Documents/Virgosol%20Projects/HepsiJetPOC/target/test-classes/logback.groovy]
+16:14:56,938 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.groovy] occurs at [jar:file:/Users/virgosol-furkan/.m2/repository/com/vrgsl/qa/qa-common/2.0.17/qa-common-2.0.17.jar!/logback.groovy]
+16:14:57,976 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@e922f1 - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+16:14:57,979 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@e922f1 - Naming appender as [STDOUT]
+16:14:58,112 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@e922f1 - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+16:14:58,114 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@e922f1 - Naming appender as [FILE]
+16:14:58,117 |-INFO in ch.qos.logback.core.FileAppender[FILE] - File property is set to [target/slnarch.log]
+16:14:58,126 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@e922f1 - Setting level of logger [com.virgosol.hepsijet] to DEBUG
+16:14:58,135 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@e922f1 - Setting level of logger [org.reflections.Reflections] to OFF
+16:14:58,138 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@e922f1 - Setting level of logger [ROOT] to INFO
+16:14:58,141 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@e922f1 - Attaching appender named [STDOUT] to Logger[ROOT]
+16:14:58,142 |-INFO in ch.qos.logback.classic.gaffer.ConfigurationDelegate@e922f1 - Attaching appender named [FILE] to Logger[ROOT]
+
+{"logLevel":"debug","message":"gauge-java took 2303milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 2303"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 53012"}
+{"logLevel":"info","message":"Listening on port:53012"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.checkTextsElement' and 'com.virgosol.hepsijet.step.StepImpl.checkTextsElement'"}
+{"logLevel":"debug","message":"Found {} li elementlerin texti var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndClickAllignment' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndClickAllignment'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olan ile aynı sıralamada yanındaki {} elementine tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.sendKeyNextTo' and 'com.virgosol.hepsijet.step.StepImpl.sendKeyNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementine {} degerini yaz in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.popUpAccept' and 'com.virgosol.hepsijet.step.StepImpl.popUpAccept'"}
+{"logLevel":"debug","message":"Found Mesajda tamam butonuna basılır. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.dragAndDropColumn' and 'com.virgosol.hepsijet.step.StepImpl.dragAndDropColumn'"}
+{"logLevel":"debug","message":"Found {} li elementi sürükle ve bırak in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndCheckClickable' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndCheckClickable'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olan tıklanabilir mi? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.checkFilename' and 'com.virgosol.hepsijet.step.StepImpl.checkFilename'"}
+{"logLevel":"debug","message":"Found Excel {} dosyasının doğru uzantıda olduğu kontrol edilir. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.clickEnterWithElement' and 'com.virgosol.hepsijet.step.StepImpl.clickEnterWithElement'"}
+{"logLevel":"debug","message":"Found {} Entere tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndCheckAttributeNextTo' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndCheckAttributeNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin {} attributesi var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.saveAttributeNextTo' and 'com.virgosol.hepsijet.step.StepImpl.saveAttributeNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementinin {} attributesini {} olarak kaydet in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.checkAttribute' and 'com.virgosol.hepsijet.step.StepImpl.checkAttribute'"}
+{"logLevel":"debug","message":"Found {} li elementin {} attributesi var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndFindElementWithTextAndFindWithTextNextTo' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndFindElementWithTextAndFindWithTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin texti {} mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.waitInVisible' and 'com.virgosol.hepsijet.step.StepImpl.waitInVisible'"}
+{"logLevel":"debug","message":"Found {} li elementi invisible olana kadar bekle in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.dateControl' and 'com.virgosol.hepsijet.step.StepImpl.dateControl'"}
+{"logLevel":"debug","message":"Found {} li elementin tarih bilgisi kontrol edilir. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.hoverElementNextTo' and 'com.virgosol.hepsijet.step.StepImpl.hoverElementNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementinin üzerine gel in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.openBrowser' and 'com.virgosol.hepsijet.step.StepImpl.openBrowser'"}
+{"logLevel":"debug","message":"Found {} tarayıcını aç in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.saveText' and 'com.virgosol.hepsijet.step.StepImpl.saveText'"}
+{"logLevel":"debug","message":"Found {} li elementin textini {} olarak kaydet in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndClick' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndClick'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olana tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementsCheckTextsAndCheckElementNextTo' and 'com.virgosol.hepsijet.step.StepImpl.findElementsCheckTextsAndCheckElementNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden texti olanın yanındaki {} elementi var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndCheckElementNextToNotExists' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndCheckElementNextToNotExists'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementi yok mu? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.deleteText2' and 'com.virgosol.hepsijet.step.StepImpl.deleteText2'"}
+{"logLevel":"debug","message":"Found {} li elementi temizle in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.openWait' and 'com.virgosol.hepsijet.step.StepImpl.openWait'"}
+{"logLevel":"debug","message":"Found Beklemeleri ac in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.goToUrl' and 'com.virgosol.hepsijet.step.StepImpl.goToUrl'"}
+{"logLevel":"debug","message":"Found {} urle git in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.checkNotExistElement' and 'com.virgosol.hepsijet.step.StepImpl.checkNotExistElement'"}
+{"logLevel":"debug","message":"Found {} li element yok mu? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.numberOfDataInDatagrid' and 'com.virgosol.hepsijet.step.StepImpl.numberOfDataInDatagrid'"}
+{"logLevel":"debug","message":"Found {} li elementin uzunluğunun 10 olduğu doğrulanır. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.checkClickable' and 'com.virgosol.hepsijet.step.StepImpl.checkClickable'"}
+{"logLevel":"debug","message":"Found {} li element tıklanabilir mi? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextAndCheckAttributeText' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextAndCheckAttributeText'"}
+{"logLevel":"debug","message":"Found {} li elementin {} attributesi {} mi in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndSaveTextNextTo' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndSaveTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin textini {} olarak kaydet in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndSendKey' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndSendKey'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olana {} değerini yaz in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.saveAttribute' and 'com.virgosol.hepsijet.step.StepImpl.saveAttribute'"}
+{"logLevel":"debug","message":"Found {} li elementin {} attributesini {} olarak kaydet in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.checkTitle' and 'com.virgosol.hepsijet.step.StepImpl.checkTitle'"}
+{"logLevel":"debug","message":"Found Sayfanın title ı {} mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.checkTextNextTo' and 'com.virgosol.hepsijet.step.StepImpl.checkTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementinin texti var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.waitMinutes' and 'com.virgosol.hepsijet.step.StepImpl.waitMinutes'"}
+{"logLevel":"debug","message":"Found {} dakika bekle in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.swipeToElement' and 'com.virgosol.hepsijet.step.StepImpl.swipeToElement'"}
+{"logLevel":"debug","message":"Found {} swipe element in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.refreshPage' and 'com.virgosol.hepsijet.step.StepImpl.refreshPage'"}
+{"logLevel":"debug","message":"Found Bulunduğun sayfayı yenile in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextAndCheckAttributeContainsTextNextTo' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextAndCheckAttributeContainsTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olan elementin {} attributesi {} içeriyor mu? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndCheckElementNextTo' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndCheckElementNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} element var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.forwardPage' and 'com.virgosol.hepsijet.step.StepImpl.forwardPage'"}
+{"logLevel":"debug","message":"Found Bulunduğun sayfada ileri git in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.backPage' and 'com.virgosol.hepsijet.step.StepImpl.backPage'"}
+{"logLevel":"debug","message":"Found Bulunduğun sayfada geri git in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndOrderAllignment' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndOrderAllignment'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olan ile aynı sıralamada altındaki {} verileri {} olarak sıralı mı in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementsCheckTextsAndCheckElementsTextNextTo' and 'com.virgosol.hepsijet.step.StepImpl.findElementsCheckTextsAndCheckElementsTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden texti olanın yanındaki {} elementin texti var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.waitVisible' and 'com.virgosol.hepsijet.step.StepImpl.waitVisible'"}
+{"logLevel":"debug","message":"Found {} li elementi görünür olana kadar bekle in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.clickEnter' and 'com.virgosol.hepsijet.step.StepImpl.clickEnter'"}
+{"logLevel":"debug","message":"Found Entere tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndCheckAttribute' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndCheckAttribute'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın {} attributesi var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.checkElements' and 'com.virgosol.hepsijet.step.StepImpl.checkElements'"}
+{"logLevel":"debug","message":"Found {} li elementler var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.clickElementNextTo' and 'com.virgosol.hepsijet.step.StepImpl.clickElementNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementine tikla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndSaveText' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndSaveText'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın textini {} olarak kaydet in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndSendKeyNextToEnter' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndSendKeyNextToEnter'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementinde Entere Tikla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.checkTextEquals' and 'com.virgosol.hepsijet.step.StepImpl.checkTextEquals'"}
+{"logLevel":"debug","message":"Found {} li elementin texti {} mi? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.checkTextContains' and 'com.virgosol.hepsijet.step.StepImpl.checkTextContains'"}
+{"logLevel":"debug","message":"Found {} li elementin texti {} içeriyor mu? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.closePage' and 'com.virgosol.hepsijet.step.StepImpl.closePage'"}
+{"logLevel":"debug","message":"Found Bulunduğun sayfayı kapat in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.checkTextContainsNextTo' and 'com.virgosol.hepsijet.step.StepImpl.checkTextContainsNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementinin texti {} içeriyor mi? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.waitElement' and 'com.virgosol.hepsijet.step.StepImpl.waitElement'"}
+{"logLevel":"debug","message":"Found Wait {} element in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.waitElement' and 'com.virgosol.hepsijet.step.StepImpl.waitElement'"}
+{"logLevel":"debug","message":"Found {} li elementi bekle in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndSendKeyAllignment' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndSendKeyAllignment'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olan ile aynı sıralamada yanındaki {} elementine {} değerini yaz in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.checkText' and 'com.virgosol.hepsijet.step.StepImpl.checkText'"}
+{"logLevel":"debug","message":"Found {} li elementin texti var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.checkElement' and 'com.virgosol.hepsijet.step.StepImpl.checkElement'"}
+{"logLevel":"debug","message":"Found {} li element var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.setAttributeNextTo' and 'com.virgosol.hepsijet.step.StepImpl.setAttributeNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementinin {} attributesini {} yap in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.checkTextEqualsNextTo' and 'com.virgosol.hepsijet.step.StepImpl.checkTextEqualsNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementinin texti {} mi? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndSaveAttribute' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndSaveAttribute'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın {} attributesini {} olarak kaydet in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndSendKeyNextTo' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndSendKeyNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementine {} değerini yaz in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.changeScreenResolution' and 'com.virgosol.hepsijet.step.StepImpl.changeScreenResolution'"}
+{"logLevel":"debug","message":"Found Ekran çözünürlüğünü {} yap. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndFindElementWithTextAndSaveTextNextTo' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndFindElementWithTextAndSaveTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin textini {} olarak kaydet in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndHoverNextTo' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndHoverNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin üzerine gel in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.saveTextNextTo' and 'com.virgosol.hepsijet.step.StepImpl.saveTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementinin textini {} olarak kaydet in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndFindElementWithTextAndClickNextTo' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndFindElementWithTextAndClickNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} li elementlerden {} değerine eşit olanın yanındaki {} elementine tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.checkElementVisible' and 'com.virgosol.hepsijet.step.StepImpl.checkElementVisible'"}
+{"logLevel":"debug","message":"Found {} li element görünür mü? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndClickNextToWithIndex' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndClickNextToWithIndex'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementlerinden indexe göre tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.checkNotExistAttribute' and 'com.virgosol.hepsijet.step.StepImpl.checkNotExistAttribute'"}
+{"logLevel":"debug","message":"Found {} li elementin {} attributesi yok mu in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndHover' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndHover'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın üzerine gel in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.dateCompare' and 'com.virgosol.hepsijet.step.StepImpl.dateCompare'"}
+{"logLevel":"debug","message":"Found {} tarihi ile {} tarihini karşılaştır. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.sendKey' and 'com.virgosol.hepsijet.step.StepImpl.sendKey'"}
+{"logLevel":"debug","message":"Found Send keys to element with key {} and text {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.sendKey' and 'com.virgosol.hepsijet.step.StepImpl.sendKey'"}
+{"logLevel":"debug","message":"Found {} li elemente {} degerini yaz in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndSetAttribute' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndSetAttribute'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın {} attributesini {} yap in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndClickWithTextNextTo' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndClickWithTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementlerinden {} değerine eşit olana tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.hoverElement' and 'com.virgosol.hepsijet.step.StepImpl.hoverElement'"}
+{"logLevel":"debug","message":"Found {} li elementin üzerine gel in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.framegir' and 'com.virgosol.hepsijet.step.StepImpl.framegir'"}
+{"logLevel":"debug","message":"Found frame gir in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.closeWait' and 'com.virgosol.hepsijet.step.StepImpl.closeWait'"}
+{"logLevel":"debug","message":"Found Beklemeleri kapat in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.waitSeconds' and 'com.virgosol.hepsijet.step.StepImpl.waitSeconds'"}
+{"logLevel":"debug","message":"Found {} sn bekle in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findFile' and 'com.virgosol.hepsijet.step.StepImpl.findFile'"}
+{"logLevel":"debug","message":"Found {} li elemente tikla ve {} dosya secimini yap in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.navigateWindow' and 'com.virgosol.hepsijet.step.StepImpl.navigateWindow'"}
+{"logLevel":"debug","message":"Found Yeni açılan sayfaya geç in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.clickElement' and 'com.virgosol.hepsijet.step.StepImpl.clickElement'"}
+{"logLevel":"debug","message":"Found Click element with key {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.clickElement' and 'com.virgosol.hepsijet.step.StepImpl.clickElement'"}
+{"logLevel":"debug","message":"Found {} li elemente tikla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndClickNextTo' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndClickNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementine tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndCheckAttributeTextNextTo' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndCheckAttributeTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin {} attributesi {} içeriyor mu? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.checkTextNotExistsElements' and 'com.virgosol.hepsijet.step.StepImpl.checkTextNotExistsElements'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olan yok mu? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextAndCheckAttributeTextNextTo' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextAndCheckAttributeTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olan elementin {} attributesi {} mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementsCheckTextsAndClickElementTextNextTo' and 'com.virgosol.hepsijet.step.StepImpl.findElementsCheckTextsAndClickElementTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden yanındaki {} elementinin {} attributesi {} içerenin yanındaki {} elementine tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.checkUrl' and 'com.virgosol.hepsijet.step.StepImpl.checkUrl'"}
+{"logLevel":"debug","message":"Found Sayfanın url i {} mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndSaveAttributeNextTo' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndSaveAttributeNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin {} attributesini {} olarak kaydet in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.elementIsDisplayed' and 'com.virgosol.hepsijet.step.StepImpl.elementIsDisplayed'"}
+{"logLevel":"debug","message":"Found {} li element gözüküyor mu? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndCheckText' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndCheckText'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olan var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndCheckClickableNextTo' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndCheckClickableNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olan elementten önceki {} elementlerin tarihi {} attributesi {} içeriyor mu? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndCheckClickableNextTo' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndCheckClickableNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementi tıklanabilir mi? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.setAttribute' and 'com.virgosol.hepsijet.step.StepImpl.setAttribute'"}
+{"logLevel":"debug","message":"Found {} li elementin {} attributesini {} yap in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndSelectNextTo' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndSelectNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementini seç in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.checkAttributeNextTo' and 'com.virgosol.hepsijet.step.StepImpl.checkAttributeNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementinin {} attributesi var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndSetAttributeNextTo' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndSetAttributeNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin {} attributesini {} yap in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.navigateFrame' and 'com.virgosol.hepsijet.step.StepImpl.navigateFrame'"}
+{"logLevel":"debug","message":"Found {} isimli frame e geç in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.navigateFrame' and 'com.virgosol.hepsijet.step.StepImpl.navigateFrame'"}
+{"logLevel":"debug","message":"Found Frameden ana sayfaya geç in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.checkElementNextTo' and 'com.virgosol.hepsijet.step.StepImpl.checkElementNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} element var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.secondCheckNotExistAttribute' and 'com.virgosol.hepsijet.step.StepImpl.secondCheckNotExistAttribute'"}
+{"logLevel":"debug","message":"Found {} li elementlerin {} attributesi yok mu? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithCheckAttribute' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithCheckAttribute'"}
+{"logLevel":"debug","message":"Found {} li elementlerin {} attributesi var mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndFindElementCheckWithTextNextTo' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndFindElementCheckWithTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} li elementler {} değerine eşit mi? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextAndCheckAttributeEqualsTextNextTo' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextAndCheckAttributeEqualsTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin {} attributesi {} mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndSaveAttributeTextNextTo' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndSaveAttributeTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} elementinin {} attributesini kaydet in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndSaveAttributeTextNextTo' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndSaveAttributeTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} li elementlerin textindeki tarihler doğru aralıkta mı? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.checkClickableNextTo' and 'com.virgosol.hepsijet.step.StepImpl.checkClickableNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementin yanındaki {} elementi tıklanabilir mi? in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndSelect' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndSelect'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanı seç in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithCheckAttributeText' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithCheckAttributeText'"}
+{"logLevel":"debug","message":"Found {} li elementlerin {} attributesi {} mi in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.handlingCAPTCHA' and 'com.virgosol.hepsijet.step.StepImpl.handlingCAPTCHA'"}
+{"logLevel":"debug","message":"Found {} textbox alanına captcha değeri yazılır. in current project scope."}
+{"logLevel":"debug","message":"Comparing 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndFindElementWithTextNextTo' and 'com.virgosol.hepsijet.step.StepImpl.findElementWithTextsAndFindElementWithTextNextTo'"}
+{"logLevel":"debug","message":"Found {} li elementlerden {} değerine eşit olanın yanındaki {} li elementlerden {} değerine eşit olan var mı? in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
