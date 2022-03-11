@@ -1,11 +1,9 @@
 {
 	"Args": [
 		"run",
-		"--machine-readable",
-		"--hide-suggestion",
-		"--simple-console"
+		"--tags",
+		"deneme",
+		"--dir=/Users/virgosol-furkan/Documents/Virgosol Projects/HepsiJetPOC"
 	],
-	"FailedItems": [
-		"specs/Scenarios/hepsiJet.spec:3"
-	]
+	"FailedItems": []
 }
