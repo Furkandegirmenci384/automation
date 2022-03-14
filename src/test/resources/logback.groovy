@@ -19,6 +19,6 @@ appender("FILE", FileAppender) {
             $/%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %caller{2} %-5level %logger{36}.%M\(%line\) - %msg%n/$
   }
 }
-logger("com.virgosol.hepsijet", DEBUG)
+logger("com.virgosol.qa", DEBUG)
 logger("org.reflections.Reflections",OFF)
 root(INFO, ["STDOUT", "FILE"])

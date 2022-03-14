@@ -1,8 +1,8 @@
 [
-	"gauge",
+	"/usr/local/bin/gauge",
 	"run",
-	"--tags",
-	"deneme",
-	"--dir=/Users/virgosol-furkan/Documents/Virgosol Projects/HepsiJetPOC",
-	"/Users/virgosol-furkan/Documents/Virgosol Projects/HepsiJetPOC/specs/Scenarios"
+	"--machine-readable",
+	"--hide-suggestion",
+	"--simple-console",
+	"/Users/virgosol-furkan/Documents/Virgosol Projects/HepsiJetPOC/specs/Scenarios/hepsiJet.spec:3"
 ]
