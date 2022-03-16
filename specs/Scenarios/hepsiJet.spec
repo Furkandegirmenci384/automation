@@ -1,19 +1,19 @@
 # HepsiJET POC Senaryolar
 
-## TC1 - Deneme
+## TC1 - Deneme1
 tags: deneme
 * "https://www.google.com/" urle git
 * "https://www.google.com/" urlinin açıldığı doğrulanır.
 
-## TC2 - Deneme
-tags: deneme
+## TC2 - Deneme2
+tags: deneme2
 * "https://www.google.com/" urle git
 * "https://www.google.com/" urlinin açıldığı doğrulanır.
 * Arama alanına "Virgosol" yazılır.
 * Arama alanındaki değer "Deger_AramaText" olarak kaydedilir.
 * "3" saniye bekle
 
-## TC3 - Deneme2
+## TC3 - Deneme3
 * "https://www.google.com/" urle git
 * "https://www.google.com/" urlinin açıldığı doğrulanır.
 * Arama alanına "Virgosol2" yazılır.
