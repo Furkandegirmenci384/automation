@@ -6,7 +6,7 @@ tags: deneme
 * "https://www.google.com/" urlinin açıldığı doğrulanır.
 
 ## TC5 - Deneme5
-tags: deneme2
+tags: deneme
 * "https://www.google.com/" urle git
 * "https://www.google.com/" urlinin açıldığı doğrulanır.
 * Arama alanına "Virgosol" yazılır.
@@ -14,6 +14,7 @@ tags: deneme2
 * "2" saniye bekle
 
 ## TC6 - Deneme6
+tags: deneme
 * "https://www.google.com/" urle git
 * "https://www.google.com/" urlinin açıldığı doğrulanır.
 

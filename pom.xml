@@ -21,7 +21,7 @@
     <gauge.plugin.version>1.5.0</gauge.plugin.version>
     <!-- <virgosol.qa.version>1.0.0</virgosol.qa.version> -->
     <!-- <virgosol.qa.version>2.0.10</virgosol.qa.version> -->
-    <virgosol.qa.version>2.0.24</virgosol.qa.version>
+    <virgosol.qa.version>2.0.25</virgosol.qa.version>
   </properties>
 
   <dependencies>
