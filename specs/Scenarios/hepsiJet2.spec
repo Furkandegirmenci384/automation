@@ -1,4 +1,4 @@
-# HepsiJET POC Senaryolar
+# HepsiJET2 POC Senaryolar
 
 ## TC4 - Deneme4
 tags: deneme

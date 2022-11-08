@@ -1,4 +1,5 @@
-# HepsiJET POC Senaryolar
+# HepsiJET1 POC Senaryolar
+tags: hepsijet1
 
 ## TC1 - Deneme1
 tags: deneme
@@ -21,7 +22,7 @@ tags: deneme
 * Arama alanındaki değer "Deger_AramaText" olarak kaydedilir.
 * "3" saniye bekle
 
-## TC1 - Sayfadaki Üst Menu Ve Hamburger Menu Kontrolü
+## TC4 - Sayfadaki Üst Menu Ve Hamburger Menu Kontrolü
 * "https://hepsijet.com/" urlinin açıldığı doğrulanır.
 * Hepsijet logosunun geldiği kontrol edilir.
 * Üst menüde "Taşımacı Başvurusu" alanının olduğu kontrol edilir.
@@ -50,7 +51,7 @@ tags: deneme
 * Alt menüde "Müşterilere İlişkin Aydınlatma Metni" alanının olduğu kontrol edilir.
 * "1" saniye bekle
 
-## TC2 - Anasayfa Taşımacı Başvurusu Alanının Doldurulması Ve Taşımacı Butonlarının Doğru Yönlendirmesinin Kontrolü
+## TC5 - Anasayfa Taşımacı Başvurusu Alanının Doldurulması Ve Taşımacı Butonlarının Doğru Yönlendirmesinin Kontrolü
 * "https://hepsijet.com/" urlinin açıldığı doğrulanır.
 * Hepsijet logosunun geldiği kontrol edilir.
 * Üst menüden "Taşımacı Başvurusu" alanına tıklanır.
@@ -82,7 +83,7 @@ tags: deneme
 * Kullanım koşullarını okudum checkbox'ı işaretlenir.
 * "1" saniye bekle
 
-## TC3 - Anasayfa Beraber Çalışalım Alanının Doldurulması Ve Müşterimiz Olun Butonlarının Doğru Yönlendirmesinin Kontrolü
+## TC6 - Anasayfa Beraber Çalışalım Alanının Doldurulması Ve Müşterimiz Olun Butonlarının Doğru Yönlendirmesinin Kontrolü
 * "https://hepsijet.com/" urlinin açıldığı doğrulanır.
 * Hepsijet logosunun geldiği kontrol edilir.
 * Üst menüden "Beraber Çalışalım" alanına tıklanır.
@@ -102,7 +103,7 @@ tags: deneme
 * Sayfada bulunan "Telefon Numarası (*)" alanına "6542345" değeri girilir.
 * "1" saniye bekle
 
-## TC4 - Sıkça Sorulan Sorular Alanının Ve Sıkça Sorulanlar Butonlarının Kontrolü
+## TC7 - Sıkça Sorulan Sorular Alanının Ve Sıkça Sorulanlar Butonlarının Kontrolü
 * "https://hepsijet.com/" urlinin açıldığı doğrulanır.
 * Hepsijet logosunun geldiği kontrol edilir.
 * Alt menüden "Sıkça Sorulanlar" alanına tıklanır.
