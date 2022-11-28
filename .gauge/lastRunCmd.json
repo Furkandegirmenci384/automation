@@ -1,8 +1,8 @@
 [
-	"/usr/local/bin/gauge",
+	"/opt/homebrew/bin/gauge",
 	"run",
 	"--machine-readable",
 	"--hide-suggestion",
 	"--simple-console",
-	"/Users/virgosol-furkan/Documents/Virgosol Projects/HepsiJetPOC/specs/Scenarios/hepsiJet.spec:3"
+	"/Users/ali.aktolun/Downloads/hepsijet-poc-web/specs/Scenarios/hepsiJet.spec:4"
 ]
